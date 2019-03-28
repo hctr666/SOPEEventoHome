@@ -8,6 +8,7 @@ import {
    isTouchMode
 } from './js/utils'
 import SwiperTabs from './js/swiper-tabs'
+import './js/menu.js'
 
 const addTouchModeClass = () => {
    if (isTouchMode()) {
@@ -35,7 +36,9 @@ const handleClickProductListTab = () => {
       $prodListTabs.each((i, $tab) => {
          $tab.addEventListener('click', e => {
             e.preventDefault()
-            improveProdImagesSrcs()
+            setTimeout(() => {
+               improveProdImagesSrcs()
+            }, 2500)
          })
       })      
    }
@@ -123,7 +126,6 @@ const tabProductlist = () => {
    domIsReady(function() {
       improveProdImagesSrcs()
       handleClickProductListTab()
-      //tabProductlist()
-
+      
    })
 })(document, window, domIsReady);
