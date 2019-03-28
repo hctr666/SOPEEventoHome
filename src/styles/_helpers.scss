@@ -1,0 +1,156 @@
+.inline {
+    display: inline-block !important;
+}
+
+.width-auto {
+    width: auto !important;
+}
+
+.width-19p {
+    width: 19% !important;
+}
+
+.width-80p {
+    width: 80% !important;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.fz-2x {
+    font-size: 2em;
+    line-height: 1.12em;
+}
+
+.color-secondary {
+    color: #dd021d;
+}
+
+.fz-3x {
+    font-size: 3em;
+    line-height: 2.1em;
+}
+
+.fz-1-5x {
+    font-size: 1.5em;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+.fullh {
+    height: 100%;
+}
+
+.fullw {
+    width: 100%;
+}
+
+.ul-no-style {
+    padding: 0;
+    &, li {
+        list-style: none;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.ol-style-decimal {
+    list-style: decimal;
+    li {
+        list-style: decimal;
+        margin-left: 15px;
+        padding-left: 4px;
+        margin-bottom: 10px;
+    }
+}
+
+.font-hands {
+    font-family: 'Hands';
+}
+
+.color-primary {
+    color: $brandPrimary;
+}
+
+.no-p-events-lg {
+    @media (min-width:1000px) {
+        pointer-events: none !important;
+    }
+}
+
+.no-overflow {
+    overflow: hidden !important;
+}
+
+.d-table {
+    display: table;
+}
+
+.d-table-cell {
+    display: table-cell;
+}
+
+.valign-middle {
+    vertical-align: middle;
+}
+
+.fade-content {
+	display: none;
+	height: 0;
+    opacity: 0;
+	overflow: hidden;
+	transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+.fade-content.fade-in {
+	display: block;
+	height: auto;
+    opacity: 1;
+}
+
+@media (max-width:500px) {
+    .d-block-xs {
+        display: block;
+    }
+    .d-block-sm {
+        display: none;
+    }
+}
+@media (min-width:501px) {
+    .d-block-xs {
+        display: none;
+    }
+    .d-block-sm {
+        display: block;
+    }
+}

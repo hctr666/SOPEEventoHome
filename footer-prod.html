@@ -1,0 +1,9 @@
+<!--
+   TEMPLATE FOOTER - PROD:
+   Este template es manejado como sección footer para producción
+-->
+<% if (process.env.NODE_ENV === "production") { %>
+   <% for (key in htmlWebpackPlugin.files.chunks) { %>
+   <script src="<%= htmlWebpackPlugin.files.chunks[key].entry %>" charset="utf-8" type="text/javascript"></script>
+   <% } %>
+<% } %>

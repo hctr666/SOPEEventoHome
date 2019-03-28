@@ -1,0 +1,23 @@
+.swiper-tabs-nav {
+    height: 80px;
+    .swiper-slide {
+        width: 22%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 2px #eee solid;
+        transition: ease-in-out .15s;
+        &.swiper-slide-tab-active {
+            background: #eee;
+            border-bottom: 2px #0072ce solid;
+        }
+    }
+}
+
+.swiper-tabs-container {
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

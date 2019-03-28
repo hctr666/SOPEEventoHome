@@ -1,0 +1,2072 @@
+<footer id="footer">
+   <div class=" borderCont hidden-xs topService hidden-sm">
+      <script src="https://www.sodimac.com.pe/static/script/common/bootstrapValidator.min.js?vid=8116"
+         type="text/javascript"></script>
+      <div class="container">
+         <input id="emailNotValid" type="hidden" value="This value is not valid">
+         <input id="emailNotEmpty" type="hidden" value="Ingrese un correo">
+         <input id="emailNotRegexp" type="hidden" value="Ingrese un correo válido">
+         <input id="checkNotValid" type="hidden" value="Acepta las condiciones">
+         <div class="col-md-8 optimaMT">
+            <div id="textSucces" class="messageOk" style="display: none">
+               <i class="fa fa-check-circle checkSucces" aria-hidden="true"></i>
+               Tu email ha sido recibido con éxito.
+            </div>
+            <div id="hidForm">
+               <div class="suscText">
+                  <p><b>Suscríbete a<br> nuestro newsletter</b></p>
+               </div>
+               <form id="emailServiceForm" method="post" class="form-horizontal bv-form" name="fvalida"
+                  novalidate="novalidate">
+                  <button type="submit" class="bv-hidden-submit"
+                     style="display: none; width: 0px; height: 0px;"></button>
+                  <div class="clearfix">
+                     <div class="suscInput col-md-4 stInput form-group">
+                        <input id="emailInput" type="text" name="email" placeholder="Ingresa tu email"
+                           class="inputClass form-control" data-bv-field="email">
+                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="email"
+                           data-bv-result="NOT_VALIDATED" style="display: none;">Ingrese un correo</small><small
+                           class="help-block" data-bv-validator="regexp" data-bv-for="email"
+                           data-bv-result="NOT_VALIDATED" style="display: none;">Ingrese un correo válido</small><small
+                           class="help-block" data-bv-validator="different" data-bv-for="email"
+                           data-bv-result="NOT_VALIDATED" style="display: none;">Ingrese un correo</small>
+                     </div>
+                     <div class="suscTerminos col-md-4 form-group">
+                        <input type="checkbox" name="check" class="aceptCheck form-control" data-bv-field="check">
+                        <p>
+                           Acepto los<br>
+                           <a class="terminos" target="_blank"
+                              href="/sodimac-pe/content/a50043/terminos-conditions">términos y condiciones</a>
+                        </p>
+                        <small class="help-block" data-bv-validator="notEmpty" data-bv-for="check"
+                           data-bv-result="NOT_VALIDATED" style="display: none;">Acepta las condiciones</small><small
+                           class="help-block" data-bv-validator="different" data-bv-for="check"
+                           data-bv-result="NOT_VALIDATED" style="display: none;">Acepta las condiciones</small>
+                     </div>
+                     <div class="suscButton form-group">
+                        <button class="btn-grey form-control" onclick="checkOptInEmailForm()">Suscríbeme</button>
+                     </div>
+                  </div>
+               </form>
+               <form id="optInEmailForm" style="display: none;"
+                  action="/sodimac-pe/common/ajax/optInEmailInfo.jsp?_DARGS=/sodimac-pe/cartridges/footerService.jsp.optInEmailForm"
+                  method="post"><input name="_dyncharset" value="iso-8859-1" type="hidden"><input
+                     value="-1177189126223956418" type="hidden"><input id="optInEmailInput"
+                     name="/falabella/catalog/formhandler/OptInEmailFormHandler.emailInput" value="" type="text"><input
+                     name="_D:/falabella/catalog/formhandler/OptInEmailFormHandler.emailInput" value=" "
+                     type="hidden"><input id="optInEmailBut"
+                     name="/falabella/catalog/formhandler/OptInEmailFormHandler.saveEmail" type="submit"><input
+                     name="_D:/falabella/catalog/formhandler/OptInEmailFormHandler.saveEmail" value=" "
+                     type="hidden"><input name="_DARGS" value="/sodimac-pe/cartridges/footerService.jsp.optInEmailForm"
+                     type="hidden"></form>
+            </div>
+         </div>
+         <div class="col-md-2">
+            <div class="sel-country hidden-xs hidden-sm selFlag">
+               <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/peru.svg">
+               <span class="countryId">Perú</span>
+               <span class="flechaDownCountry"><i class="fa fa-chevron-down"></i></span>
+            </div>
+            <div id="boxCountry" class="otherCountry" style="display: none;">
+               <div class="countryInBox">
+                  <a href="https://www.sodimac.com.pe/sodimac-pe" target="_blank">
+                     <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/peru.svg">
+                     <span class="countryId">Perú</span>
+                     <span class="flechaUpCountry"><i class="fa fa-chevron-up"></i></span>
+                  </a>
+               </div>
+               <div class="countryInBox">
+                  <a href="https://www.sodimac.cl/sodimac-cl" target="_blank">
+                     <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/chile.svg">
+                     <span class="countryId">Chile</span>
+                  </a>
+               </div>
+               <div class="countryInBox">
+                  <a href="https://www.homecenter.com.co/homecenter-co" target="_blank">
+                     <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/colombia.svg">
+                     <span class="countryId">Colombia</span>
+                  </a>
+               </div>
+               <div class="countryInBox">
+                  <a href="https://www.sodimac.com.ar/sodimac-ar" target="_blank">
+                     <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/argentina.svg">
+                     <span class="countryId">Argentina</span>
+                  </a>
+               </div>
+               <div class="countryInBox">
+                  <a href="https://www.sodimac.com.uy/sodimac-uy" target="_blank">
+                     <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/uruguay.svg">
+                     <span class="countryId">Uruguay</span>
+                  </a>
+               </div>
+               <div class="countryInBox">
+                  <a href="https://www.sodimac.com.br/" target="_blank">
+                     <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/brasil.svg">
+                     <span class="countryId">Brasil</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-2 ">
+            <div class="currency-prices hidden-xs hidden-sm blockPrice">
+               <div class="sel-currency-prices ">
+                  <span class="currencyMoneda">Moneda:</span>
+                  <div class="currencySel">
+                     <span class="currencyId2">Nuevo Sol (PEN)</span>
+                     <span class="flechaDownCurrency"><i class="fa fa-chevron-down"></i></span>
+                  </div>
+               </div>
+               <div style="display: none" class="messageError" id="refFailMessage">Ha ocurrido un error</div>
+               <div id="boxCurrency" class="otherCurrency" style="display: none;">
+                  <div class="currencyInBox" data-value="PEN" onclick="changeCurrency(this)">
+                     <span class="currencyId">Nuevo Sol (PEN)</span>
+                     <span class="flechaUpCurrency"><i class="fa fa-chevron-up"></i></span>
+                  </div>
+                  <div class="currencyInBox" data-value="EUR" onclick="changeCurrency(this)">
+                     <span class="currencyId">Euro (EU)</span>
+                  </div>
+                  <div class="currencyInBox" data-value="USD" onclick="changeCurrency(this)">
+                     <span class="currencyId">Dolar americano (US)</span>
+                  </div>
+               </div>
+               <form id="changeCurrencyForm" style="display: none;"
+                  action="/sodimac-pe/includes/currencySaveSuccess.jsp?_DARGS=/sodimac-pe/cartridges/footerSocial.jsp.changeCurrencyForm"
+                  method="post"><input name="_dyncharset" value="iso-8859-1" type="hidden"><input
+                     value="-1177189126223956418" type="hidden"><input id="currencyInput" name="currency" value="CLP"
+                     type="text"><input name="_D:currency" value=" " type="hidden"><input id="btnChangeCurrency"
+                     name="/falabella/commerce/pricing/StoreCurrencyFormhandler.save" type="submit"><input
+                     name="_D:/falabella/commerce/pricing/StoreCurrencyFormhandler.save" value=" " type="hidden"><input
+                     name="_DARGS" value="/sodimac-pe/cartridges/footerSocial.jsp.changeCurrencyForm" type="hidden">
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <section class="container">
+      <section class="footer-mobile hidden-md hidden-lg">
+         <div class="container hidden-md hidden-lg section-menu">
+            <div class="panel-group" id="mobileAccordion">
+               <div class="panel panel-default cont-deploy" onclick="switchIcon(this)">
+                  <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse"
+                     data-parent="#mobileAccordion" href="#mobileCollapse7">
+                     <h4 class="panel-title">
+                        <a class="https://www.sodimac.com.pe/sodimac-pe">
+                           <div class="flagInTabMobile">
+                              <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/peru.svg">
+                              <span class="countryId" style="font-size:13px;">Perú</span>
+                           </div>
+                        </a>
+                        <i class="indicator glyphicon glyphicon-chevron-down  pull-right"
+                           style="top:-17px; right:-6px;"></i>
+                     </h4>
+                  </div>
+                  <div id="mobileCollapse7" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <ul class="list-group content-tabs" id="tab7">
+                           <li class="col-xs-12 col-sm-12 pt-10 ">
+                              <a href="https://www.sodimac.com.pe/sodimac-pe">
+                                 <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/peru.svg">
+                                 <span class="countryId">Perú</span>
+                              </a>
+                           </li>
+                           <li class="col-xs-12 col-sm-12 pt-10 mt-10">
+                              <a href="https://www.sodimac.cl/sodimac-cl">
+                                 <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/chile.svg">
+                                 <span class="countryId">Chile</span>
+                              </a>
+                           </li>
+                           <li class="col-xs-12 col-sm-12 pt-10 mt-10">
+                              <a href="https://www.homecenter.com.co/homecenter-co">
+                                 <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/colombia.svg">
+                                 <span class="countryId">Colombia</span>
+                              </a>
+                           </li>
+                           <li class="col-xs-12 col-sm-12 pt-10 mt-10">
+                              <a href="https://www.sodimac.com.ar/sodimac-ar">
+                                 <img class="flagCL"
+                                    src="https://www.sodimac.com.pe/static/images/footer/argentina.svg">
+                                 <span class="countryId">Argentina</span>
+                              </a>
+                           </li>
+                           <li class="col-xs-12 col-sm-12 pt-10 mt-10">
+                              <a href="https://www.sodimac.com.uy/sodimac-uy">
+                                 <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/uruguay.svg">
+                                 <span class="countryId">Uruguay</span>
+                              </a>
+                           </li>
+                           <li class="col-xs-12 col-sm-12 pt-10 mt-10">
+                              <a href="https://www.sodimac.com.br/">
+                                 <img class="flagCL" src="https://www.sodimac.com.pe/static/images/footer/brasil.svg">
+                                 <span class="countryId">Brasil</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-default cont-deploy" onclick="switchIcon(this)">
+                  <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse"
+                     data-parent="#mobileAccordion" href="#mobileCollapse8">
+                     <h4 class="panel-title">
+                        <a class="">
+                           <div>
+                              <span class="currencyMoneda2" style="font-size:13px;">Moneda:</span>
+                              <div><span class="currencyId2" style="font-size:13px;">Nuevo Sol (PEN)</span></div>
+                           </div>
+                        </a>
+                        <i class="indicator glyphicon glyphicon-chevron-down  pull-right"
+                           style="top:-23px; right:-6px;"></i>
+                     </h4>
+                  </div>
+                  <div id="mobileCollapse8" class="panel-collapse collapse">
+                     <div class="panel-body">
+                        <ul class="list-group content-tabs" id="tab8">
+                           <li class="col-md-12 pt-10 " data-value="PEN" onclick="changeCurrency(this)">
+                              <a class="linkFotter">
+                                 <span class="currencyId">Nuevo Sol (PEN)</span>
+                              </a>
+                           </li>
+                           <li class="col-md-12 pt-10 mt-10" data-value="EUR" onclick="changeCurrency(this)">
+                              <a class="linkFotter">
+                                 <span class="currencyId">Euro (EU)</span>
+                              </a>
+                           </li>
+                           <li class="col-md-12 pt-10 mt-10" data-value="USD" onclick="changeCurrency(this)">
+                              <a class="linkFotter">
+                                 <span class="currencyId">Dolar americano (US)</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </section>
+   <style>
+      #footer .service-info {
+         width: 100%;
+         margin-left: 8px;
+      }
+
+      #footer .service-info a {
+         font-size: 12px;
+         color: #000;
+         line-height: 20px;
+      }
+
+      #footer .service-info a:hover {
+         color: #0072Ce;
+      }
+
+      #footer .service-info .fa {
+         margin: 0 6 0 3px;
+      }
+
+      .iconosFooter {
+         width: 20px;
+         height: 20px;
+         float: left;
+         margin-right: 6px;
+         margin-bottom: 10px;
+      }
+
+      .line-iconService {
+         padding-top: 0px !important;
+         padding-bottom: 4px !important;
+         margin-top: 20px;
+      }
+
+      .phoneSize {
+         font-size: 16px;
+      }
+
+      .colModDer {
+         width: 25% !important;
+      }
+
+      #footer .col-md-3 {
+         padding: 0px 34px;
+      }
+
+      #footer .title {
+         margin-bottom: 13px;
+         display: block;
+         line-height: 15px;
+      }
+
+      #BVRRSummaryContainer {
+         margin-top: -7px !important;
+      }
+   </style>
+   <section class="full-container">
+      <div class="container">
+         <div class="row service-info hidden-xs hidden-sm line-iconService">
+            <div class="pull-left col-md-3">
+               <a href="/sodimac-pe/content/a50055/nuestras-tiendas">
+                  <strong class="title">
+                     <div class="iconosFooter">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000"
+                           enable-background="new 0 0 2000 2000" xml:space="preserve">
+                           <g>
+                              <g>
+                                 <path fill="#333333" d="M1313.508,1H188.044v1999h1623.912V500.323L1313.508,1z M1313.309,176.887l323.631,322.76h-323.631
+                                       V176.887z M1688.397,1876.441H311.603V124.559h878.147v503.06h498.647V1876.441z M435.161,1752.883h1129.678v-127.971H435.161
+                                       V1752.883z M435.161,1501.354h1129.678v-123.559H435.161V1501.354z M435.161,1249.823h1129.678v-123.559H435.161V1249.823z
+                                       M435.161,1002.706h1129.678V874.735H435.161V1002.706z"></path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Nuestras Tiendas y Horarios
+                  </strong>
+               </a>
+            </div>
+            <div class="pull-left col-md-3">
+               <a href="/sodimac-pe/myaccount/seekOrder">
+                  <strong class="title">
+                     <div class="iconosFooter">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000"
+                           enable-background="new 0 0 2000 2000" xml:space="preserve">
+                           <g>
+                              <g>
+                                 <path fill="#333333"
+                                    d="M1000.001,249.971c-275.993,0-499.73,223.737-499.73,499.73c0,275.991,223.737,499.732,499.73,499.732
+                                       c275.992,0,499.726-223.741,499.726-499.732C1499.727,473.708,1275.993,249.971,1000.001,249.971z M1000.001,1124.495
+                                       c-206.663,0-374.796-168.131-374.796-374.794s168.133-374.796,374.796-374.796s374.796,168.133,374.796,374.796
+                                       S1206.664,1124.495,1000.001,1124.495z M1749.56,747.09c-1.412-412.786-336.447-746.985-749.559-746.985
+                                       c-413.567,0-748.897,334.928-749.58,748.338c0,0.42-0.015,0.837-0.015,1.257c0,148.365,43.115,286.656,117.483,403.045
+                                       l12.187,18.439l544.591,824.496l-2.567,4.424h154.979l-2.66-4.493l531.438-804.288c13.695-18.766,26.539-38.303,38.479-58.328
+                                       c66.824-112.139,105.26-243.218,105.26-383.237C1749.594,748.885,1749.567,747.962,1749.56,747.09z M1526.007,1085.319
+                                       c-3.254,5.092-6.585,10.128-9.985,15.116l-224.852,340.2l-291.625,441.226l-291.979-441.76L489.67,1110.425l-22.598-34.195
+                                       c-58.538-95.074-92.354-206.921-92.354-326.529c0-344.44,280.224-624.664,624.663-624.664
+                                       c344.436,0,624.664,280.224,624.664,624.664C1624.045,873.136,1588.046,988.319,1526.007,1085.319z">
+                                 </path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Seguimiento de tu Compra
+                  </strong>
+               </a>
+            </div>
+            <div class="pull-left col-md-3 colModDer">
+               <a>
+                  <strong class="title">
+                     <div class="iconosFooter">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000"
+                           enable-background="new 0 0 2000 2000" xml:space="preserve">
+                           <g>
+                              <g>
+                                 <path fill="#333333"
+                                    d="M201.54,399.062H69.867v1201.878H201.54L600.789,2000H1130.9v-666.666H733.872l-67.761-67.168V733.834
+                                       l67.153-66.853l0.607-0.314H1130.9V0H600.789L201.54,399.062z M999.444,136.15v399.061H667.329L534.656,667.286v665.424
+                                       l132.673,132.079h332.116v399.061H655.917l-454.595-453.18V589.331l454.59-453.18H999.444z M1283.519,717.691l-93.63,93.631
+                                       c47.91,48.494,77.492,115.12,77.492,188.678c0,73.559-29.582,140.186-77.492,188.679l93.63,93.63
+                                       c72.247-72.246,116.94-172.058,116.94-282.309C1400.459,889.75,1355.766,789.938,1283.519,717.691z M1658.271,342.934
+                                       l-94.099,94.107C1708.246,581.115,1797.355,780.15,1797.355,1000c0,219.851-89.109,418.891-233.183,562.963l94.099,94.099
+                                       c168.161-168.157,272.162-400.464,272.162-657.062C1930.434,743.403,1826.433,511.095,1658.271,342.934z M1471.725,529.48
+                                       l-93.777,93.777c96.418,96.418,156.058,229.616,156.058,376.742c0,147.127-59.64,280.324-156.058,376.742l93.777,93.773
+                                       c120.416-120.416,194.9-286.766,194.9-470.516C1666.625,816.25,1592.141,649.9,1471.725,529.48z">
+                                 </path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Servicio al Cliente<br><span class="phoneSize">(01) 419 2000</span>
+                  </strong>
+               </a>
+            </div>
+            <div class="pull-left col-md-3 colModDer">
+               <a>
+                  <strong class="title">
+                     <div class="iconosFooter">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000"
+                           enable-background="new 0 0 2000 2000" xml:space="preserve">
+                           <g>
+                              <g>
+                                 <path fill="#333333"
+                                    d="M201.54,399.062H69.867v1201.878H201.54L600.789,2000H1130.9v-666.666H733.872l-67.761-67.168V733.834
+                                       l67.153-66.853l0.607-0.314H1130.9V0H600.789L201.54,399.062z M999.444,136.15v399.061H667.329L534.656,667.286v665.424
+                                       l132.673,132.079h332.116v399.061H655.917l-454.595-453.18V589.331l454.59-453.18H999.444z M1283.519,717.691l-93.63,93.631
+                                       c47.91,48.494,77.492,115.12,77.492,188.678c0,73.559-29.582,140.186-77.492,188.679l93.63,93.63
+                                       c72.247-72.246,116.94-172.058,116.94-282.309C1400.459,889.75,1355.766,789.938,1283.519,717.691z M1658.271,342.934
+                                       l-94.099,94.107C1708.246,581.115,1797.355,780.15,1797.355,1000c0,219.851-89.109,418.891-233.183,562.963l94.099,94.099
+                                       c168.161-168.157,272.162-400.464,272.162-657.062C1930.434,743.403,1826.433,511.095,1658.271,342.934z M1471.725,529.48
+                                       l-93.777,93.777c96.418,96.418,156.058,229.616,156.058,376.742c0,147.127-59.64,280.324-156.058,376.742l93.777,93.773
+                                       c120.416-120.416,194.9-286.766,194.9-470.516C1666.625,816.25,1592.141,649.9,1471.725,529.48z">
+                                 </path>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     Venta Telefónica <br><span class="phoneSize">(01) 615 6002</span>
+                  </strong>
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <script type="text/javascript">
+      function Temporizador() {
+         this.variable_token = 'token_tablet';
+         /*
+         En la línea de abajo se debe agregar solo la URL base. Ejm:
+         URL A USAR: /static/Sodimac/Dameros-electro/tienda-sanMiguel/cocinas
+         URL BASE: /static/Sodimac/Dameros-electro/tienda-sanMiguel/
+         */
+         this.url_base = document.referrer;
+         this.tiempo_maximo_espera = 2 * 60; //SEGUNDOS
+
+         this.tiempo_control = this.tiempo_maximo_espera;
+         this.evaluar = function () {
+            if (this.tiempo_control <= 0 && this.status === true) {
+               window.location.href = this.getUrlInicio();
+               this.status = false;
+            } else {
+               this.tiempo_control--;
+               this.log("#log2", this.tiempo_control);
+            }
+         };
+         this.existeToken = function () {
+            return this.getValorToken() !== "" && this.getValorToken() !== null;
+         };
+         this.getValorToken = function () {
+            return new URL(window.location.href).searchParams.get(this.variable_token);
+         };
+         this.getUrlInicio = function () {
+            return this.url_base/*+this.getValorToken()*/;
+         };
+         this.iniciar = function () {
+            if (this.existeToken()) {
+               this.status = true;
+               var obj = this;
+               setInterval(function () {
+                  obj.evaluar();
+               }, 1000);
+
+               this.crearBoton();
+            }
+         };
+         this.crearBoton = function () {
+            var span = $("<span/>").html("«").css({
+               'font-size': '24px',
+               'margin': '0 3px 0 0',
+               'position': 'absolute',
+               'top': '5px',
+               'left': '15px',
+            });
+            var boton = $("<a/>").attr('href', this.getUrlInicio())
+               .attr('id', 'regresarLanding')
+               .css({
+                  'position': 'fixed',
+                  'top': '35%',
+                  'left': '20px',
+                  'background-color': '#d72324',
+                  'color': '#fff',
+                  'border': '1px solid #8e0f0f',
+                  'transition': 'all ease 0.2s',
+                  'z-index': '99999',
+                  'padding': '12px 15px 12px 35px',
+                  'line-height': '1',
+                  'font-family': 'Helvetica Neue,Helvetica,Arial,sans-serif',
+                  'font-size': '15px',
+                  'letter-spacing': '0.05em',
+                  'text-transform': 'uppercase',
+                  'text-decoration': 'none'
+               }).append(span).append('Regresar');
+            //                var html = "<a  style=' '><span style=''>«</span> Regresar</a>";
+            $("body").prepend(boton);
+
+            $('#regresarLanding').hover(function () {
+               $(this).css({
+                  'background-color': '#006bb3',
+                  'border-color': '#0f466b'
+               })
+            }, function () {
+               $(this).css({
+                  'background-color': '#d72324',
+                  'border-color': '#8e0f0f'
+               })
+            });
+         };
+         this.log = function (id, mensaje) {
+            var log = $(id);
+            if (log.length > 0) {
+               log.html(mensaje + "<br>" + this.getUrlInicio());
+            } else {
+               //$("body").prepend($("<div/>").attr("id","log2"));
+            }
+         };
+      }
+
+      var temporizador = new Temporizador();
+      temporizador.iniciar();
+
+      $("body").on("tap", function () {
+         temporizador.reiniciar();
+      });
+
+      (function () {
+         $(document).ready(function () {
+            // Fix menu icon flicking on scroll event
+            var handleMenubarScroll = function (e) {
+               if ($(window).scrollTop() > 20) {
+                  $('.links-sohsoc').hide();
+                  $('#category-hide').addClass('show');
+                  $('#category-hide').find('.fa-bars').next().addClass('hidden');
+                  //$('.nav-bar .b-box.categoryDropdown1').css('padding-top', '15px');
+               } else {
+                  $('.links-sohsoc').show();
+                  $('#category-hide').show();
+                  $('#category-hide').find('.fa-bars').next().removeClass('hidden');
+                  //$('.nav-bar .b-box.categoryDropdown1').css('padding-top', '61px');
+               }
+            }
+            handleMenubarScroll();
+            $(window).bind('scroll', handleMenubarScroll);
+         })
+      })();
+   </script>
+   <!-- Estilos despliegue footer-->
+   <style>
+      .footer-mobile a {
+         color: #000;
+         text-align: left;
+      }
+
+      .on {
+         background-color: #ebebeb !important;
+      }
+
+      .footer-mobile li {
+         padding: 0
+      }
+
+      .footer-mobile li>a.sope-footer-direct-link {
+         border: 0;
+         padding: 18px;
+         display: block;
+         text-align: left;
+      }
+
+      .panel-default>.panel-heading panel-color {
+         color: #333;
+         background-color: #fff;
+         border-top: #ebebeb 1px;
+      }
+
+      .ul.list-group {
+         padding: 5px 0;
+         display: block;
+         color: #000;
+      }
+
+      .panel-group .panel-heading panel-color+.panel-collapse>.list-group content-tabs,
+      .panel-group .panel-heading panel-color+.panel-collapse>.panel-body {
+         border-top: 0px;
+         background-color: #ddd;
+      }
+
+      .panel-default>.panel-heading panel-color {
+         color: #333;
+         background-color: none;
+         border-top: 0px;
+      }
+
+      .cont-deploy {
+         border-left: none;
+         border-right: none;
+         border-bottom: solid 4px #f5f5f5;
+         border-radius: 1px !important;
+         border-top: solid 4px #f5f5f5;
+         margin-bottom: -9px !important;
+      }
+
+      /*.panel-color {background-color: #fff!important;}*/
+      .section-menu {
+         width: 100%;
+         padding: 0px;
+      }
+
+      .content-tabs {
+         background-color: #f5f5f5 !important
+      }
+
+      .linkFotter {
+         font-size: 15px;
+         color: #333 !important
+      }
+
+      .linkSocial {
+         font-size: 28px;
+         color: #333 !important
+      }
+
+      .arrowTab {
+         float: right;
+      }
+
+      .activeTab {
+         background-color: #ebebeb
+      }
+
+      .itemToMenu {
+         font-size: 16px;
+         padding-left: 0px !important;
+         font-weight: 500;
+      }
+
+      .rowBottomFooter {
+         padding-left: 0px;
+         margin-bottom: 25px;
+         float: left;
+      }
+
+      .textBottonFotter {
+         font-size: 14px;
+      }
+
+      @media screen and (max-width:999px) {
+         .sope-footer-direct-link .iconosFooter {
+            display: table-cell;
+            width: 25px;
+            padding-right: 5px;
+            vertical-align: middle;
+         }
+
+         .sope-footer-direct-link .sope-footer-direct-link-text {
+            display: table-cell;
+            vertical-align: middle;
+         }
+
+         .section-menu .panel-group .cont-deploy .accordion-toggle {
+            cursor: pointer;
+         }
+
+         #footer .full-container {
+            border: none;
+         }
+
+         #footer .footer-mobile {
+            padding-bottom: 12px;
+            padding-top: 12px
+         }
+
+         .line-service {
+            height: 0
+         }
+      }
+   </style>
+   <script type="text/javascript">
+      $(document).ready(function () {
+         function toggleChevron(e) {
+            $(e.target)
+               .prev('.panel-heading')
+               .find("i.indicator")
+               .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+         }
+         $('#accordion1').on('hidden.bs.collapse', toggleChevron);
+         $('#accordion1').on('shown.bs.collapse', toggleChevron);
+      });
+
+   </script>
+   <section class="footer-mobile hidden-md hidden-lg">
+      <ul>
+         <li class="col-md-12 col-xs-12 col-sm-12 itemToMenu ">
+            <a class="sope-footer-direct-link" href="/sodimac-pe/content/a50055/nuestras-tiendas">
+               <div class="iconosFooter">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Capa_1" x="0px" y="0px" viewBox="0 0 200 200" enable-background="new 0 0 200 200"
+                     xml:space="preserve">
+                     <g>
+                        <defs>
+                           <rect id="SVGID_1_" x="25.005" width="149.99" height="200"></rect>
+                        </defs>
+                        <clipPath id="SVGID_2_">
+                           <use xlink:href="#SVGID_1_" overflow="visible"></use>
+                        </clipPath>
+                        <path clip-path="url(#SVGID_2_)" fill="#000"
+                           d="M174.991,74.733C174.85,33.436,141.331,0,99.999,0   C58.623,0,25.075,33.509,25.007,74.869c0,0.042-0.002,0.083-0.002,0.125c0,14.844,4.313,28.678,11.754,40.324l1.22,1.844   l54.484,82.435l-0.257,0.389h0.515L92.729,200h14.982l-0.265-0.403l53.167-80.443c1.37-1.878,2.657-3.818,3.85-5.824   c6.687-11.217,10.532-24.327,10.532-38.335C174.995,74.907,174.991,74.82,174.991,74.733 M152.625,108.57   c-0.325,0.51-0.657,1.014-0.998,1.513l-22.495,34.037l-29.179,44.143l-29.21-44.197l-21.8-32.981l-2.262-3.422   c-5.856-9.512-9.239-20.702-9.239-32.668c0-34.459,28.035-62.495,62.496-62.495c34.459,0,62.494,28.036,62.494,62.495   C162.433,87.344,158.832,98.867,152.625,108.57">
+                        </path>
+                        <path clip-path="url(#SVGID_2_)" fill="#000"
+                           d="M99.999,24.999c-27.611,0-49.996,22.384-49.996,49.996   c0,27.613,22.385,49.997,49.996,49.997c27.614,0,49.999-22.384,49.999-49.997C149.998,47.382,127.613,24.999,99.999,24.999    M99.999,112.491c-20.676,0-37.496-16.821-37.496-37.497s16.82-37.497,37.496-37.497c20.679,0,37.499,16.821,37.499,37.497   S120.678,112.491,99.999,112.491">
+                        </path>
+                     </g>
+                  </svg>
+               </div>
+               <span class="sope-footer-direct-link-text">Nuestras Tiendas y Horarios</span>
+            </a>
+         </li>
+         <li class="col-md-12 col-xs-12 col-sm-12 itemToMenu ">
+            <a class="sope-footer-direct-link" href="/sodimac-pe/myaccount/seekOrder">
+               <div class="iconosFooter">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                     id="Capa_1" x="0px" y="0px" viewBox="0 0 200 200" enable-background="new 0 0 200 200"
+                     xml:space="preserve">
+                     <path fill="#000"
+                        d="M162.086,31.74L162.086,31.74L162.086,31.74l-12.417-0.001h-12.418V6.873l0,0V6.861H0.665v6.23H0.664  v142.796v12.417h12.417h12.417c0,13.716,11.118,24.834,24.834,24.834s24.834-11.118,24.834-24.834h62.086  c0,13.716,11.118,24.834,24.834,24.834s24.834-11.118,24.834-24.834h12.416v-12.417v-37.251L162.086,31.74z M154.982,44.134  l31.938,74.503h-49.669V44.134H154.982z M50.332,180.722c-6.858,0-12.417-5.559-12.417-12.417h24.834  C62.749,175.163,57.189,180.722,50.332,180.722z M13.081,155.888V19.278h111.753v99.358v12.418v24.833H13.081z M162.086,180.722  c-6.857,0-12.417-5.559-12.417-12.417h24.834C174.503,175.163,168.943,180.722,162.086,180.722z M137.251,155.888v-24.833h49.669  v24.833H137.251z">
+                     </path>
+                  </svg>
+               </div>
+               <span class="sope-footer-direct-link-text">Seguimiento de tu Compra</span>
+            </a>
+         </li>
+         <li class="col-md-12 col-xs-12 col-sm-12 itemToMenu ">
+            <a class="sope-footer-direct-link" href="tel:014192000">
+               <div class="iconosFooter">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000"
+                     enable-background="new 0 0 2000 2000" xml:space="preserve">
+                     <g>
+                        <g>
+                           <path fill="#000"
+                              d="M201.54,399.062H69.867v1201.878H201.54L600.789,2000H1130.9v-666.666H733.872l-67.761-67.168V733.834
+                                 l67.153-66.853l0.607-0.314H1130.9V0H600.789L201.54,399.062z M999.444,136.15v399.061H667.329L534.656,667.286v665.424
+                                 l132.673,132.079h332.116v399.061H655.917l-454.595-453.18V589.331l454.59-453.18H999.444z M1283.519,717.691l-93.63,93.631
+                                 c47.91,48.494,77.492,115.12,77.492,188.678c0,73.559-29.582,140.186-77.492,188.679l93.63,93.63
+                                 c72.247-72.246,116.94-172.058,116.94-282.309C1400.459,889.75,1355.766,789.938,1283.519,717.691z M1658.271,342.934
+                                 l-94.099,94.107C1708.246,581.115,1797.355,780.15,1797.355,1000c0,219.851-89.109,418.891-233.183,562.963l94.099,94.099
+                                 c168.161-168.157,272.162-400.464,272.162-657.062C1930.434,743.403,1826.433,511.095,1658.271,342.934z M1471.725,529.48
+                                 l-93.777,93.777c96.418,96.418,156.058,229.616,156.058,376.742c0,147.127-59.64,280.324-156.058,376.742l93.777,93.773
+                                 c120.416-120.416,194.9-286.766,194.9-470.516C1666.625,816.25,1592.141,649.9,1471.725,529.48z"></path>
+                        </g>
+                     </g>
+                  </svg>
+               </div>
+               <span class="sope-footer-direct-link-text">Servicio al Cliente (01) 419 2000</span>
+            </a>
+         </li>
+         <li class="col-md-12 col-xs-12 col-sm-12 itemToMenu">
+            <a class="sope-footer-direct-link" href="tel:016156002">
+               <div class="iconosFooter">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 2000"
+                     enable-background="new 0 0 2000 2000" xml:space="preserve">
+                     <g>
+                        <g>
+                           <path fill="#000"
+                              d="M201.54,399.062H69.867v1201.878H201.54L600.789,2000H1130.9v-666.666H733.872l-67.761-67.168V733.834
+                                 l67.153-66.853l0.607-0.314H1130.9V0H600.789L201.54,399.062z M999.444,136.15v399.061H667.329L534.656,667.286v665.424
+                                 l132.673,132.079h332.116v399.061H655.917l-454.595-453.18V589.331l454.59-453.18H999.444z M1283.519,717.691l-93.63,93.631
+                                 c47.91,48.494,77.492,115.12,77.492,188.678c0,73.559-29.582,140.186-77.492,188.679l93.63,93.63
+                                 c72.247-72.246,116.94-172.058,116.94-282.309C1400.459,889.75,1355.766,789.938,1283.519,717.691z M1658.271,342.934
+                                 l-94.099,94.107C1708.246,581.115,1797.355,780.15,1797.355,1000c0,219.851-89.109,418.891-233.183,562.963l94.099,94.099
+                                 c168.161-168.157,272.162-400.464,272.162-657.062C1930.434,743.403,1826.433,511.095,1658.271,342.934z M1471.725,529.48
+                                 l-93.777,93.777c96.418,96.418,156.058,229.616,156.058,376.742c0,147.127-59.64,280.324-156.058,376.742l93.777,93.773
+                                 c120.416-120.416,194.9-286.766,194.9-470.516C1666.625,816.25,1592.141,649.9,1471.725,529.48z"></path>
+                        </g>
+                     </g>
+                  </svg>
+               </div>
+               <span class="sope-footer-direct-link-text">Venta Telefónica (01) 615 6002</span>
+            </a>
+         </li>
+      </ul>
+   </section>
+   <!-- Lightning Bolt Begins -->
+   <script type="text/javascript" async="" id="lightning_bolt"
+      src="//cdn-akamai.mookie1.com/LB/LightningBolt.js"></script>
+   <!-- Lightning Bolt Ends -->
+   <style>
+      #footer .cust-service ul a:hover {
+         color: #0072Ce;
+         ont-size: 11px;
+         /*	width: 100px;*/
+         /*	height: 100px;*/
+      }
+
+      #footer .socials-icons fa a:hover {
+         color: #0072Ce;
+         font-size: 26px;
+      }
+
+      .topService {
+         padding-top: 30px;
+      }
+
+      a.sociaLink {
+         font-size: 26px !important;
+         color: #000 !important;
+      }
+
+      a.sociaLink:hover {
+         font-size: 26px !important;
+         color: #0072Ce !important;
+      }
+
+      a.sociaLink:active {
+         font-size: 26px !important;
+         color: #0072Ce !important;
+      }
+
+      .shareColor {
+         margin-left: 10px;
+      }
+
+      .popover-content {
+         font-size: 12px;
+      }
+
+      /******************************************* 
+         modificaciones por release sope 2-7-2019 
+         *********************************************/
+      /*.newHeader .normal-zone-price { puesto por release 
+         justify-content: flex-end;
+         left:0 !important;
+         }*/
+      #header .zone-price {
+         margin-top: -65px !important;
+         left: 514px !important;
+         right: 0;
+         top: 4px;
+         display: inline-block;
+         flex: 0;
+      }
+
+      #header .action-box {
+         top: 0px !important;
+      }
+
+      @media (max-width: 1000px) {
+         #header .zone-price {
+            display: none;
+         }
+
+         #header .action-box {
+            top: -18px !important;
+         }
+      }
+
+      /*.search-box {
+         margin-left: -38px!important;
+         margin-top: 1px;}
+         }*/
+      /* quitado por release dmt 02-7-2019*/
+      /*Correccion 10 abril 2018 -- alinear estilos en PDP Clasudio Sepulveda*/
+      /******************************************* 
+         Fin modificaciones por release sope 2-7-2019 
+         *********************************************/
+      .cmr-icon {
+         width: 59px !important;
+         margin-right: 8px;
+         background-position: 0px -6px;
+      }
+
+      #footer .cust-service ul a {
+         line-height: 18px;
+      }
+   </style>
+   <section class="full-container hidden-xs hidden-sm topService">
+      <div class="container">
+         <div class="pull-left col-md-3 cust-service hidden-xs hidden-sm" style="padding-left: 23px;">
+            <strong class="Información para clientes.">Información para clientes.</strong>
+            <ul style="padding-left: 0px;">
+               <li><a href="/sodimac-pe/content/a50043/terminos-condiciones" title="Términos y Condiciones">Términos y
+                     Condiciones</a></li>
+               <li><a href="/sodimac-pe/content/a50034/multiples-medios-de-pagos"
+                     title="Multiples medios de Pago">Multiples Medios de Pago</a></li>
+               <li><a href="https://survey.medallia.com/?hogar-pe&amp;brand=Sodimac&amp;country=Peru"
+                     title="Tu opinión">Tu opinión</a></li>
+               <li><a href="/sodimac-pe/content/a50035/devolucion-gratis" title="Legales">Políticas de Cambio</a></li>
+               <li><a href="/sodimac-pe/content/a50049/politica-proteccion-datos" title="Protección de Datos">Protección
+                     de Datos</a></li>
+               <!--<li><a href="/sodimac-pe/sitemap" title="Privacidad">Mapa del Sitio</a></li>-->
+               <li><a href="/sodimac-pe/content/a50048/venta-telefonica" title="Venta Telefónica" target="_blank">Venta
+                     Telefónica</a></li>
+               <!--<li>
+                     <a target="_blank" href="https://dte.falabella.com/dteportalfapr/publica.do?prm=IHaUGgjgtS3Gi1qBb2yYDokXKVtRO/HwqsCf4DtvTU/Xb1iLIt7U7A%3D%3D" title="Consulta Comprobantes ElectrÃƒÂ³nicos Sodimac PerÃƒÂº">Consulta Comprobantes ElectrÃƒÂ³nicos - Sodimac PerÃƒÂº</a>
+                     </li>
+                     <li>
+                     <a target="_blank" href="https://dte.falabella.com/sodimacperuoriente" title="Consulta Comprobantes ElectrÃƒÂ³nicos Sodimac AmazonÃƒÂ&shy;a">Consulta Comprobantes ElectrÃƒÂ³nicos - Sodimac AmazonÃƒÂ&shy;a</a>
+                     </li>-->
+               <li>
+                  <a class="collapsible-link js-collapsible-link" href="#">Comprobantes electrónicos <i
+                        class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <ul style="display:none;" class="pb-15">
+                     <li>
+                        <a class="mr-5" target="_blank"
+                           href="https://dte.falabella.com/dteportalfapr/publica.do?prm=IHaUGgjgtS3Gi1qBb2yYDokXKVtRO/HwqsCf4DtvTU/Xb1iLIt7U7A%3D%3D"
+                           title="Sodimac Perú">Sodimac Perú</a><a style="font-size:14px;" data-toggle="popover"
+                           data-trigger="focus" data-content="Comprobantes electrónicos hasta el 2018" href="#"
+                           data-original-title="" title=""><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a target="_blank"
+                           href="https://dte.falabella.com/dteportalfapr/publica.do?prm=AN49CKM3%2FBSK9jgjyH1hsQevjXDFPOL7Oi0jfWxTKkdQaGER3s62iQ%3D%3D"
+                           title="Consulta Comprobantes ElectrÃ³nicos Sodimac Amazonía">Sodimac Amazonía</a>
+                     </li>
+                     <li>
+                        <a class="mr-5" target="_blank"
+                           href="http://dte.falabella.com/dteportalfapr/publica.do?prm=peoHZ7Ih0trb%2BHmjil2oGRixVb51YnEHl9tIFHiBM0s2ngpclVNkBw%3D%3D"
+                           title="Tiendas del mejoramiento de hogar">Tiendas del mejoramiento de hogar "Sodimac"</a><a
+                           style="font-size:14px;" href="#" data-toggle="popover" data-trigger="focus"
+                           data-content="Comprobantes electrónicos a partir del 01 de Enero del 2019"
+                           data-original-title="" title=""><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </li>
+               <!--<li><a href="https://www.sodimacperu.pe/Reclamaciones/reclamacioncliente/index" title="Mapa del sitio">Libro de reclamaciones</a></li>-->
+               <li>
+                  <a href="https://www.sodimacperu.pe/Reclamaciones/reclamacioncliente/index" title="Mapa del sitio">
+                     <img src="https://www.sodimac.com.pe/static/footer/images/libro-reclamaciones-1.png"
+                        class="img-responsive">
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="pull-left col-md-3 cust-service hidden-xs hidden-sm">
+            <strong class="title">Gestiona tu cuenta</strong>
+            <ul style="padding-left: 0px;">
+               <li><a href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/login?successUrl=/myaccount/"
+                     title="Mi cuenta">Mi Cuenta</a></li>
+               <li><a href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/register/personal"
+                     title="Registrate ahora">Registrate ahora</a></li>
+               <li><a href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/login?successUrl=/myaccount/profile"
+                     title="Actualizar mis datos">Actualizar mis datos</a></li>
+               <li><a href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/forgotpassword"
+                     title="Recuperar mi clave">Recuperar mi clave</a></li>
+               <li><a href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/login?successUrl=/myaccount/changepw"
+                     title="Cambio de clave">Cambio de clave</a></li>
+            </ul>
+            <strong class="title">Descarga nuestra APP desde:</strong>
+            <ul style="padding-left: 0px;">
+               <li><a href="https://itunes.apple.com/us/app/sodimac/id532353705?l=es&amp;ls=1&amp;mt=8"
+                     title="Descarga nuestra app en el apple Store">App Store</a><br>
+               </li>
+               <li><a href="https://play.google.com/store/apps/details?id=cl.sodimac"
+                     title="Descarga nuestra app en el Google Play">Google Play</a></li>
+            </ul>
+         </div>
+         <div class="pull-left col-md-3 cust-service hidden-xs hidden-sm">
+            <strong class="title">MÁS SITIOS NUESTROS</strong>
+            <ul>
+               <li><a href="https://www.falabella.com.pe/falabella-pe/" title="Falabella" target="_blank">Falabella</a>
+               </li>
+               <li><a href="https://cmr-points-pe.azurewebsites.net/" title="CMR Falabella" target="_blank">CMR
+                     Falabella</a></li>
+               <li><a href="https://www.viajesfalabella.com.pe/" title="Viajes Falabella" target="_blank">Viajes
+                     Falabella</a></li>
+               <li><a href="http://www.tottus.com.pe/tottus/" title="Supermercados Tottus" target="_blank">Supermercados
+                     Tottus</a></li>
+               <li><a href="https://www.bancofalabella.pe/" title="Banco Falabella" target="_blank">Banco Falabella</a>
+               </li>
+               <li><a href="https://web.segurosfalabella.com/pe/" title="Seguros Falabella" target="_blank">Seguros
+                     Falabella</a></li>
+               <li><a href="https://www.linio.com.pe/" title="Linio" target="_blank">Linio</a></li>
+            </ul>
+         </div>
+         <div class="pull-left col-md-3 cust-service hidden-xs hidden-sm" style="padding-left: 44px;">
+            <strong class="title">Nuestra empresa</strong>
+            <ul style="padding-left: 0px;">
+               <li><a href="/sodimac-pe/content/a50057/Informacion-de-nuestra-empresa" title="InformaciÃ³n"
+                     target="_blank">Información de nuestra empresa</a></li>
+               <li><a href="/sodimac-pe/content/a50056/sodimac-peru" title="Agente virtual" target="_blank">Sodimac
+                     Perú.</a></li>
+               <li><a href="/sodimac-pe/Trabaja-con-nosotros" title="Trabaja con nosotros">Trabaja con nosotros</a></li>
+               <li><a href="/sodimac-pe/content/a50051/venta-empresa" title="Venta empresas" target="_blank">Venta
+                     empresas</a></li>
+               <li><a href="/sodimac-pe/content/a50052/venta-internet" title="Inversionistas" target="_blank">Venta
+                     Internet</a></li>
+               <li><a href="/sodimac-pe/Responsabilidad-Social" title="Responsabilidad Social"
+                     target="_blank">Responsabilidad Social</a></li>
+               <li><a href="https://www.sodimac.com.pe/static/footer/SoPE/codigo-etica-sodimac2018.PDF"
+                     title="CÃ³digo de Etica Sodimac">Código de Ética</a></li>
+               <li><a href="https://canaldeintegridad.ines.cl/sodimac/" title="Canal de Integridad"
+                     target="_blank">Canal de Integridad</a></li>
+               <li class="socials-icons clearfix hidden-xs hidden-sm">
+                  <a href="https://www.facebook.com/SodimacHomecenterPeru" title="SÃ&shy;guenos en Facebook"
+                     class="fa fa-facebook-square sociaLink" target="_blank"></a>
+                  <a href="https://www.youtube.com/user/VideosSodimac" title="SÃ&shy;guenos en Youtube"
+                     class="fa fa-youtube-square sociaLink" target="_blank"></a>
+                  <a href="https://www.instagram.com/sodimacperu/" title="SÃ&shy;guenos en instagram"
+                     class="fa fa-instagram sociaLink" target="_blank"></a>
+                  <a href="https://twitter.com/sodimacperu" title="SÃ&shy;guenos en Twitter"
+                     class="fa fa-twitter-square sociaLink" target="_blank"></a>
+                  <a href="https://www.pinterest.com/sodimacperu/" title="SÃ&shy;guenos en Pinterest"
+                     class="fa fa-pinterest-square sociaLink" target="_blank"></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   <script language="javascript" type="text/javascript"
+      src="https://www.sodimac.com.pe/static/script/cookieDynamic.js"></script><!-- Estilos despliegue footer-->
+   <style>
+      .footer-mobile a {
+         color: #000;
+         text-align: left;
+      }
+
+      .on {
+         background-color: #ebebeb !important;
+      }
+
+      .footer-mobile li {
+         padding: 0px 15px;
+      }
+
+      .footer-mobile li>a {
+         border: 0;
+         padding: 0;
+         display: block;
+         text-align: left;
+      }
+
+      .panel-default>.panel-heading panel-color {
+         color: #333;
+         background-color: #fff;
+         border-top: #ebebeb 1px;
+      }
+
+      .ul.list-group {
+         padding: 5px 0;
+         display: block;
+         color: #000;
+      }
+
+      .panel-group .panel-heading panel-color+.panel-collapse>.list-group content-tabs,
+      .panel-group .panel-heading panel-color+.panel-collapse>.panel-body {
+         border-top: 0px;
+         background-color: #ddd;
+      }
+
+      .panel-default>.panel-heading panel-color {
+         color: #333;
+         background-color: none;
+         border-top: 0px;
+      }
+
+      .cont-deploy {
+         border-left: none;
+         border-right: none;
+         border-bottom: solid 4px #f5f5f5;
+         border-radius: 1px !important;
+         border-top: solid 4px #f5f5f5;
+         margin-bottom: -9px !important;
+      }
+
+      /*.panel-color {background-color: #fff!important;}*/
+      .section-menu {
+         width: 100%;
+         padding: 0px;
+      }
+
+      .content-tabs {
+         background-color: #f5f5f5 !important
+      }
+
+      .linkFotter {
+         font-size: 15px;
+         color: #333 !important
+      }
+
+      .linkSocial {
+         font-size: 28px;
+         color: #333 !important
+      }
+
+      .arrowTab {
+         float: right;
+      }
+
+      .activeTab {
+         background-color: #ebebeb
+      }
+
+      .itemToMenu {
+         font-size: 16px;
+         padding-left: 0px !important;
+         font-weight: 500;
+      }
+
+      .newpt-20 {
+         padding-top: 20px !important
+      }
+
+      .newpb-20 {
+         padding-bottom: 20px !important
+      }
+
+      .rowBottomFooter {
+         padding-left: 0px;
+         margin-bottom: 25px;
+         float: left;
+      }
+
+      .textBottonFotter {
+         font-size: 14px;
+      }
+
+      .panel-group .cont-deploy .collapsed {
+         background-color: #fff !important;
+      }
+
+      .panel-group .cont-deploy .accordion-toggle {
+         background-color: #f5f5f5;
+      }
+
+      .panel-group .panel-heading+.panel-collapse>.list-group,
+      .panel-group .panel-heading+.panel-collapse>.panel-body {
+         background-color: #f5f5f5 !important;
+      }
+
+      .panel-default>.panel-heading {
+         color: #333;
+         background-color: #f5f5f5;
+         border-color: #f5f5f5;
+      }
+
+      .panel-group .panel-heading+.panel-collapse>.list-group {
+         border-top: 1px solid #f5f5f5;
+      }
+
+      .panel-default>.panel-heading+.panel-collapse>.panel-body {
+         border-top-color: #f5f5f5 !important;
+      }
+
+      @media (max-width:999px) {
+         #footer .panel-default>.panel-heading+.panel-collapse>.panel-body {
+            padding: 0
+         }
+
+         #footer .panel-default>.panel-heading+.panel-collapse>.panel-body .list-group {
+            padding-bottom: 12px;
+            padding-top: 12px;
+            margin-bottom: 0
+         }
+
+         #footer .panel-default>.panel-heading+.panel-collapse>.panel-body .list-group>li {
+            padding: 0;
+            border-bottom: 1px #ebebeb solid;
+         }
+
+         #footer .panel-default>.panel-heading+.panel-collapse>.panel-body .list-group>li:last-child {
+            border: none;
+         }
+
+         #footer .panel-default>.panel-heading+.panel-collapse>.panel-body .list-group>li>a {
+            display: block;
+            padding: 13px 16px 13px 26px
+         }
+
+         #footer .panel-group .cont-deploy .accordion-toggle {
+            padding: 12px 16px;
+            background: #fff;
+            border-bottom: 2px #ececec solid;
+         }
+      }
+
+      @media (max-width:600px) {
+         #footer {
+            padding-bottom: 54px
+         }
+      }
+   </style>
+   <script type="text/javascript">
+      $(document).ready(function () {
+
+         function toggleChevron(e) {
+            $(e.target)
+               .prev('.panel-heading')
+               .find("i.indicator")
+               .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+         }
+         $('#accordion2').on('hidden.bs.collapse', toggleChevron);
+         $('#accordion2').on('shown.bs.collapse', toggleChevron);
+      });
+   </script>
+   <div class="container hidden-md hidden-lg section-menu">
+      <div class="panel-group" id="accordion2">
+         <div class="panel panel-default cont-deploy">
+            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
+               href="#collapse31">
+               <h4 class="panel-title">
+                  <a class="">
+                     Información para clientes
+                  </a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+               </h4>
+            </div>
+            <div id="collapse31" class="panel-collapse collapse">
+               <div class="panel-body">
+                  <ul class="list-group content-tabs" id="tab31">
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50043/terminos-condiciones"
+                           title="Retiro en tienda">Términos y Condiciones</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50034/multiples-medios-de-pagos"
+                           title="Tu opiniÃ³n">Múltiples Medios de Pago</a></li>
+                     <li class="col-md-12 pt-10"><a
+                           href="https://survey.medallia.com/?hogar-pe&amp;brand=Sodimac&amp;country=Peru"
+                           title="PolÃ&shy;ticas de cambios">Tu opinión</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50035/devolucion-gratis"
+                           title="Legales">Políticas de Cambio</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50049/politica-proteccion-datos"
+                           title="TÃ©rminos y condiciones">Protección de Datos</a></li>
+                     <!--<li class="col-md-12 pt-10"><a href="/sodimac-pe/sitemap" title="Privacidad">Mapa del Sitio</a></li>-->
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50048/venta-telefonica"
+                           title="Círculo de especialistas" target="_blank">Venta Telefónica</a></li>
+                     <li class="col-md-12 pt-10"><a target="_blank" style="display:inline-block;"
+                           href="https://dte.falabella.com/dteportalfapr/publica.do?prm=IHaUGgjgtS3Gi1qBb2yYDokXKVtRO/HwqsCf4DtvTU/Xb1iLIt7U7A%3D%3D"
+                           title="Consulta Comprobantes Electrónicos Sodimac Perú">Consulta Comprobantes - Perú</a><a
+                           class="inline pull-right no-padding" style="font-size:16px;" data-toggle="popover"
+                           data-trigger="focus" data-placement="left"
+                           data-content="Comprobantes electrÃ³nicos hasta el 2018" href="#" data-original-title=""
+                           title=""><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                     <li class="col-md-12 pt-10"><a target="_blank"
+                           href="https://dte.falabella.com/dteportalfapr/publica.do?prm=AN49CKM3%2FBSK9jgjyH1hsQevjXDFPOL7Oi0jfWxTKkdQaGER3s62iQ%3D%3D"
+                           title="Consulta Comprobantes Electrónicos Sodimac Amazonía">Consulta Comprobantes -
+                           Amazonía</a></li>
+                     <li class="col-md-12 pt-10"><a target="_blank" style="display:inline-block;"
+                           href="http://dte.falabella.com/dteportalfapr/publica.do?prm=peoHZ7Ih0trb%2BHmjil2oGRixVb51YnEHl9tIFHiBM0s2ngpclVNkBw%3D%3D"
+                           title="Consulta Comprobantes Electrónicos Tiendas del mejoramiento de hogar">Consulta
+                           Comprobantes - Tiendas del mejoramiento de hogar</a><a class="inline pull-right no-padding"
+                           style="font-size:16px;" data-toggle="popover" data-trigger="focus" data-placement="left"
+                           data-content="Comprobantes electrónicos a partir del 01 de Enero del 2019" href="#"
+                           data-original-title="" title=""><i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                     <li class="col-md-12 pt-10"><a
+                           href="https://www.sodimacperu.pe/Reclamaciones/reclamacioncliente/index"
+                           title="Mapa del sitio">Libro de reclamaciones</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="panel panel-default cont-deploy">
+            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
+               href="#collapse32">
+               <h4 class="panel-title">
+                  <a class="">
+                     Gestión de cuenta
+                  </a><i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+               </h4>
+            </div>
+            <div id="collapse32" class="panel-collapse collapse">
+               <div class="panel-body">
+                  <ul class="list-group content-tabs" id="tab32">
+                     <li class="col-md-12 pt-10"><a
+                           href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/login?successUrl=/myaccount/"
+                           title="Mi cuenta">Mi Cuenta</a></li>
+                     <li class="col-md-12 pt-10"><a
+                           href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/register/personal"
+                           title="Regístrate ahora">Regístrate ahora</a></li>
+                     <li class="col-md-12 pt-10"><a
+                           href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/login?successUrl=/myaccount/profile"
+                           title="Actualizar mis datos">Actualizar mis datos</a></li>
+                     <li class="col-md-12 pt-10"><a
+                           href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/forgotpassword"
+                           title="Recuperar mi clave">Recuperar mi clave</a></li>
+                     <li class="col-md-12 pt-10"><a
+                           href="https://secure.sodimac.com.pe/sodimac-pe/myaccount/login?successUrl=/myaccount/changepw"
+                           title="Cambio de clave">Cambio de clave</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="panel panel-default cont-deploy">
+            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
+               href="#collapse33">
+               <h4 class="panel-title">
+                  <a class="">
+                     Descarga nuestra APP
+                  </a><i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+               </h4>
+            </div>
+            <div id="collapse33" class="panel-collapse collapse">
+               <div class="panel-body">
+                  <ul class="list-group content-tabs" id="tab33">
+                     <li class="col-md-12 pt-10"><a class="linkFotter"
+                           href="https://itunes.apple.com/us/app/sodimac/id532353705?l=es&amp;ls=1&amp;mt=8"
+                           title="Descarga nuestra app en el apple Store">App Store</a>
+                     </li>
+                     <li class="col-md-12 pt-10 pb-10"><a class="linkFotter"
+                           href="https://play.google.com/store/apps/details?id=cl.sodimac"
+                           title="Descarga nuestra app en el Google Play">Google Play</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="panel panel-default cont-deploy">
+            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
+               href="#collapse34">
+               <h4 class="panel-title">
+                  <a class="">
+                     Nuestra empresa
+                  </a><i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+               </h4>
+            </div>
+            <div id="collapse34" class="panel-collapse collapse">
+               <div class="panel-body">
+                  <ul class="list-group content-tabs" id="tab34">
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50057/Informacion-de-nuestra-empresa"
+                           title="Información" target="_blank">Información de nuestra empresa</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50056/sodimac-peru"
+                           title="Agente virtual" target="_blank">Sodimac Perú</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/Trabaja-con-nosotros"
+                           title="Trabaja con nosotros">Trabaja con nosotros</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50051/venta-empresa"
+                           title="Venta empresas" target="_blank">Venta empresas</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/content/a50052/venta-internet"
+                           title="Inversionistas" target="_blank">Venta Internet</a></li>
+                     <li class="col-md-12 pt-10"><a href="/sodimac-pe/Responsabilidad-Social"
+                           title="Responsabilidad Social" target="_blank">Responsabilidad Social</a></li>
+                     <li class="col-md-12 pt-10"><a href="https://canaldeintegridad.ines.cl/sodimac/"
+                           title="Canal de Integridad" target="_blank">Canal de Integridad</a></li>
+                     <li class="col-md-12 pt-10"><a
+                           hhref="https://www.sodimac.com.pe/static/footer/SoPE/codigo-etica-sodimac2018.PDF"
+                           title="Código de Etica Sodimac" target="_blank">Código de ética</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="panel panel-default cont-deploy">
+            <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
+               href="#collapse35">
+               <h4 class="panel-title">
+                  <a class="">
+                     Redes sociales
+                  </a><i class="indicator glyphicon glyphicon-chevron-down pull-right"></i>
+               </h4>
+            </div>
+            <div id="collapse35" class="panel-collapse collapse">
+               <div class="panel-body">
+                  <ul class="list-group content-tabs" id="tab35">
+                     <li class="col-xs-1 pt-10"> <a href="https://www.facebook.com/SodimacHomecenterPeru"
+                           title="Síguenos en Facebook" class="fa fa-facebook-square sociaLink" target="_blank"></a>
+                     </li>
+                     <li class="col-xs-1 pt-10"><a href="https://www.youtube.com/user/VideosSodimac"
+                           title="Síguenos en Youtube" class="fa fa-youtube-square sociaLink" target="_blank"></a></li>
+                     <li class="col-xs-1 pt-10"><a href="https://www.instagram.com/sodimacperu/"
+                           title="Síguenos en instagram" class="fa fa-instagram sociaLink" target="_blank"></a> </li>
+                     <li class="col-xs-1 pt-10"><a href="https://twitter.com/sodimacperu" title="Síguenos en Twitter"
+                           class="fa fa-twitter-square sociaLink" target="_blank"></a></li>
+                     <li class="col-xs-1 pt-10"><a href="https://www.pinterest.com/sodimacperu/"
+                           title="Síguenos en Pinterest" class="fa fa-pinterest-square sociaLink" target="_blank"></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script type="text/javascript"
+      src="https://www.sodimac.com.pe/static/footer/assets/js/signinflyout.min.js?a10c004"></script>
+   <style>
+      .pull-left {
+         margin-left: 0px
+      }
+
+      .reservados ul {
+         display: inline-block
+      }
+
+      .reservados ul li {
+         line-height: 21px;
+         font-size: 12px;
+         text-align: center;
+         opacity: .7
+      }
+
+      .logoSodimac {
+         width: 40px;
+         height: 40px;
+         margin: auto;
+         opacity: .75;
+         display: inline-block
+      }
+
+      .footerLogo {
+         padding-top: 17px;
+         padding-bottom: 17px
+      }
+
+      @media (max-width:992px) {
+         .logoSodimac {
+            display: block;
+            width: 42px;
+            height: 42px;
+            margin: auto
+         }
+
+         .reservados ul li {
+            line-height: 20px;
+            font-size: 12px
+         }
+      }
+
+      .blockPrice {
+         width: 142px
+      }
+
+      .checkSucces {
+         font-size: 20px;
+         position: relative;
+         top: 3px;
+         color: #38ad6a
+      }
+
+      .messageOk {
+         font-size: 13px;
+         margin-top: 5px;
+         background-color: #f5f5f5;
+         padding-top: 8px;
+         padding-bottom: 8px;
+         padding-left: 12px
+      }
+
+      .messageError {
+         color: #dd0021;
+         font-size: 11px;
+         position: relative;
+         top: -9px;
+         left: 23px
+      }
+
+      .stInput {
+         margin-left: -19px;
+         width: 224px;
+         margin-right: 22px
+      }
+
+      .terminos {
+         text-decoration: underline;
+         color: #333 !important
+      }
+
+      .form-control {
+         width: 100%;
+         height: 34px;
+         padding: 6px 12px;
+         background-color: #fff;
+         border: 1px solid #ccc;
+         border-radius: 1px !important;
+         -webkit-box-shadow: none;
+         box-shadow: none;
+         -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+         -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+      }
+
+      .form-horizontal input+.help-block,
+      .form-horizontal select+.help-block,
+      .form-horizontal textarea+.help-block,
+      .form-horizontal .uneditable-input+.help-block,
+      .form-horizontal .input-prepend+.help-block,
+      .form-horizontal .input-append+.help-block {
+         margin-top: 0px !important
+      }
+
+      .form-horizontal .help-block {
+         margin-bottom: 0
+      }
+
+      .has-error .checkbox,
+      .has-error .checkbox-inline,
+      .has-error .control-label,
+      .has-error .form-control-feedback,
+      .has-error .help-block,
+      .has-error .radio,
+      .has-error .radio-inline,
+      .has-error.checkbox label,
+      .has-error.checkbox-inline label,
+      .has-error.radio label,
+      .has-error.radio-inline .aceptCheck label {
+         color: #dd0021;
+         margin-top: 0px !important
+      }
+
+      .has-error .help-block .aceptCheck {
+         display: block;
+         color: #dd0021
+      }
+
+      .has-error .form-control {
+         border-color: #dd0021;
+         -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+         box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075)
+      }
+
+      .aceptCheck {
+         margin-right: 6px;
+         position: absolute;
+         top: -18px;
+         box-shadow: none !important;
+         z-index: 9999;
+         left: -14px;
+         width: 20px;
+         height: 20px
+      }
+
+      .currencyMoneda {
+         position: absolute;
+         top: 6px;
+         left: 38px
+      }
+
+      .sel-currency-prices {
+         margin-top: 8px;
+         border-left: solid 2px #adadad;
+         height: 35px;
+         padding-top: 8px
+      }
+
+      .flechaUpCountry {
+         width: 10px;
+         height: 10px;
+         position: absolute;
+         top: 25px;
+         right: 27px
+      }
+
+      .flechaUpCurrency {
+         width: 10px;
+         height: 10px;
+         position: absolute;
+         top: 25px;
+         right: 14px
+      }
+
+      .flechaDownCountry {
+         width: 10px;
+         height: 10px;
+         position: absolute;
+         top: 18px;
+         right: 20px
+      }
+
+      .flechaDownCurrency {
+         width: 10px;
+         height: 10px;
+         position: absolute;
+         top: 18px;
+         right: -5px
+      }
+
+      .countryInBox {
+         width: 100%;
+         height: 26px;
+         display: block;
+         padding-left: 21px;
+         margin-top: 0
+      }
+
+      .currencySel {
+         width: 100%;
+         height: 26px;
+         display: block;
+         padding-left: 21px;
+         margin-top: 0
+      }
+
+      .currencyInBox {
+         width: 100%;
+         height: 26px;
+         display: block;
+         padding-left: 22px;
+         margin-top: 0
+      }
+
+      .currencyInBox:hover {
+         cursor: pointer;
+         background: #f0f0f0
+      }
+
+      #boxCountry {
+         width: 160px;
+         height: 210px;
+         position: absolute;
+         z-index: 2;
+         background: #fff;
+         top: -8px;
+         border: solid 1px #ccc;
+         box-shadow: -2px 2px 8px 0 rgba(0, 0, 0, .16), 0 5px 10px 0 rgba(0, 0, 0, .12);
+         padding-top: 22px
+      }
+
+      .countryInBox a {
+         color: #000;
+         text-decoration: none
+      }
+
+      .countryInBox:hover {
+         color: #000;
+         text-decoration: none;
+         cursor: pointer;
+         background: #f0f0f0
+      }
+
+      #boxCurrency {
+         width: 172px;
+         height: 107px;
+         position: absolute;
+         z-index: 2;
+         background: #fff;
+         top: -8px;
+         border: solid 1px #ccc;
+         box-shadow: -2px 2px 8px 0 rgba(0, 0, 0, .16), 0 5px 10px 0 rgba(0, 0, 0, .12);
+         padding-top: 23px
+      }
+
+      .countryId {
+         position: relative;
+         top: 3px
+      }
+
+      .currencyId {
+         position: relative;
+         top: 3px
+      }
+
+      .currencyId2 {
+         position: relative;
+         top: 3px
+      }
+
+      .flagCL {
+         width: 25px;
+         margin-right: 10px
+      }
+
+      .selFlag {
+         width: 100%;
+         height: 35px;
+         border-left: solid 2px #adadad;
+         padding-top: 7px;
+         padding-left: 20px;
+         cursor: pointer;
+         display: block
+      }
+
+      .optimaMT {
+         margin-top: 5px
+      }
+
+      .optimaPT {
+         position: relative;
+         top: -8px
+      }
+
+      .select2-container--default .select2-selection--single {
+         border-radius: 0px !important
+      }
+
+      .select2-container .select2-selection--single {
+         height: 35px !important
+      }
+
+      #footer .currency-prices,
+      #footer .sel-country {
+         margin-bottom: 0
+      }
+
+      .topService {
+         padding: 5px 0 4px 0 !important
+      }
+
+      .borderCont .col-md-8 {
+         padding-left: 0
+      }
+
+      .borderCont {
+         border-top: solid 1px #adadad;
+         border-bottom: solid 1px #adadad;
+         font-size: 12px;
+         background-image: url(https://www.sodimac.com.pe/static/footer/SoPE/img/background-suscribe.jpg);
+         background-repeat: repeat-x;
+         height: 62px
+      }
+
+      .suscText {
+         font-weight: 500;
+         width: 20%;
+         float: left;
+         line-height: 12px;
+         margin-top: 6px
+      }
+
+      .suscInput {
+         float: left;
+         width: 30%;
+         margin-right: 15px
+      }
+
+      .inputClass {
+         height: 35px;
+         width: 100%;
+         padding-left: 5px
+      }
+
+      .suscTerminos p {
+         padding-left: 0;
+         margin-top: -25px;
+         line-height: 12px;
+         position: absolute;
+         z-index: 9999
+      }
+
+      .suscTerminos {
+         text-align: left;
+         width: 23%;
+         margin-top: 6px;
+         position: relative;
+         left: 1px;
+         top: 23px;
+         z-index: 999
+      }
+
+      .form-horizontal .form-group {
+         margin-right: 0;
+         margin-left: 0
+      }
+
+      .suscButton {
+         width: 22%;
+         float: left;
+         padding-left: 10px
+      }
+
+      .btn-grey {
+         width: 135px;
+         background-color: #f5f5f5;
+         color: #333;
+         border: solid 1px #ebebeb;
+         padding: 0 25px 0 2 5px !important;
+         font-weight: 700;
+         outline: none;
+         height: 35px
+      }
+
+      .btn-grey:hover {
+         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .3) !important;
+         transition: box-shadow 0.6s !important
+      }
+
+      .btn-grey:active {
+         background-color: #858585;
+         color: #fff;
+         outline: none
+      }
+
+      .btn-grey:disabled {
+         background-color: #ebebeb;
+         color: #adadad;
+         pointer-events: none;
+         outline: none
+      }
+
+      .select-chevronDown {
+         background: url(graphics/chevron-down.png) 97% center no-repeat #fff;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+         appearance: none;
+         padding: 5px;
+         border: 0;
+         -moz-box-shadow: 0 0 0 0 transparent;
+         -webkit-box-shadow: 0 0 0 0 transparent;
+         -ms-box-shadow: 0 0 0 0 transparent;
+         box-shadow: 0 0 0 0 transparent;
+         background: #fff;
+         height: 28px
+      }
+
+      .sel-country .select-chevronDown {
+         width: 160px;
+         font-size: 10px
+      }
+
+      .sel-country {
+         margin-top: 8px
+      }
+
+      .flag-text {
+         margin-left: 10px
+      }
+
+      .flag-icon,
+      .flag-icon-background {
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: 50%
+      }
+
+      .flag-icon {
+         position: relative;
+         display: inline-block;
+         width: 1.33333333em;
+         line-height: 1em
+      }
+
+      .flag-icon:before {
+         content: "ï¿½a0"
+      }
+
+      .flag-icon-cl {
+         background-image: url(/static/footer/SoPE/img/chile.svg)
+      }
+
+      .flag-icon-co {
+         background-image: url(/static/footer/SoPE/img/colombia.svg)
+      }
+
+      .flag-icon-ar {
+         background-image: url(/static/footer/SoPE/img/argentina.svg)
+      }
+
+      .flag-icon-pe {
+         background-image: url(/static/footer/SoPE/img/peru.svg)
+      }
+
+      .flag-icon-br {
+         background-image: url(/static/footer/SoPE/img/brasil.svg)
+      }
+
+      .flag-icon-cor {
+         background-image: url(/static/footer/SoPE/img/mexico.svg)
+      }
+
+      .select2-search--dropdown {
+         display: none !important
+      }
+
+      #countrySodimac {
+         border: 1px solid #9fc1ca;
+         font-size: 11px;
+         font-family: arial
+      }
+   </style>
+   <section class="full-container footerLogo">
+      <div class="container">
+         <div class="reservados col-xs-12 text-center">
+            <div class="logoSodimac">
+               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 104 80"
+                  style="enable-background:new 0 0 104 80;" xml:space="preserve">
+                  <style type="text/css">
+                     .st01 {
+                        fill: #E2061F;
+                     }
+
+                     .st1 {
+                        fill: #FFFFFF;
+                     }
+
+                     .st2 {
+                        fill: #006AB4;
+                     }
+
+                     .st3 {
+                        fill: #FFED00;
+                     }
+                  </style>
+                  <polygon
+                     points="76.5,15.2 60,15.2 60,8.9 53.7,8.9 47.4,8.9 47.4,15.2 31,15.2 9.7,39.6 9.7,75 97.8,75 97.8,39.6 ">
+                  </polygon>
+                  <rect x="16" y="45.9" class="st01" width="34.6" height="22.8"></rect>
+                  <rect x="56.9" y="45.9" class="st1" width="34.6" height="22.8"></rect>
+                  <polygon class="st2" points="89.9,39.5 74.1,21.4 41.1,21.4 57,39.5 "></polygon>
+                  <polygon class="st3" points="49,39.6 33.5,21.4 17.6,39.6 "></polygon>
+               </svg>
+            </div>
+            <ul>
+               <li>Todos los derechos reservados <br class="visible-xs"> <span
+                     class="hidden-xs">&nbsp;&nbsp;|&nbsp;&nbsp;</span> Tiendas del mejoramiento del hogar S.A. 2019
+               </li>
+            </ul>
+         </div>
+      </div>
+   </section>
+   <script type="text/javascript">
+      ; (function () {/*Append extra global scripts*/ var globalExtraScript = document.createElement('script'); globalExtraScript.src = 'https://www.sodimac.com.pe/static/home2018/js/global-extra.js?b001ac01'; document.getElementsByTagName('head')[0].appendChild(globalExtraScript); /*Append extra product page scripts*/ if (window.location.pathname.indexOf('/sodimac-pe/product/') !== -1) { var PDPExtraScript = document.createElement('script'); PDPExtraScript.src = 'https://www.sodimac.com.pe/static/home2018/js/pdp-extra.js'; document.getElementsByTagName('head')[0].appendChild(PDPExtraScript); } /*Append extra category page scripts*/ if (window.location.pathname.indexOf('/sodimac-pe/category/') !== -1) { var PLPExtraScript = document.createElement('script'); PLPExtraScript.src = 'https://www.sodimac.com.pe/static/home2018/js/plp-extra.js?b001ac01900ac'; document.getElementsByTagName('head')[0].appendChild(PLPExtraScript); } })();
+      (function () {
+         $(function () {
+            if (typeof Blazy !== "undefined" && (digitalData.page.pageName === 'home' || digitalData.page.pageName === 'home-2')) { var _blazy = new Blazy({ container: "body", offset: 750 }) } if (digitalData.page.pageName === 'checkout: bolsa de compras') { var $cart = $('.cart'); if ($cart.length > 0) { $cart.find('.jq-scrollList').parent().css('height', 'auto') } }
+            /* Handle footer collapsible links click */
+            $(document).on('click', '.js-collapsible-link', function (e) {
+               e.preventDefault();
+               var $target = $(this).next();
+               if (typeof $target !== "undefined" && $target !== null) {
+                  $target.stop().slideToggle();
+               }
+            });
+            var $popover = $('[data-toggle="popover"]');
+            if ($popover.length > 0) {
+               $popover.popover();
+               $popover.on('click', function (e) {
+                  e.preventDefault();
+               });
+            }
+         })
+
+      })();
+   </script>
+</footer>
+<script language="JavaScript">
+   var digitalData = { "login": { "clienteID": "777158439", "genero": "unset", "tipo": "person" }, "page": { "pageName": "home", "url": "https://www.sodimac.com.pe/sodimac-pe/", "loginStatus": "No Logged", "canal": "internet", "siteSection": "home", "pageType": "home", "sessionId": "ylbaCBCoLEb99ueGS067mibY.node3", "facetList": {} }, "events": "event13", "ecom": { "step": "", "orderId": "778189694", "purchaseID": "1778189694", "purchaseType": "Standard Anonymous", "vendedor": "Client", "productList": [], "shippingCost": 0.0, "shippingDate": "", "extendedWarranty": "No", "TotalOrder": "0" }, "search": { "pageTypePrevious": "home" }, "error": {}, "webservice": { "time": { "crea": 0.0, "anula": 0.0, "entrega": 0.0, "retiro": 0.0 } } };
+   var edpData = {};
+</script>
+<script language="JavaScript" type="text/javascript"
+   src="https://www.sodimac.com.pe/static/script/common/jquery-migrate-1.2.1.min.js?vid=8116"></script>
+<script language="JavaScript" type="text/javascript"
+   src="https://www.sodimac.com.pe/static/script/common/jquery.colorbox-min.js?vid=8116"></script>
+<script language="JavaScript" type="text/javascript"
+   src="https://www.sodimac.com.pe/static/script/common/jquery.normal-autocomplete.js?vid=8116"></script>
+<script type="text/javascript" language="JavaScript"
+   src="https://www.sodimac.com.pe/static/script/common/turboCart.js?vid=8116"></script>
+<script type="text/javascript" language="JavaScript"
+   src="https://www.sodimac.com.pe/static/script/cookieDynamic.js?vid=8116"></script>
+<input name="productBvFunctions" id="productBvFunctions" value="true" type="hidden" />
+<input name="ctxInput" id="ctxInput" value="/sodimac-pe" type="hidden" />
+<input id="month_1" value="Ene" type="hidden" />
+<input id="month_2" value="Feb" type="hidden" />
+<input id="month_3" value="Mar" type="hidden" />
+<input id="month_4" value="Abr" type="hidden" />
+<input id="month_5" value="May" type="hidden" />
+<input id="month_6" value="Jun" type="hidden" />
+<input id="month_7" value="Jul" type="hidden" />
+<input id="month_8" value="Ago" type="hidden" />
+<input id="month_9" value="Sep" type="hidden" />
+<input id="month_10" value="Oct" type="hidden" />
+<input id="month_11" value="Nov" type="hidden" />
+<input id="month_12" value="Dic" type="hidden" />
+<script language="JavaScript" type="text/javascript">
+   var useCookieForHeader = false;
+   var enableGeographicalPopUP = true;
+   var context = "/sodimac-pe";
+   var enableLogUseCookieHeader = false;
+</script>
+<script type="text/javascript">
+
+   function ajaxCallForNameQuantityAndStore() {
+      $.ajax({
+         async: true,
+         type: "POST",
+         url: "https://www.sodimac.com.pe/sodimac-pe/common/includes/ajaxCallForNameQuantityAndStore.jsp",
+         success: function (data) {
+            if (data != null && data != "") {
+               var dataContent = $(data);
+               var headerUserContent = dataContent.find(".headerNameSection").html();
+               $(".headerNameSection").html(headerUserContent);
+               var quantity = dataContent.find("#number").html();
+               if (quantity >= 0) {
+                  $(".number").html(quantity);
+               }
+               var storeName = dataContent.find("#storeName").html();
+               if (storeName.length >= 0) {
+                  storeName = storeName.replace(/\+/g, '%20');
+                  storeName = decodeURIComponent(storeName);
+                  $("#mostrar-header > a ").find("b").html(storeName);
+                  $("#mostrar-header > a ").find("span").html(storeName);
+                  $(".jq-chevronDown option:selected").text(storeName);
+               }
+            }
+         }
+      });
+   }
+
+   function updateAnonymousProfileSection() {
+      var updateAnonymousContent = $('#headerAnonymousProfileShowId').val();
+      if (typeof updateAnonymousContent !== 'undefined' && updateAnonymousContent !== "undefined" && updateAnonymousContent === 'true') {
+         $(".commonHeaderProfileSection").html($("#headerAnonymousProfile").html());
+      }
+   }
+
+
+   $(function () {
+      if (!(typeof useCookieForHeader == "undefined") && useCookieForHeader) {
+         //fetch data from another cookie
+         var flagForStoreCookie = false;
+         var flagForNameCookie = false;
+         var documentCookies = document.cookie.split("; ");
+         //ajaxCallForNameQuantityAndStore();
+         for (var i = 0, l = documentCookies.length; i < l; i++) {
+            var parts = documentCookies[i].split("=");
+            if ("DYNAMIC_DATA_COOKIE" == parts[0]) {
+               var dynamicDataCookieValue = parts[1].split("*");
+               var quantity = dynamicDataCookieValue[1];
+               var name = dynamicDataCookieValue[0];
+               if (!(typeof enableLogUseCookieHeader == "undefined") && enableLogUseCookieHeader) {
+                  console.log("userName=" + name + "& quantity=" + quantity);
+               }
+               if (quantity >= 0) {
+                  $("#minicartQuanlitySection").find(".number").html(quantity);
+               }
+               if (name != "undefined" && name != '') {
+                  if ($(".headerNameSection").find('.nameText').length > 0) {
+                     $(".headerNameSection").find("b.nameText").text(name);
+                  } else {
+                     var updateLoggedInContent = $('#headerLoggedProfileShowId').val();
+                     if (typeof updateLoggedInContent !== 'undefined' && updateLoggedInContent !== "undefined" && updateLoggedInContent === 'true') {
+                        $(".commonHeaderProfileSection").html($("#headerLoggedInProfile").html());
+                        $(".headerNameSection").find("b.nameText").text(name);
+                     }
+                  }
+               }
+               else if (name == "undefined" || name == "" || name == null) {
+                  updateAnonymousProfileSection();
+               }
+               flagForNameCookie = true;
+               if (flagForStoreCookie) {
+                  break;
+               }
+            }
+            if (typeof enableGeographicalPopUP != 'undefined' && enableGeographicalPopUP) {
+               if ("regionName_key" == parts[0]) {
+                  var regionName = parts[1];
+                  if (regionName.length >= 0) {
+                     regionName = regionName.replace(/\+/g, '%20');
+                     regionName = decodeURIComponent(regionName);
+                     //added for bbs-599
+                     if (regionName.includes("SANTIA")) {
+                        regionName = regionName.concat("GO");
+                     }
+                     $("#mostrar-header > a ").find("b").html(regionName);
+                     $("#mostrar-header > a ").find("span").html(regionName);
+                     $(".jq-chevronDown option:selected").text(regionName);
+                  }
+                  if (flagForNameCookie) {
+                     break;
+                  }
+                  flagForStoreCookie = true;
+               } else {
+                  if (flagForNameCookie) {
+                     break;
+                  }
+                  flagForStoreCookie = true;
+               }
+            } else {
+               if ("CACHE_KEY" == parts[0]) {
+                  var storeName = parts[1];
+                  if (storeName.length >= 0) {
+                     storeName = storeName.replace(/\+/g, '%20');
+                     storeName = decodeURIComponent(storeName);
+                     $("#mostrar-header > a ").find("b").html(storeName);
+                     $("#mostrar-header > a ").find("span").html(storeName);
+                     $(".jq-chevronDown option:selected").text(storeName);
+                  }
+                  if (flagForNameCookie) {
+                     break;
+                  }
+                  flagForStoreCookie = true;
+               } else {
+                  if (flagForNameCookie) {
+                     break;
+                  }
+                  flagForStoreCookie = true;
+               }
+            }
+
+
+         }
+
+      } else {
+         ajaxCallForNameQuantityAndStore();
+      }
+   })
+</script>
+<script src="https://www.sodimac.com.pe/static/script/min/plugin/home.min.js?vid=8518"></script>
+<script src="https://www.sodimac.com.pe/static/script/vendor/require.js?vid=8518"
+   data-main="https://www.sodimac.com.pe/static/script/min/require/home"></script>
+<script src="https://www.sodimac.com.pe/static/script/min/home.min.js?vid=8518"></script>
+<script src="https://www.sodimac.com.pe/static/script/min/special/home.min.js?vid=8518"></script>

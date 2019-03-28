@@ -1,0 +1,24 @@
+<!--
+   TEMPLATE HEADER - PROD:
+   Este template es manejado como sección header para producción
+-->
+<% if (process.env.NODE_ENV === "production") { %>
+<head>
+   <title>Sodimac CyberWow</title>
+   <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+   <meta name="theme-color" content="#0072ce">
+   <!-- Mobile header color Windows Phone -->
+   <meta name="msapplication-navbutton-color" content="#0072ce">
+   <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+   <% for (key in htmlWebpackPlugin.files.css) { %>
+      <% if (htmlWebpackPlugin.files.cssIntegrity) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet"
+         integrity="<%= htmlWebpackPlugin.files.cssIntegrity[key] %>"
+         crossorigin="<%= webpackConfig.output.crossOriginLoading %>" />
+      <% } else { %>
+      <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet" />
+      <% } %>
+   <% } %>
+</head>
+<%}%>

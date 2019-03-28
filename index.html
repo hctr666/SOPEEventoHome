@@ -1,0 +1,42 @@
+<!--
+   TEMPLATE INDEX - DEV:
+   Este template se usa solo en el ambiente de desarrollo (development)
+-->
+<head>
+   <!-- INCLUDE BASE HEAD CONTENT -->
+   <%= require('html-loader!./src/html/master/dev/head.html') %>
+   <% for (key in htmlWebpackPlugin.files.css) { %>
+      <% if (htmlWebpackPlugin.files.cssIntegrity) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet"
+         integrity="<%= htmlWebpackPlugin.files.cssIntegrity[key] %>"
+         crossorigin="<%= webpackConfig.output.crossOriginLoading %>" />
+      <% } else { %>
+      <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet" />
+      <% } %>
+   <% } %>
+   <link rel="stylesheet" href="https://www.sodimac.com.pe/static/react/pages/home-page/home-page.css?vid=8518">
+</head>
+<!-- INCLUDE BASE HEADER -->
+<%= require('html-loader!./src/html/master/dev/header.html') %>
+
+<main id="main">
+   <div class="container">
+
+   <%= require('html-loader!./src/html/layouts/section-intro.html') %>
+
+   <!-- START: INCLUDE PRODUCT COUNTDOWN -->
+   <%= require('html-loader!./src/html/layouts/section-product-countdown.html') %>
+   <!-- END: INCLUDE PRODUCT COUNTDOWN -->
+
+   <!-- START: INCLUDE PRODUCT TAB PANEL -->
+   <%= require('html-loader!./src/html/layouts/section-product-panel.html') %>
+   <!-- END: INCLUDE PRODUCT TAB PANEL -->
+
+   </div>
+</main>
+<!-- INCLUDE BASE FOOTER -->
+<%= require('html-loader!./src/html/master/dev/footer.html') %>
+
+<% for (key in htmlWebpackPlugin.files.chunks) { %>
+<script src="<%= htmlWebpackPlugin.files.chunks[key].entry %>" charset="utf-8" type="text/javascript"></script>
+<% } %>

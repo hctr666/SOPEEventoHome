@@ -1,0 +1,94 @@
+$modalCloseSize: 40px;
+
+.modal-simple {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 201;
+    opacity: 0;
+    pointer-events: none;
+    transition: ease-in-out .25s;
+    &.visible {
+       opacity: 1;
+       pointer-events: all;
+       background: hsla(0, 0%, 0%, 0.068);
+       .modal-simple-inner {
+          transform: translateY(0);
+       }
+    }
+    .modal-simple-close {
+        position: absolute;
+        height: $modalCloseSize;
+        width: $modalCloseSize;
+        right: -$modalCloseSize;
+        top: 0;
+        background: $brandPrimary;
+        @media (max-width: 600px) {
+         right: 12px;
+         top: 10px;
+         background: none;
+        }
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 35px;
+            background: #fff;
+            right: 19px;
+            top: 2px;
+            transform: rotate(-45deg);
+            @media (max-width:601px) {
+               right: 10px;
+               background: $brandPrimary;
+            }
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+
+    }
+    .modal-simple-content {
+       padding: 1.5em 2em 3em;
+       &.modal-simple-content-fluid {
+          padding: 0;
+       }
+    }
+    .modal-simple-inner {
+       position: inherit;
+       bottom: inherit;
+       left: inherit;
+       right: inherit;
+       z-index: 201;
+       box-shadow: 0 0 30px -13px hsla(0, 0%, 0%, .65);
+       transform: translateY(100vh);
+       transition: transform ease-in-out .2s;
+       @media (min-width:601px) {
+          width: 600px;
+          height: 60vh;
+          bottom: 50%;
+          left: 50%;
+          margin-bottom: -30vh;
+          margin-left: -300px;
+       }
+    }
+ 
+   .modal-simple-wrapper {
+      font-size: 1.2em;
+      line-height: 1.3em;
+      color: #313131;
+      height: inherit;
+      border-radius: 4px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      @media (max-width:600px) {
+         height: 60vh;
+      }
+   }
+ }
