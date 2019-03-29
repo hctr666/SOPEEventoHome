@@ -110,10 +110,21 @@ const setStyleWithVendors = (element, property, value) => {
    }
 }
 
+const throttle = (fn, wait) => {
+   let time = Date.now();
+   return () => {
+      if ((time + wait - Date.now()) < 0) {
+         fn();
+         time = Date.now();
+      }
+   }
+}
+
 module.exports = {
    domIsReady : domIsReady,
    attachEvent: attachEvent,
    detachEvent: detachEvent,
-   isTouchMode: isTouchMode
+   isTouchMode: isTouchMode,
+   throttle: throttle
 }
 

@@ -7,7 +7,7 @@ import {
    detachEvent,
    isTouchMode
 } from './js/utils'
-import SwiperTabs from './js/swiper-tabs'
+import ProductListNavigation from './js/productlist-navigation'
 import './js/menu.js'
 
 const addTouchModeClass = () => {
@@ -30,6 +30,7 @@ const improveProdImagesSrcs = () => {
    }
 }
 
+
 const handleClickProductListTab = () => {
    const $prodListTabs = $('.fbra_categoryListTab')
    if ($prodListTabs.length > 0) {
@@ -38,7 +39,7 @@ const handleClickProductListTab = () => {
             e.preventDefault()
             setTimeout(() => {
                improveProdImagesSrcs()
-            }, 2500)
+            }, 1500)
          })
       })      
    }
@@ -126,6 +127,8 @@ const tabProductlist = () => {
    domIsReady(function() {
       improveProdImagesSrcs()
       handleClickProductListTab()
-      
+      const prodListNavigation = new ProductListNavigation('#fbra_categoryList', {
+         tabsSelector: '.fbra_categoryListTab'
+      })
    })
 })(document, window, domIsReady);
