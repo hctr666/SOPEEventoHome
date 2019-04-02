@@ -1,85 +1,119 @@
-@import './../mixins';
 @import './../variables';
 
- .fbra_falabellaComponentDailyDealsSection {
-    background:  #fff !important;
-    .fbra_dailyDealSectionContainer {
-        max-width: $containerMaxWidth;
-        margin: auto;
-        .fbra_dailyDealsSectionAddToCartBtn {
-            @media (max-width: $bp-xsmall) {
-               height: 35px;
-               width: 170px;
-            }
+.content-daily-deals {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: ease-in-out .2s;
+    @media (min-width: $bp-small + 1px){
+        flex-wrap: nowrap;
+    }
+    @media (max-width: $bp-small) {
+        .daily-deals-container:nth-child(1) {
+            order: 2;
         }
-        > .fbra_dailyDealsSectionContainer {
-            > .fbra_heading {
-                @include sectionHeading();
-            }
-        }
-
-        .fbra_dailyDealTimeSlotSection {
-            @media (max-width: $bp-xsmall) {
-                top: 5px !important;
-            }
-            .fbra_dailyDealTimeSlot {
-                > div {
-                    padding: 4px 20px;
-                    @media (max-width: $bp-xsmall) {
-                       padding: 4px 8px !important;
-                       height: 31px;
-                       border-radius: 3px;
-                       font-weight: 600;
-                       font-size: 1.5rem;
-                    }
-                }
-                > span {
-                    @media (max-width: $bp-xsmall) {
-                       line-height: .7em;
-                    }
-                }
-            }
-            > span {
-                @media (min-width: $bp-ipad-w + 1px) {
-                    line-height: 1rem;
-                }
-                &:last-child {
-                    font-size: 2.5rem;
-                    font-weight: 600;
-                }
-                @media (max-width: $bp-xsmall) {
-                    margin-top: 8px;
-                    line-height: 1.5rem;
-                    &:last-child {
-                        font-size: 1.3em;
-                    }
-                }
-            }
-        }
-        .fbra_dailyDealsSectionProductDetails {
-            .fbra_dailyDealsSectionProductName {
-                font-size: 1.7rem;
-                font-weight: 600;
-                line-height: 2rem;
-            }
-            .fbra_dailyDealsSectionPriceContainer {
-                p {
-                    font-size: .7em !important;
-                }
-                .fbra_productSecondaryPrice {
-                    @media (max-width: $bp-xsmall) {
-                        font-size: 1em !important;
-                    }
-                }
-                .fbra_productMainPrice {
-                    font-weight: 600;
-                    font-size: 3rem !important;
-                    margin: 8px 0;
-                    @media (max-width: $bp-xsmall) {
-                        font-size: 2.2rem !important;
-                    }
-                }
-            }
+        .daily-deals-container:nth-child(3) {
+            order: 3;
         }
     }
+}
+.daily-deals-container {
+    min-height: 240px;
+    flex-basis: 50%;
+    padding: 12px;
+    position: relative;
+    .ddeals-loading {
+        opacity: 0;
+        background: $colorWhite;
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out .35s;
+    }
+    &.is-loading {
+        .ddeals-loading {
+            opacity: 1;
+        }
+    }
+    @media (min-width: $bp-small + 1px) {
+        width: 35.555%;
+    }
+}
+
+.ddeals-countdown {
+    display: flex;
+    background: $brandPrimary;
+    color: $colorWhite;
+    @media (max-width: $bp-small) {
+        order: 1;
+    }
+}
+
+.ddeals-countdown-time-box {
+    display: inline-block;
+    width: 20%;
+}
+
+.ddeals-countdown-time-value {
+    display: block;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        position: absolute;
+        left: -13%;
+        top: 0;
+        bottom: 0;
+        width: 49%;
+        background: #000;
+        z-index: -1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: -13%;
+        top: 0;
+        bottom: 0;
+        width: 49%;
+        background: #000;
+        z-index: -1;
+    }
+}
+
+.ddeals-countdown-time-measure {
+    font-size: .85rem;
+}
+
+.ddeals-text-offerends {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.ddeals-countdown-wrapper {
+}
+
+.ddeals-text-hurryup {
+}
+
+.daily-deals-countdown {
+    padding: 12px;
+    width: 100%;
+    @media (min-width: $bp-small + 1px) {
+        width: 30%;
+    }
+}
+
+.ddeals-price-list-wrapper {
+    font-size: 1.1rem;
+}
+
+.ddeals-name {
+    font-size: 1.5rem;
 }

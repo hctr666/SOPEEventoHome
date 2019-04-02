@@ -1,0 +1,52 @@
+.swiper-custom-button {
+    height: 89px;
+    width: 41px;
+    background: rgba(0, 0, 0, 0.54);
+    position: absolute;
+    top: 50%;
+    margin-top: -44px;
+    z-index: 2;
+    @media (max-width: $bp-xsmall) {
+        width: 36px;
+    }
+    &.swiper-custom-button-prev {
+        left: 0;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            right: 50%;
+            width: 1px;
+            height: 37px;
+            background: $colorWhite;
+        }
+        &:before {
+            top: 11px;
+            transform: rotate(32deg);
+        }
+        &:after {
+            bottom: 10px;
+            transform: rotate(-32deg);
+        }
+    }
+    &.swiper-custom-button-next {
+        right: 0;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 1px;
+            height: 37px;
+            background: $colorWhite;
+        }
+        &:before {
+            top: 11px;
+            transform: rotate(-32deg);
+        }
+        &:after {
+            bottom: 10px;
+            transform: rotate(32deg);
+        }
+    }
+}

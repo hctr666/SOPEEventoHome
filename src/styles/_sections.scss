@@ -1,6 +1,31 @@
-/* Daily deals */
+@import './mixins';
+@import './variables';
+
+.section-heading {
+    text-align: center;
+}
+
+.section-title {
+    letter-spacing: 1px !important;
+    @include sectionHeading();
+}
+
+.section-wrapper,
+.fbra_falabellaComponent {
+    padding: 30px 0 40px;
+}
+
+.section-container {
+    max-width: $containerMaxWidth;
+    margin: auto;
+}
+
+/* Section intro */
+@import './sections/section-intro';
+
+/* Section Daily deals */
 @import './sections/daily-deals';
 
-/* Category List Tab */
+/* Section Category List Tab */
 @import './sections/category-list';
- 
+

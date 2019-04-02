@@ -1,0 +1,85 @@
+@import './../mixins';
+@import './../variables';
+
+ .fbra_falabellaComponentDailyDealsSection {
+    background:  #fff !important;
+    .fbra_dailyDealSectionContainer {
+        max-width: $containerMaxWidth;
+        margin: auto;
+        .fbra_dailyDealsSectionAddToCartBtn {
+            @media (max-width: $bp-xsmall) {
+               height: 35px;
+               width: 170px;
+            }
+        }
+        > .fbra_dailyDealsSectionContainer {
+            > .fbra_heading {
+                @include sectionHeading();
+            }
+        }
+
+        .fbra_dailyDealTimeSlotSection {
+            @media (max-width: $bp-xsmall) {
+                top: 5px !important;
+            }
+            .fbra_dailyDealTimeSlot {
+                > div {
+                    padding: 4px 20px;
+                    @media (max-width: $bp-xsmall) {
+                       padding: 4px 8px !important;
+                       height: 31px;
+                       border-radius: 3px;
+                       font-weight: 600;
+                       font-size: 1.5rem;
+                    }
+                }
+                > span {
+                    @media (max-width: $bp-xsmall) {
+                       line-height: .7em;
+                    }
+                }
+            }
+            > span {
+                @media (min-width: $bp-ipad-w + 1px) {
+                    line-height: 1rem;
+                }
+                &:last-child {
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+                @media (max-width: $bp-xsmall) {
+                    margin-top: 8px;
+                    line-height: 1.5rem;
+                    &:last-child {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        .fbra_dailyDealsSectionProductDetails {
+            .fbra_dailyDealsSectionProductName {
+                font-size: 1.7rem;
+                font-weight: 600;
+                line-height: 2rem;
+            }
+            .fbra_dailyDealsSectionPriceContainer {
+                p {
+                    font-size: .7em !important;
+                }
+                .fbra_productSecondaryPrice {
+                    @media (max-width: $bp-xsmall) {
+                        font-size: 1em !important;
+                    }
+                }
+                .fbra_productMainPrice {
+                    font-weight: 600;
+                    font-size: 3rem !important;
+                    margin: 8px 0;
+                    @media (max-width: $bp-xsmall) {
+                        font-size: 2.2rem !important;
+                    }
+                }
+            }
+        }
+    }
+}

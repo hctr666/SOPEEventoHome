@@ -18,6 +18,10 @@
     margin: auto;
 }
 
+.no-margin {
+    margin: 0 !important;
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -33,6 +37,10 @@
 
 .color-secondary {
     color: #dd021d;
+}
+
+.color-dark {
+    color: #000;
 }
 
 .fz-3x {
@@ -54,6 +62,13 @@
 
 .fullw {
     width: 100%;
+}
+
+.no-decoration {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .ul-no-style {

@@ -1,0 +1,94 @@
+@import './../mixins';
+
+$paginationHeightDesktop: 55px;
+$paginationWithContentBreakpoint: 915px;
+
+.swiper-slider-intro {
+    width: 100%;
+    height: auto;
+    background: red;
+    @media (min-width: $paginationWithContentBreakpoint + 1px) {
+        padding-bottom: $paginationHeightDesktop;
+    }
+
+    .swiper-wrapper {
+        height: auto;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    .swiper-pagination {
+        @media (min-width: $paginationWithContentBreakpoint + 1px) {
+            bottom: 0;
+            display: flex;
+            border-bottom: 1px $greyLighter solid;
+        }
+        @media (max-width: $paginationWithContentBreakpoint) {
+            //@include horizontalScroll()
+            text-align: center;
+        }
+    }
+    .swiper-pagination-bullets {
+        .swiper-pagination-bullet {
+            @media (min-width: $paginationWithContentBreakpoint + 1px) {
+                margin: 0;
+                border-radius: 0;
+                height: $paginationHeightDesktop;
+                padding: 10px 12px;
+                width: calc(100% / 5);
+                opacity: 1;
+                float: left;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                background: $colorWhite;
+                border-top: 3px transparent solid;
+            }
+            &.swiper-pagination-bullet-active {
+                @media (min-width: $paginationWithContentBreakpoint + 1px) {
+                    background: $greyLighter;
+                    border-top: 3px $brandPrimary solid;
+                }
+            }
+        }
+    }
+
+    .swiper-slide-image {
+        padding-bottom: 92%;
+        transition: ease-in-out .15s;
+        background-position: center;
+        background-size: 100% 100%;
+        @media (min-width: $bp-xsmall + 1px) {
+            padding-bottom: 60%;
+        }
+        @media (min-width: $bp-small + 1px) {
+            padding-bottom: 420px;
+            background-size: auto 420px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .slider-intro-nav-description {
+        display: none;
+        @media (min-width: $paginationWithContentBreakpoint + 1px) {
+            display: block;
+            font-size: 1.2rem;
+            line-height: 1.3rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .slider-intro-nav-price {
+        display: none;
+        @media (min-width: $paginationWithContentBreakpoint + 1px) {
+            display: block;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+    }
+}

@@ -1,5 +1,11 @@
+
+/**
+ * This class add navigation improvements
+ * to productlist tabs navigation
+ */
 import { throttle } from './utils'
 
+// Store jQuery global var
 if (typeof $ !== "undefined") {
    var jq = $
 }
@@ -48,8 +54,6 @@ export default class ProductListNavigation {
             this.$tabs[i].addEventListener('click', e => {
                e.preventDefault()
                this.$tabActive = this.$tabs[i]
-               console.log(this.$tabActive.offsetLeft);
-               
                this.tabActiveIndex = i
                this.checkForTransition()
             })
@@ -62,5 +66,4 @@ export default class ProductListNavigation {
          }, 90))
       }
    }
-
 }

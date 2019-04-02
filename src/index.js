@@ -3,13 +3,13 @@ import 'normalize.css/normalize.css'
 import './styles/index.scss'
 import {
    domIsReady,
-   attachEvent,
-   detachEvent,
    isTouchMode
 } from './js/utils'
 import ProductListNavigation from './js/productlist-navigation'
-import './js/menu.js'
+import SliderIntro from './js/slider-intro'
+import DailyDeals from './js/daily-deals'
 
+// Add touch mode class
 const addTouchModeClass = () => {
    if (isTouchMode()) {
       document.documentElement.classList.add('touch-mode')
@@ -123,11 +123,35 @@ const tabProductlist = () => {
    })
 }
 
-;(function(document, window, domIsReady, undefined) {
+;(function(document, window, domIsReady) {
    domIsReady(function() {
+      // Init Slider intro
+      new SliderIntro('#swiper-slider-intro', {
+         imageSelector: '.js-swiper-slide-image',
+         selectorBtnNext: '.swiper-slider-intro-btn-next',
+         selectorBtnPrev: '.swiper-slider-intro-btn-prev',
+         selectorPagination: '.swiper-slider-intro-pagination'
+      })
+
+      // DailyDeals Homecenter
+      new DailyDeals('#daily-deals-homecenter', {
+         renderToExternalCountdown: true,
+         dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full?alt=json'
+      })
+
+      // DailyDeals Constructor
+      new DailyDeals('#daily-deals-constructor', {
+         renderCountdown: false,
+         dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full?alt=json'
+      })
+
+      // Improve productlist image resolution
       improveProdImagesSrcs()
+
       handleClickProductListTab()
-      const prodListNavigation = new ProductListNavigation('#fbra_categoryList', {
+
+      // Init productlist navigation improvements
+      new ProductListNavigation('#fbra_categoryList', {
          tabsSelector: '.fbra_categoryListTab'
       })
    })

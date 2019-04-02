@@ -99,6 +99,11 @@ module.exports = {
          filename: 'layouts/section-promotions.html',
          inject: false
       }),
+      new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-daily-deals.html',
+         filename: 'layouts/section-daily-deals.html',
+         inject: false
+      }),
       new CleanWebpackPlugin(buildPath),
       /*        new FaviconsWebpackPlugin({
           // Your source logo
