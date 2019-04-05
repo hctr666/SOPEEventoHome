@@ -16,7 +16,7 @@ module.exports = {
    output: {
       filename: '[name].[hash:20].js',
       path: buildPath,
-      publicPath: '/static/campanas/cyberwow/home/'
+      publicPath: '/static/campanas/cyberwow/evento/2019/home/'
    },
    node: {
       fs: 'empty'
@@ -65,7 +65,7 @@ module.exports = {
          },
          {
             // Load all images as base64 encoding if they are smaller than 8192 bytes
-            test: /\.(png|jpg|gif)$/,
+            test: /\.(png|jpg|gif|svg)$/,
             use: [
                {
                   loader: 'url-loader',
@@ -81,28 +81,48 @@ module.exports = {
    plugins: [
       new HtmlWebpackPlugin({
          template: './header-prod.html',
-         filename: 'layouts/section-header.html',
-         inject: false,
-      }),
-      new HtmlWebpackPlugin({
-         template: './footer-prod.html',
-         filename: 'layouts/section-footer.html',
+         filename: 'sections/section-header.html',
          inject: false,
       }),
       new HtmlWebpackPlugin({
          template: './src/html/layouts/section-intro.html',
-         filename: 'layouts/section-intro.html',
-         inject: false
-      }),
-      new HtmlWebpackPlugin({
-         template: './src/html/layouts/section-promotions.html',
-         filename: 'layouts/section-promotions.html',
+         filename: 'sections/section-intro.html',
          inject: false
       }),
       new HtmlWebpackPlugin({
          template: './src/html/layouts/section-daily-deals.html',
-         filename: 'layouts/section-daily-deals.html',
+         filename: 'sections/section-daily-deals.html',
          inject: false
+      }),
+      new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-promotions.html',
+         filename: 'sections/section-promotions.html',
+         inject: false
+      }),
+      new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-news.html',
+         filename: 'sections/section-news.html',
+         inject: false
+      }),
+      new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-others.html',
+         filename: 'sections/section-others.html',
+         inject: false
+      }),
+      new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-our-brands.html',
+         filename: 'sections/section-our-brands.html',
+         inject: false
+      }),
+      new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-our-benefits.html',
+         filename: 'sections/section-our-benefits.html',
+         inject: false
+      }),
+      new HtmlWebpackPlugin({
+         template: './footer-prod.html',
+         filename: 'sections/section-footer.html',
+         inject: false,
       }),
       new CleanWebpackPlugin(buildPath),
       /*        new FaviconsWebpackPlugin({

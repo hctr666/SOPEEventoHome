@@ -14,7 +14,7 @@
       <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet" />
       <% } %>
    <% } %>
-   <link rel="stylesheet" href="https://www.sodimac.com.pe/static/react/pages/home-page/home-page.css?vid=8519">
+   <%= require('html-loader!./src/html/layouts/section-styles-inline.html') %>
 </head>
 <!-- INCLUDE BASE HEADER -->
 <%= require('html-loader!./src/html/master/dev/header.html') %>
@@ -30,9 +30,29 @@
    <%= require('html-loader!./src/html/layouts/section-daily-deals.html') %>
    <!-- END: REQUIRE PRODUCT COUNTDOWN -->
 
+   <!-- START: REQUIRE SECTION PROMOS 1 -->
+   <%= require('html-loader!./src/html/layouts/section-promotions.html') %>
+   <!-- END: REQUIRE SECTION PROMOS 1 -->
+
    <!-- START: REQUIRE PRODUCT TAB PANEL -->
    <%= require('html-loader!./src/html/layouts/section-product-panel.html') %>
    <!-- END: REQUIRE PRODUCT TAB PANEL -->
+
+   <!-- START: REQUIRE NEWS -->
+   <%= require('html-loader!./src/html/layouts/section-news.html') %>
+   <!-- END: REQUIRE NEWS -->
+
+   <!-- START: REQUIRE OUR BRANDS -->
+   <%= require('html-loader!./src/html/layouts/section-our-brands.html') %>
+   <!-- END: REQUIRE OUR BRANDS -->
+
+   <!-- START: REQUIRE OTHERS -->
+   <%= require('html-loader!./src/html/layouts/section-others.html') %>
+   <!-- END: REQUIRE OTHERS -->
+
+   <!-- START: REQUIRE OUR BENEFITS -->
+   <%= require('html-loader!./src/html/layouts/section-our-benefits.html') %>
+   <!-- END: REQUIRE OUR BENEFITS -->
 
    </div>
 </main>

@@ -9,6 +9,9 @@ export default class Countdown {
       }
 
       this.interval = setInterval(this.calculate.bind(this), 1000)
+      if (typeof this.options.onInit === "function") {
+         this.options.onInit(this)
+      }
    }
 
    calculate() {

@@ -1,5 +1,5 @@
 {
-    "name": "detouroper",
+    "name": "cyber-home",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -22,6 +22,8 @@
     "homepage": "",
     "dependencies": {
         "@polymer/paper-tabs": "^3.0.1",
+        "blazy": "^1.8.2",
+        "mutation-observer": "^1.0.3",
         "normalize.css": "^8.0.0",
         "simplegrid": "^1.0.2",
         "swiper": "^4.5.0"

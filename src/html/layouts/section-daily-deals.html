@@ -1,4 +1,4 @@
-<div class="section-container">
+<div id="section-dailydeals" class="section-container-fluid section-dailydeals bg-grey-lighter">
    <div class="section-wrapper">
       <div class="section-heading">
          <h2 class="section-title">
@@ -16,50 +16,65 @@
                   <img class="b-lazy ddeals-image" src="" alt="">
                </div>
                <div class="ddeals-content-info">
-                  <span class="ddeals-promo-badge"></span>
+                  <span class="ddeals-promo-badge">
+                     <span class="ddeals-promo-badge-cmr"></span>
+                     <span class="ddeals-promo-badge-combo"></span>
+                  </span>
                   <div>
-                     <span class="ddeals-name"></span>
+                     <span class="ddeals-name block"></span>
                   </div>
-                  <div>
+                  <div class="bold mb-5 mt-5">
                      <span>S/</span>
                      <span class="ddeals-price-promo"></span>
                   </div>
-                  <div class="ddeals-price-list-wrapper">
+                  <div class="ddeals-price-secondary">
+                     <span class="ddeals-price-label">Ahorro: </span>
+                     <span>S/</span>
+                     <span class="ddeals-amount-savings"></span>
+                  </div>
+                  <div class="ddeals-price-secondary">
                      <span class="ddeals-price-label">Antes: </span>
                      <span>S/</span>
                      <span class="ddeals-price-list"></span>
                   </div>
                </div>
+               <div class="text-right posr">
+                  <button class="btn btn-red letter-spacing-1 ddeals-btn-cta">¡Compra ahora!</button>
+               </div>
             </a>
          </div>
          <div id="daily-deals-countdown" class="daily-deals-countdown text-center">
-            <span class="ddeals-text-offerends">Esta oferta termina en: </span>
+            <div class="ddeals-countdown-heading color-white">
+               <span class="text-uppercase block">solo por</span>
+               <span class="text-uppercase block bold">horas</span>
+            </div>
+            <span class="ddeals-text-offerends color-white">Esta oferta termina en: </span>
             <div class="ddeals-countdown-wrapper">
                <!-- DAYS -->
-               <div class="ddeals-countdown-time-box text-uppercase">
-                  <span class="js-measure-days ddeals-countdown-time-value">00</span>
-                  <span class="ddeals-countdown-time-measure">días</span>
+               <div class="ddeals-countdown-time-box text-uppercase hidden">
+                  <span class="js-measure-days ddeals-countdown-time-value bold">00</span>
+                  <span class="ddeals-countdown-time-measure color-white">días</span>
                </div>
-               <span class="ddeals-countdown-time-separator">:</span>
+               <span class="ddeals-countdown-time-separator hidden">:</span>
                <!-- HOURS -->
                <div class="ddeals-countdown-time-box text-uppercase">
-                  <span class="js-measure-hours ddeals-countdown-time-value">00</span>
-                  <span class="ddeals-countdown-time-measure">horas</span>
+                  <span class="js-measure-hours ddeals-countdown-time-value bold">00</span>
+                  <span class="ddeals-countdown-time-measure color-white">horas</span>
                </div>
-               <span class="ddeals-countdown-time-separator">:</span>
+               <span class="ddeals-countdown-time-separator color-white">:</span>
                <!-- MINUTES -->
                <div class="ddeals-countdown-time-box text-uppercase">
-                  <span class="js-measure-minutes ddeals-countdown-time-value">00</span>
-                  <span class="ddeals-countdown-time-measure">min.</span>
+                  <span class="js-measure-minutes ddeals-countdown-time-value bold">00</span>
+                  <span class="ddeals-countdown-time-measure color-white">min.</span>
                </div>
-               <span class="ddeals-countdown-time-separator">:</span>
+               <span class="ddeals-countdown-time-separator color-white">:</span>
                <!-- SECONDS -->
                <div class="ddeals-countdown-time-box text-uppercase">
-                  <span class="js-measure-seconds ddeals-countdown-time-value">00</span>
-                  <span class="ddeals-countdown-time-measure">seg.</span>
+                  <span class="js-measure-seconds ddeals-countdown-time-value bold">00</span>
+                  <span class="ddeals-countdown-time-measure color-white">seg.</span>
                </div>
             </div>
-            <span class="ddeals-text-hurryup">¡Apúrate!</span>
+            <span class="ddeals-text-hurryup bold color-white">¡Apúrate!</span>
          </div>
          <!-- DAILY DEALS TEMPLATE -->
          <div id="daily-deals-constructor" class="daily-deals-container no-margin is-loading">
@@ -71,19 +86,30 @@
                   <img class="b-lazy ddeals-image" src="" alt="">
                </div>
                <div class="ddeals-content-info">
-                  <span class="ddeals-promo-badge"></span>
+                  <span class="ddeals-promo-badge">
+                     <span class="ddeals-promo-badge-cmr"></span>
+                     <span class="ddeals-promo-badge-combo"></span>
+                  </span>
                   <div>
-                     <span class="ddeals-name"></span>
+                     <span class="ddeals-name block"></span>
                   </div>
-                  <div>
+                  <div class="bold mb-5 mt-5">
                      <span>S/</span>
                      <span class="ddeals-price-promo"></span>
                   </div>
-                  <div class="ddeals-price-list-wrapper">
+                  <div class="ddeals-price-secondary">
+                     <span class="ddeals-price-label">Ahorro: </span>
+                     <span>S/</span>
+                     <span class="ddeals-amount-savings"></span>
+                  </div>
+                  <div class="ddeals-price-secondary">
                      <span class="ddeals-price-label">Antes: </span>
                      <span>S/</span>
                      <span class="ddeals-price-list"></span>
                   </div>
+               </div>
+               <div class="text-right">
+                  <button class="btn btn-red letter-spacing-1 ddeals-btn-cta">¡Compra ahora!</button>
                </div>
             </a>
          </div>

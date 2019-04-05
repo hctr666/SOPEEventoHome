@@ -1,0 +1,28 @@
+@import './variables';
+
+.flex-grid {
+    display: flex;
+    flex-shrink: 2;
+    flex-flow: wrap;
+}
+
+.flex-grid-col {
+    flex-basis: 50%;
+
+    &.flex-grid-6 {
+        flex-basis: 50%;
+        width: 50%;
+    }
+    &.flex-grid-sm-4 {
+        @media (min-width: $bp-small + 1px) {
+            flex-basis: calc(100% / 3);
+            width: calc(100% / 3);
+        }
+    }
+    &.flex-grid-md-3 {
+        @media (min-width: $bp-medium + 1px) {
+            flex-basis: calc(100% / 4);
+            width: calc(100% / 4);
+        }
+    }
+}

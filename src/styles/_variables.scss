@@ -1,5 +1,6 @@
 /* Colors */
 $brandPrimary: #0072ce;
+$brandSecondary: #dd0021;
 $greyLighter: #eee;
 $greyLight: #ddd;
 $colorWhite: #fff;
@@ -11,6 +12,7 @@ $headerFixedHeight: 41px;
 $containerMaxWidth: 1200px;
 
 /* Breakpoints */
+$bp-xxsmall: 375px;
 $bp-xsmall: 480px;
 $bp-small: 800px;
 $bp-medium: 1000px;

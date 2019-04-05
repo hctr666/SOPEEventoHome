@@ -1,0 +1,28 @@
+@import './../variables';
+
+.secourb-box {
+    padding: 14px 12px;
+    display: flex;
+    align-items: center;
+    background: $greyLighter;
+    margin: 2px;
+    font-size: 1.4rem;
+    height: 100;
+    border-bottom: 5px $greyLight solid;
+    @media (min-width: $bp-xsmall + 1px) {
+        font-size: 1.7rem;
+    }
+    .c-icon {
+        margin-right: 14px;
+    }
+    span {
+        &:nth-child(2) {
+            span {
+                line-height: 1.6rem;
+                @media (min-width: $bp-xsmall + 1px) {
+                    line-height: 2.1rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import './../variables';
+
+$bp-news-medium: 900px;
+$bp-news-small: 600px;
+$gridColSpace: 5px;
+$gridImageWidth: 295px;
+
+.section-news-banner {
+    flex-basis: calc(50% - #{$gridColSpace});
+    margin-bottom: $gridColSpace;
+    margin-right: $gridColSpace / 2;
+    margin-left: $gridColSpace / 2;
+    @media (min-width: $bp-news-small) {
+        flex-basis: calc(33.33333% - #{$gridColSpace});
+    }
+    @media (min-width: $containerMaxWidth) {
+        flex-basis: $gridImageWidth;
+    }
+    img {
+        width: 100%;
+        @media (min-width: $containerMaxWidth) {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import './../variables';
+
+.section-promotions {
+    .swiper-container {
+        height: 240px;
+    }
+}
+
+.bfs-buy-also-calling {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-right: 1.5rem;
+    @media (max-width: $bp-xsmall) {
+        font-size: .8rem;
+    }
+    span {
+        display: block;
+        &:last-child {
+            font-size: 1.85rem;
+        }
+    }
+}
+
+.banner-promotional {
+    margin-top: 10px !important;
+    .icon-phone-sales {
+        display: inline-block;
+        vertical-align: middle;
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1.5rem;
+        background-image: url('../assets/img/icon-telefono.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.banner-cmr-puntos {
+    height: 84px;
+    padding: 0;
+    > div {
+        height: 100%;
+        padding: 12px;
+        border: 1px green solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+    }
+}
+
+.icon-cmr-puntos {
+    width: 10rem;
+    height: 4rem;
+    background-image: url('../assets/img/icon-X3CMR.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner-phone-sales {
+    padding: 0;
+    height: 84px;
+    overflow: hidden;
+    > div{
+        height: 100%;
+        padding: 12px;
+        background: $brandSecondary;
+        border-radius: 2px;
+        border: 1px $brandSecondary solid;
+        a {
+            height: inherit;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @media (max-width: $bp-small) {
+                justify-content: space-between;
+                font-size: 12px;
+                text-align: center;
+            }
+            &:hover {
+                color: $colorWhite;
+            }
+            > .bfs-extended-schedule {
+                display: none;
+                @media (min-width: $bp-medium + 1px) {
+                    display: inline-block;
+                }
+                span {
+                    display:block;
+                }
+            }
+        }
+    }
+    .bfs-extended-schedule {
+        font-size: 1rem;
+    }
+    .bfs-number {
+        padding: 0 5px;
+        @media (min-width: $bp-medium + 1px) {
+            margin-right: 1.5rem;
+        }
+        > .bfs-extended-schedule {
+            display: block;
+            @media (min-width: $bp-medium + 1px) {
+                display: none;
+            }
+        }
+    }
+}

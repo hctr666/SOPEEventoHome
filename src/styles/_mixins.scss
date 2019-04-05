@@ -1,6 +1,6 @@
 @mixin sectionHeading {
     font-weight: 400 !important;
-    font-size: 2em !important;
+    font-size: 1.8em !important;
     line-height: 1.2;
     margin-top: 2rem !important;
     margin-bottom: 3rem !important;
@@ -18,4 +18,18 @@
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+}
+
+@mixin swiperCustomCarousel {
+    padding: 0 7px;
+    .swiper-slide {
+        max-width: 236px;
+        width: 74%;
+    }
+    @media (min-width: $containerMaxWidth + 1px) {
+        padding: 0;
+        .swiper-custom-button {
+            display: none;
+        }
+    }
 }

@@ -1,0 +1,34 @@
+.section-our-brands {
+    .swiper-container {
+        height: 150px;
+    }
+}
+
+.section-our-brands-banner {
+    flex-basis: calc(50% - #{$gridColSpace});
+    margin-bottom: $gridColSpace;
+    margin-right: $gridColSpace / 2;
+    margin-left: $gridColSpace / 2;
+    &:nth-child(3) {
+        flex-basis: 100%;
+    }
+    @media (min-width: $bp-small + 1px) {
+        &, &:nth-child(3) {
+            flex-basis: calc(33.33333% - #{$gridColSpace});
+        }
+        &:nth-child(4),
+        &:nth-child(5) {
+            flex-basis: calc(50% - #{$gridColSpace});
+        }
+    }
+    @media (min-width: $containerMaxWidth) {
+        &, &:nth-child(3) {
+        }
+    }
+    img {
+        width: 100%;
+        @media (min-width: $containerMaxWidth) {
+            width: auto;
+        }
+    }
+}

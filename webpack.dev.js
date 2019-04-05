@@ -7,7 +7,7 @@ module.exports = {
     devtool: 'eval-cheap-module-source-map',
     entry: './src/index.js',
     devServer: {
-        host: '0.0.0.0',
+        host: 'localhost',
         open: 'chrome',
         port: 8082,
         contentBase: path.join(__dirname, "dist")
@@ -57,7 +57,7 @@ module.exports = {
             ,
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|svg)$/,
                 use: [
                     {
                         loader: 'url-loader',
@@ -67,7 +67,7 @@ module.exports = {
                             limit: 8192
                         }
                     }
-                ]
+                ],
             }
         ],
     },

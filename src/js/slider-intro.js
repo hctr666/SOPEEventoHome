@@ -14,17 +14,18 @@ export default class SliderIntro {
       this.imageElements = []
       this.checkDeviceWidth()
       this.setElements()
-      this.setBgImages()
+      this.setImages()
       this.onWindowResize(() => {
-         this.setBgImages()
+         this.setImages()
       })
       this.initSwiper()
    }
 
-   setBgImages() {
+   setImages() {
       if (this.imageElements.length > 0) {
          for (let i = 0; i < this.imageElements.length; i++) {
             let imageElem = this.imageElements[i]
+
             if (this.isDeviceSmall) {
                imageElem.node.style.backgroundImage = `url(${imageElem.imgSmall})`
             }
@@ -79,6 +80,11 @@ export default class SliderIntro {
                   imgMedium: originalImageElems[i].dataset.imgMedium,
                   imgSmall: originalImageElems[i].dataset.imgSmall
                })
+
+               // Set URLs
+               originalImageElems[i].parentNode.href = originalImageElems[i].dataset.url
+               originalImageElems[i].parentNode.setAttribute('title', originalImageElems[i].dataset.title)
+
                delete originalImageElems[i].dataset.imgLarge
                delete originalImageElems[i].dataset.imgSmall
                delete originalImageElems[i].dataset.imgMedium
@@ -90,18 +96,32 @@ export default class SliderIntro {
    initSwiper() {
       this.swiper = new Swiper(this.selector, {
          slidesPerView: 1,
+         preventClicks: false,
+         preventClicksPropagation: false,
          pagination: {
             el: this.options.selectorPagination,
             clickable: true,
-            renderBullet: function (index, className) {
+            renderBullet: (index, className) => {
+               const slides = this.$container.querySelectorAll('.js-swiper-slide-image')
+               let data = {}
+
+               if (slides.length > 0) {
+                  for (let s = 0; s < slides.length; s++) {
+                     if (s === index) {
+                        data.price = slides[s].dataset.price
+                        data.title = slides[s].dataset.title
+                     }
+                  }
+               }
+               
                return `
                   <div class="${className}">
                      <span>
-                        <span class="slider-intro-nav-description block fullw bold text-uppercase text-left">Box Tarima Nappy</span>
-                        <span class="slider-intro-nav-price block fullw text-left">S/ 1200</span>
+                        <span class="slider-intro-nav-description block fullw bold text-uppercase text-left">${data.title}</span>
+                        <span class="slider-intro-nav-price block fullw text-left">S/ ${data.price}</span>
                      </span>
                   </div>
-               `;
+               `
             },
          },
          navigation: {

@@ -1,3 +1,12 @@
+.swiper-container {
+    &.swiper-custom-carousel {
+        @include swiperCustomCarousel();
+    }
+}
+.swiper-button-disabled {
+    opacity: 0;
+    pointer-events: none;
+}
 .swiper-custom-button {
     height: 89px;
     width: 41px;

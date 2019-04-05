@@ -1,5 +1,11 @@
 @import './../mixins';
 
+.fbra_heading.fbra_hurryBuyMessage {
+   font-size: 1.75rem;
+   font-weight: 600 !important;
+   white-space: normal !important;
+}
+
 .fbra_falabellaComponentHomePageCategoryList {
     .fbra_categoryListHeaderContainer {
        > .fbra_heading {
@@ -7,15 +13,15 @@
        }
     }
     .fbra_test_categoryListHeader {
-       font-weight: 400;
-       font-size: 3em;
+       font-weight: 400 !important;
+       font-size: 3em !important;
     }
     .fbra_categoryList {
-       max-width: $containerMaxWidth;
-       margin: auto;
+       max-width: $containerMaxWidth !important;
+       margin: auto !important;
        .fbra_categoryItem {
           @media (max-width: $bp-medium) {
-             height: auto;
+             height: auto !important;
           }
        }
     }
@@ -56,19 +62,19 @@
     }
     .fbra_categoryListTab {
        margin-right: 0 !important;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+       display: flex !important;
+       justify-content: center !important;
+       align-items: center !important;
        //width: calc(100% / 14);
  
        .fbra_categoryItem {
-          overflow: hidden;
-          padding: 12px 5px 5px;
+          overflow: hidden !important;
+          padding: 12px 5px 5px !important;
        }
     
        .fbra_categoryListTab__text {
-          overflow: hidden;
-          text-overflow: ellipsis;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
           font-size: 1.1rem !important;
        }
     }
@@ -78,7 +84,7 @@
     }
  
     .fixedCategoryHeader {
-       top: $headerFixedHeight;
+       top: $headerFixedHeight !important;
        padding: 0;
        @media (max-width:$bp-medium) {
           top: $headerHeightMobile !important;
@@ -89,7 +95,7 @@
     }
  
     .fbra_productsContainer {
-       max-width: $containerMaxWidth;
+       max-width: $containerMaxWidth !important;
        margin: auto;
     }
  
@@ -103,8 +109,8 @@
           .fbra_productListItem {
              box-shadow: 0px 0px 4px -3px rgba(0,0,0,.51);
              border-radius: 2px;
-             background: $colorWhite;
-             height: 410px;
+             background: $colorWhite !important;
+             height: 410px !important;
              position: relative;
              .fbra_productPriceSection {
                 .fbra_productMainPrice {
@@ -130,11 +136,11 @@
              }
  
              .fbra_productImage {
-                border: 0;
-                text-align: center;
+                border: 0 !important;
+                text-align: center !important;
                 img {
                    right: 0 !important;
-                   top: 0;
+                   top: 0 !important;
                    &:not(.fbra_productImage__cyberLogo) {
                       width: 175px !important;
                       height: 175px !important;
@@ -143,7 +149,7 @@
              }
           
              &:hover {
-                box-shadow: none;
+                box-shadow: none !important;
              }
  
              .fbra_productButtonContainer {
@@ -159,4 +165,8 @@
  
  .fbra_falabellaComponent {
     background: $greyLighter;
+ }
+
+ .fbra_falabellaComponentHomePageCategoryList {
+    margin-bottom: 0 !important;
  }

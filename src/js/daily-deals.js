@@ -13,6 +13,7 @@ const IS_CMR = 'gsx$is-cmr'
 const IS_COMBO = 'gsx$is-combo'
 const PRICE_PROMO = 'gsx$price-promo'
 const PRICE_LIST = 'gsx$price-list'
+const TRACK_ID = 'gsx$track-id'
 
 export default class DailyDeals {
    constructor(selector, options) {
@@ -70,9 +71,17 @@ export default class DailyDeals {
                         this.dealPricePromo = item[PRICE_PROMO].$t
                         this.dealIsCMR   = item[IS_CMR].$t == 1
                         this.dealIsCombo = item[IS_COMBO].$t == 1
+                        this.dealTrackId = item[TRACK_ID].$t
                         this.endDate = _endDate
+                        if (typeof this.options.onInit === "function") {
+                           this.options.onInit()
+                        }
                         this.initCountdown()
                         this.renderProductContent()
+                     } else {
+                        if (typeof this.options.onEnd === "function") {
+                           this.options.onEnd()
+                        }
                      }
                   }
                })
@@ -90,10 +99,18 @@ export default class DailyDeals {
    initCountdown() {
       // Init countdown and render content
       new Countdown(this.endDate, {
+         onInit: () => {
+            if (typeof this.options.onInit === "function") {
+               this.options.onInit()
+            }
+         },
          onLapsing: (c) => {
             this.renderCountdownContent(c.parsed.days, c.parsed.hours, c.parsed.minutes, c.parsed.seconds)
          },
          onEnd: () => {
+            if (typeof this.options.onEnd === "function") {
+               this.options.onEnd()
+            }
             this.getData()
          }
       })
@@ -114,17 +131,44 @@ export default class DailyDeals {
       if (secondsElem) secondsElem.innerHTML = seconds
    }
 
+   getPriceParsed(price) {
+      let priceStr = typeof price !== "undefined" ? price : ''
+      if (typeof price === "number") {
+         priceStr = price.toFixed(2)
+      }      
+
+      let priceSplit = priceStr.split('.')
+
+      // Add right zero if decimal has length 1 (Ex.: 125.5 -> 125.50)
+      if (typeof priceSplit[1] !== "undefined" && priceSplit[1].length === 1 && priceSplit[1] !== '0') {
+         priceSplit[1] += '0'
+         return priceSplit.join('.')
+      }
+      // Remove right zeroes
+      if (priceSplit.length > 1 && (priceSplit[1] === "0" || priceSplit[1] === "00")) {
+         priceSplit[1] = ''
+         return priceSplit.join('')
+      }
+      return priceSplit.join('.')
+
+   }
+
    renderProductContent() {
       this.nameElem = this.$container.querySelector('.ddeals-name')
       this.imageElem = this.$container.querySelector('.ddeals-image')
       this.pricePromoElem = this.$container.querySelector('.ddeals-price-promo')
       this.priceListElem = this.$container.querySelector('.ddeals-price-list')
+      this.amountSavingsElem = this.$container.querySelector('.ddeals-amount-savings')
       this.promoBadgeElem = this.$container.querySelector('.ddeals-promo-badge')
       this.linkElem = this.$container.querySelector('.ddeals-link')
 
       if (this.nameElem) this.nameElem.innerHTML = this.dealName
-      if (this.pricePromoElem) this.pricePromoElem.innerHTML = this.dealPricePromo
-      if (this.priceListElem) this.priceListElem.innerHTML = this.dealPriceList
+      if (this.pricePromoElem) this.pricePromoElem.innerHTML = this.getPriceParsed(this.dealPricePromo)
+      if (this.priceListElem) this.priceListElem.innerHTML = this.getPriceParsed(this.dealPriceList)
+
+      if (this.amountSavingsElem) {
+         this.amountSavingsElem.innerHTML = this.getPriceParsed(parseFloat(this.dealPriceList) - parseFloat(this.dealPricePromo))
+      }
 
       if (this.promoBadgeElem && this.dealIsCMR) {
          this.promoBadgeElem.classList.add('is-cmr')
@@ -135,12 +179,12 @@ export default class DailyDeals {
       }
 
       if (this.imageElem) {
-         this.imageElem.src = `https://sodimac.scene7.com/is/image/SodimacPeru/${this.dealCode}?$lista175$`
+         this.imageElem.src = `https://sodimac.scene7.com/is/image/SodimacPeru/${this.dealCode}?$lista160$`
          this.imageElem.classList.remove('b-lazy')
       }
 
       if (this.linkElem) {
-         this.linkElem.href = `/sodimac-pe/product/${this.dealCode}/`
+         this.linkElem.href = `/sodimac-pe/product/${this.dealCode}/?cid=${this.dealTrackId}`
       }
    }
 

@@ -24,6 +24,7 @@ $paginationWithContentBreakpoint: 915px;
             bottom: 0;
             display: flex;
             border-bottom: 1px $greyLighter solid;
+            box-shadow: 0px -6px 30px -13px rgba(0, 0, 0, 0.62);
         }
         @media (max-width: $paginationWithContentBreakpoint) {
             //@include horizontalScroll()
@@ -32,6 +33,7 @@ $paginationWithContentBreakpoint: 915px;
     }
     .swiper-pagination-bullets {
         .swiper-pagination-bullet {
+            transition: ease-in-out .15s;
             @media (min-width: $paginationWithContentBreakpoint + 1px) {
                 margin: 0;
                 border-radius: 0;
@@ -45,12 +47,12 @@ $paginationWithContentBreakpoint: 915px;
                 align-items: flex-start;
                 justify-content: center;
                 background: $colorWhite;
-                border-top: 3px transparent solid;
+                border-bottom: 3px transparent solid;
             }
             &.swiper-pagination-bullet-active {
                 @media (min-width: $paginationWithContentBreakpoint + 1px) {
-                    background: $greyLighter;
-                    border-top: 3px $brandPrimary solid;
+                    //background: $greyLight;}
+                    border-bottom: 3px $brandPrimary solid;
                 }
             }
         }

@@ -10,6 +10,11 @@
     @include sectionHeading();
 }
 
+.section-wrapper {
+    max-width: $containerMaxWidth;
+    margin: auto;
+}
+
 .section-wrapper,
 .fbra_falabellaComponent {
     padding: 30px 0 40px;
@@ -27,5 +32,17 @@
 @import './sections/daily-deals';
 
 /* Section Category List Tab */
-@import './sections/category-list';
+/*@import './sections/category-list';*/
+
+/* Section promotions */
+@import './sections/section-promotions';
+
+/* Section news */
+@import './sections/section-news';
+
+/* Section our brands */
+@import './sections/section-our-brands';
+
+/* Section our benefits */
+@import './sections/section-our-benefits';
 

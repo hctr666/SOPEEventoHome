@@ -1,0 +1,39 @@
+.c-icon {
+    width: 5rem;
+    height: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5rem 5rem;
+
+    &.c-icon-phone {
+        background-image: url('../assets/img/icons/venta-telefonica.svg')
+    }
+
+    &.c-icon-shield {
+        background-image: url('../assets/img/icons/compra-tranquilo.svg')
+    }
+
+    &.c-icon-card {
+        background-image: url('../assets/img/icons/multiples-medios-de-pago.svg')
+    }
+
+    &.c-icon-shop-cart {
+        background-image: url('../assets/img/icons/retiro-en-tienda.svg')
+    }
+
+    &.c-icon-light-bulb {
+        background-image: url('../assets/img/icons/asesoria-en-su-compra.svg')
+    }
+
+    &.c-icon-rotate-money {
+        background-image: url('../assets/img/icons/cambio-devolucion.svg')
+    }
+
+    &.c-icon-tools {
+        background-image: url('../assets/img/icons/servicios-hogar.svg')
+    }
+
+    &.c-icon-papers {
+        background-image: url('../assets/img/icons/terminos-condiciones.svg')
+    }
+}
