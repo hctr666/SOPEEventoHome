@@ -25,7 +25,7 @@ module.exports = {
       rules: [
          {
             test: /\.js$/,
-            exclude: [/node_modules/, /src\/js\//],
+            exclude: [/node_modules/,/node_modules\/(?!(swiper|dom7)\/).*/, /src\/js\//],
             loader: 'babel-loader',
 
             options: {
