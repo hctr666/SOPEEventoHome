@@ -52,6 +52,12 @@ const improveProdImagesSrcs = () => {
    }
 }
 
+const resetProductListScrollPosition = () => {
+   if (productListWrapperEl && productListWrapperEl.parentNode) {
+      productListWrapperEl.parentNode.scrollTo(0,0)
+   }
+}
+
 // Handle productlist tab click events
 const handleClickProductListTab = () => {
    const $prodListTabs = $('.fbra_categoryListTab')
@@ -60,9 +66,7 @@ const handleClickProductListTab = () => {
          $tab.addEventListener('click', e => {
             e.preventDefault()
             shouldResetMissingPrices = true
-            productListWrapperEl.appendChild(document.createElement('div'))
-            console.log(shouldResetMissingPrices);
-            
+            resetProductListScrollPosition()
          })
       })      
    }
