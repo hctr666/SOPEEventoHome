@@ -10,11 +10,19 @@ $gridImageWidth: 295px;
     margin-bottom: $gridColSpace;
     margin-right: $gridColSpace / 2;
     margin-left: $gridColSpace / 2;
+    
+    &:first-child {
+        flex-basis: 100%;
+    }
+
     @media (min-width: $bp-news-small) {
         flex-basis: calc(33.33333% - #{$gridColSpace});
     }
     @media (min-width: $containerMaxWidth) {
         flex-basis: $gridImageWidth;
+        &:first-child {
+            flex-basis: 49%;
+        }
     }
     img {
         width: 100%;

@@ -3,24 +3,42 @@ import 'normalize.css/normalize.css'
 import './styles/index.scss'
 import {
    domIsReady,
-   isTouchMode
+   isTouchMode,
+   hasWebpSupport,
+   slugify
 } from './js/utils'
 import ProductListNavigation from './js/productlist-navigation'
 import SliderIntro from './js/slider-intro'
 import DailyDeals from './js/daily-deals'
-import Swiper from 'swiper'
+import Swiper from 'swiper/dist/js/swiper'
 import MutationObserver from 'mutation-observer'
+require('intersection-observer')
 
 let productListWrapperEl = null
+let sectionNewsEl = null
+let scrollToTopEl = null
+let scrollToTopRefElem = null
+let shouldResetMissingPrices = false
 
 // Add touch mode class
-const addTouchModeClass = () => {
-   if (isTouchMode()) {
+const checkIsTouchDevice = () => {
+   return isTouchMode()
+}
+
+const addHTMLClasses = () => {
+   // Add touch mode class
+   if (checkIsTouchDevice()) {
       document.documentElement.classList.add('touch-mode')
    }
-}
-addTouchModeClass()
 
+   if (hasWebpSupport()) {
+      document.documentElement.classList.add('supports-webp')
+   }
+}
+
+addHTMLClasses()
+
+// Improve image quality of product items
 const improveProdImagesSrcs = () => {
    const $prodImages = $('.fbra_productImage img').not('.fbra_productImage__cyberLogo')
    if ($prodImages.length > 0) {
@@ -34,33 +52,23 @@ const improveProdImagesSrcs = () => {
    }
 }
 
-
+// Handle productlist tab click events
 const handleClickProductListTab = () => {
    const $prodListTabs = $('.fbra_categoryListTab')
    if ($prodListTabs.length > 0) {
       $prodListTabs.each((i, $tab) => {
          $tab.addEventListener('click', e => {
             e.preventDefault()
-            const verifyContentIsLoading = () => {
-               productListWrapperEl = document.querySelector('.fbra_productList .fbra_loadingWrapper')
-               if (productListWrapperEl.classList.contains('fbra_loadingWrapper--isLoading')) {
-                  console.log('wrapper is loading.');
-                  setTimeout(() => {
-                     verifyContentIsLoading()
-                  }, 500)
-               } else {
-                  console.log('wrapper has loaded');
-                  improveProdImagesSrcs()
-                  renderMissingPrices()
-                  appendSeeAllCategoryItemToCategoryList()
-               }
-            }
-            //verifyContentIsLoading()
+            shouldResetMissingPrices = true
+            productListWrapperEl.appendChild(document.createElement('div'))
+            console.log(shouldResetMissingPrices);
+            
          })
       })      
    }
 }
 
+// Init section promotions functionality
 const sectionPromotions = () => {
    const swiperPromotions = new Swiper('.section-promotions .swiper-container', {
       init: false,
@@ -83,7 +91,7 @@ const sectionPromotions = () => {
       const imageElems = swiperPromotions.imagesToLoad
       if (imageElems.length > 0) {
          for (let i = 0; i < imageElems.length; i++) {
-            imageElems[i].src = imageElems[i].dataset.src
+            imageElems[i].src = imageElems[i].dataset.src + `&${hasWebpSupport() ? 'fmt=webp' : ''}`
             imageElems[i].classList.remove('swiper-lazy')
          }
       }
@@ -91,6 +99,7 @@ const sectionPromotions = () => {
    swiperPromotions.init()
 }
 
+// Init section promotions functionality
 const sectionOurBrands = () => {
    const swiperOurBrands = new Swiper('.section-our-brands .swiper-container', {
       init: false,
@@ -113,7 +122,7 @@ const sectionOurBrands = () => {
       const imageElems = swiperOurBrands.imagesToLoad
       if (imageElems.length > 0) {
          for (let i = 0; i < imageElems.length; i++) {
-            imageElems[i].src = imageElems[i].dataset.src
+            imageElems[i].src = imageElems[i].dataset.src + `&${hasWebpSupport() ? 'fmt=webp' : ''}`
             imageElems[i].classList.remove('swiper-lazy')
          }
       }
@@ -199,18 +208,31 @@ const tabProductlist = () => {
    })
 }
 
+// Lazy load images to improve page load performace
 const lazyImages = () => {
    const imageElems = document.querySelectorAll('.b-lazy')
+   const getURLWithFmt = (url) => {
+      if (url.indexOf('?') !== -1) {
+         return hasWebpSupport() ? `${url}&fmt=webp` : ''
+      }
+      return hasWebpSupport() ? '?fmt=webp' : ''
+   }
    if (imageElems.length > 0) {
       for (let i = 0; i < imageElems.length; i++) {
          if (! imageElems[i].classList.contains('b-loaded')) {
-            imageElems[i].src = imageElems[i].dataset.src
+            if (imageElems[i].dataset.srcset) {
+               imageElems[i].setAttribute('srcset', `${getURLWithFmt(imageElems[i].dataset.srcset)}`)
+            }
+            if (imageElems[i].dataset.src) {
+               imageElems[i].src = getURLWithFmt(imageElems[i].dataset.src)
+            }
             imageElems[i].classList.add('b-loaded')
          }
       }
    }
 }
 
+// Extract price from string (product name)
 const extractPriceListFromString = (str) => {
    if (typeof str !== "undefined") {
       // Extract "regular/antes/normal" prices from substring text
@@ -229,6 +251,8 @@ const extractPriceListFromString = (str) => {
    }
 }
 
+
+// Append additional item box in productlist with cta to category page
 const appendSeeAllCategoryItemToCategoryList = () => {
    try {
       const seeAllCategoryLinkEl = document.querySelector('a.fbra_categoryHeaderSeeCategory_button')
@@ -261,6 +285,8 @@ const appendSeeAllCategoryItemToCategoryList = () => {
    }
 }
 
+
+// Render product missing prices such as savings, price normal, ...
 const renderMissingPrices = () => {
    try {
       const fbraProductItemElems = document.querySelectorAll('.fbra_productItem .fbra_productListItem')
@@ -274,89 +300,82 @@ const renderMissingPrices = () => {
             const curSavingsElem = fbraProductItemEl.querySelector('[data-name="savings"]')
             const curPriceSecondaryFromNameEl = fbraProductItemEl.querySelector('[data-name="price-normal"]')
 
-            // Check if amount savings and price secondary from name are already rendered
-            if (fbraProductSecondaryPriceElem) {
-               if (curSavingsElem) {
-                  curSavingsElem.parentNode.removeChild(curSavingsElem)
-               }
-               if (curPriceSecondaryFromNameEl) {
-                  curPriceSecondaryFromNameEl.parentNode.removeChild(curPriceSecondaryFromNameEl)
-               }
+            if (shouldResetMissingPrices) {
+               if (curSavingsElem) curSavingsElem.parentNode.removeChild(curSavingsElem)
+               if (curPriceSecondaryFromNameEl) curPriceSecondaryFromNameEl.parentNode.removeChild(curPriceSecondaryFromNameEl)
             }
    
-            //if (!hasSavingPriceSet) {
-               const fbraProductPrices = []
+            const fbraProductPrices = []
 
-               // Get price main
-               if (fbraProductMainPriceElem) {
-                  if (typeof fbraProductMainPriceElem.children[1] !== "undefined" && typeof fbraProductMainPriceElem.children[3] !== "undefined") {
+            // Get price main
+            if (fbraProductMainPriceElem) {
+               if (typeof fbraProductMainPriceElem.children[1] !== "undefined" && typeof fbraProductMainPriceElem.children[3] !== "undefined") {
+                  fbraProductPrices.push({
+                     value: parseFloat(fbraProductMainPriceElem.children[1].textContent.trim()),
+                     format: fbraProductMainPriceElem.children[3].textContent.trim()
+                  }) 
+               }
+            }
+
+            // Get price secondary
+            if (fbraProductSecondaryPriceElem) {
+               if (typeof fbraProductSecondaryPriceElem.children[3] !== "undefined") {
+                  fbraProductPrices.push({
+                     value: parseFloat(fbraProductSecondaryPriceElem.children[3].textContent.trim()),
+                  }) 
+               }
+            } else {
+               // Extracting price list from name
+               const fbraProductNameEl = fbraProductItemEl.querySelector('.fbra_productName')
+               if (fbraProductNameEl) {
+                  const priceSecondaryFromName = extractPriceListFromString(fbraProductNameEl.textContent)
+                  if (priceSecondaryFromName) {
                      fbraProductPrices.push({
-                        value: parseFloat(fbraProductMainPriceElem.children[1].textContent.trim()),
-                        format: fbraProductMainPriceElem.children[3].textContent.trim()
+                        value: parseFloat(priceSecondaryFromName.value),
                      }) 
                   }
                }
+            }
 
-               // Get price secondary
-               if (fbraProductSecondaryPriceElem) {
-                  if (typeof fbraProductSecondaryPriceElem.children[3] !== "undefined") {
-                     fbraProductPrices.push({
-                        value: parseFloat(fbraProductSecondaryPriceElem.children[3].textContent.trim()),
-                     }) 
-                  }
-               } else {
-                  // Extracting price list from name
-                  const fbraProductNameEl = fbraProductItemEl.querySelector('.fbra_productName')
-                  if (fbraProductNameEl) {
-                     const priceSecondaryFromName = extractPriceListFromString(fbraProductNameEl.textContent)
-                     if (priceSecondaryFromName) {
-                        fbraProductPrices.push({
-                           value: parseFloat(priceSecondaryFromName.value),
-                        }) 
+            if (fbraProductPrices.length > 0) {
+               if (typeof fbraProductPrices[0] !== "undefined" && typeof fbraProductPrices[1] !== "undefined") {
+                  const amountSavings = (fbraProductPrices[1].value - fbraProductPrices[0].value).toFixed(2)
+
+                  if (! curSavingsElem) {
+                     const savingsElem = document.createElement('p')
+                     savingsElem.classList.add('fbra_productSecondaryPrice')
+                     savingsElem.setAttribute('data-name', 'savings')
+
+                     // Verify both prices has set
+                     savingsElem.innerHTML = `
+                        <span>Ahorro </span>
+                        <span>S/${amountSavings}</span>
+                     `
+
+                     if (fbraProductPriceSection) {
+                        fbraProductPriceSection.appendChild(savingsElem)
                      }
-                  }
-               }
-
-               if (fbraProductPrices.length > 0) {
-                  if (typeof fbraProductPrices[0] !== "undefined" && typeof fbraProductPrices[1] !== "undefined") {
-                     const amountSavings = (fbraProductPrices[1].value - fbraProductPrices[0].value).toFixed(2)
-   
-                     if (! curSavingsElem) {
-                        const savingsElem = document.createElement('p')
-                        savingsElem.classList.add('fbra_productSecondaryPrice')
-                        savingsElem.setAttribute('data-name', 'savings')
-   
-                        // Verify both prices has set
-                        savingsElem.innerHTML = `
-                           <span>Ahorro </span>
-                           <span>S/${amountSavings}</span>
+                     if (!fbraProductSecondaryPriceElem) {
+                        const priceSecondaryFromNameEl = document.createElement('p')
+                        priceSecondaryFromNameEl.classList.add('fbra_productSecondaryPrice')
+                        priceSecondaryFromNameEl.setAttribute('data-name', 'price-normal')                        
+                        priceSecondaryFromNameEl.innerHTML = `
+                           <span>Antes </span>
+                           <span>S/${fbraProductPrices[1].value.toFixed(2)}</span>
                         `
-
-                        if (fbraProductPriceSection) {
-                           fbraProductPriceSection.appendChild(savingsElem)
-                        }
-                        if (!fbraProductSecondaryPriceElem) {
-                           const priceSecondaryFromNameEl = document.createElement('p')
-                           priceSecondaryFromNameEl.classList.add('fbra_productSecondaryPrice')
-                           priceSecondaryFromNameEl.setAttribute('data-name', 'price-normal')                        
-                           priceSecondaryFromNameEl.innerHTML = `
-                              <span>Antes </span>
-                              <span>S/${fbraProductPrices[1].value.toFixed(2)}</span>
-                           `
-                           fbraProductPriceSection.appendChild(priceSecondaryFromNameEl)
-                        }
-                     } else {
-                        //curSavingsElem.querySelectorAll('span')[0].textContent = 'Ahorro'
-                        curSavingsElem.querySelectorAll('span')[1].textContent = amountSavings
-                        if (curPriceSecondaryFromNameEl) {
-                           curPriceSecondaryFromNameEl.querySelectorAll('span')[1].textContent = fbraProductPrices[1].value.toFixed(2)
-                        }
+                        fbraProductPriceSection.appendChild(priceSecondaryFromNameEl)
+                     }
+                  } else {
+                     //curSavingsElem.querySelectorAll('span')[0].textContent = 'Ahorro'
+                     curSavingsElem.querySelectorAll('span')[1].textContent = amountSavings
+                     if (curPriceSecondaryFromNameEl) {
+                        curPriceSecondaryFromNameEl.querySelectorAll('span')[1].textContent = fbraProductPrices[1].value.toFixed(2)
                      }
                   }
                }
+            }
 
-               fbraProductItemEl.classList.add('jsHasMissingPrices')
-            //}
+            fbraProductItemEl.classList.add('jsHasMissingPrices')
          }
       }
    } catch(e){
@@ -364,12 +383,58 @@ const renderMissingPrices = () => {
    }
 }
 
+// Init intersection observers
+const handleScrollToTop = (target) => {
+   if (typeof target !== "undefined") {
+      const buildThresholdList = () => {
+         var thresholds = [];
+         var numSteps = 20;
+       
+         for (var i = 1.0; i <= numSteps; i++) {
+           var ratio = i / numSteps;
+           thresholds.push(ratio);
+         }
+       
+         thresholds.push(0);
+         return thresholds;
+      }
+
+      const options = {
+         root: null,
+         //rootMargin: '3446px',
+         rootMargin: `${document.body.scrollHeight - sectionNewsEl.offsetTop}px`,
+         thresholds: buildThresholdList()
+      }
+
+      const observer = new IntersectionObserver((entries, observer) => {            
+         entries.forEach(entry => {
+            if (scrollToTopEl) {
+               if (entry.isIntersecting) {
+                  scrollToTopEl.classList.add('is-visible')
+               } else {
+                  scrollToTopEl.classList.remove('is-visible')
+               }
+            }
+         })
+      }, options)
+      observer.observe(target)
+
+      if (scrollToTopEl) {
+         scrollToTopEl.addEventListener('click', e => {
+            e.preventDefault()
+            window.scrollTo(0, 0)
+         })
+      }
+   }
+}
+
+// Init mutation observers
 const initMutationObservers = (targets) => {
    if (typeof targets !== "undefined" && targets.length > 0) {
       for (let i = 0; i < targets.length; i++) {
          const observer = new MutationObserver((mutations) => {
             mutations.map(mutation => {
-               if (!mutation.target.classList.contains('fbra_loadingWrapper--isLoading') && mutation.type === "childList") {
+               if (!mutation.target.classList.contains('fbra_loadingWrapper--isLoading') && mutation.type === "childList") {                  
                   improveProdImagesSrcs()
                   renderMissingPrices()
                   appendSeeAllCategoryItemToCategoryList()
@@ -386,16 +451,46 @@ const initMutationObservers = (targets) => {
    } 
 }
 
-;(function(document, window, domIsReady) {
+
+//Fix category icons issue
+const setTabNavIcons = () => {
+   const catListTabElems = document.querySelectorAll('.fbra_categoryListTab')
+   if (catListTabElems.length > 0) {
+      for(let i = 0; i < catListTabElems.length; i++) {
+         const catListTabIconEl = catListTabElems[i].querySelector('.icono-cyber')
+         const catListTabTextEl = catListTabElems[i].querySelector('.fbra_categoryListTab__text')
+
+         if (catListTabIconEl && catListTabTextEl) {
+            const iconClassName = slugify(catListTabTextEl.textContent.trim())
+            catListTabIconEl.classList.add('c-icon-cat', `c-icon-cat-${iconClassName}`)
+            catListTabElems[i].setAttribute('title', catListTabTextEl.textContent.trim())
+         }
+      }
+   }
+   
+}
+
+const createScrollToTopRefEl = () => {
+   scrollToTopRefElem = document.createElement('div')
+   scrollToTopRefElem.classList.add('scrolltotop-intersect-ref')
+   document.body.appendChild(scrollToTopRefElem)
+}
+
+;(function(d, w, domIsReady) {
    domIsReady(function() {
 
-      productListWrapperEl = document.querySelector('.fbra_productList .fbra_loadingWrapper')
+      productListWrapperEl = d.querySelector('.fbra_productList .fbra_loadingWrapper')
+      sectionNewsEl = d.querySelector('.section-news')
+      scrollToTopEl = d.querySelector('.button-back-to-top')
+
+      createScrollToTopRefEl()
 
       initMutationObservers([ productListWrapperEl ])
 
+      handleScrollToTop(scrollToTopRefElem)
+
       // Init Slider intro
       new SliderIntro('#swiper-slider-intro', {
-         data: typeof dataShowcases !== "undefined" ? dataShowcases : {},
          imageSelector: '.js-swiper-slide-image',
          selectorBtnNext: '.swiper-slider-intro-btn-next',
          selectorBtnPrev: '.swiper-slider-intro-btn-prev',
@@ -429,7 +524,10 @@ const initMutationObservers = (targets) => {
       // Append 'see all category' banner to category list
       appendSeeAllCategoryItemToCategoryList()
 
-      //handleClickProductListTab()
+      // Set product list tab navigation icons
+      setTabNavIcons()
+
+      handleClickProductListTab()
 
       // Init productlist navigation improvements
       new ProductListNavigation('#fbra_categoryList', {

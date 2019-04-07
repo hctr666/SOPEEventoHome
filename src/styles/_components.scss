@@ -1,4 +1,4 @@
-//@import './components/swiper-tabs';
+@import './variables';
 
 #main {
     .btn {
@@ -20,5 +20,58 @@
     
     .btn-text-white {
         color: #fff;
+    }
+}
+
+
+.hover-effect-default {
+    opacity: 1;
+    transition: ease-in-out .3s;
+    &:hover {
+        filter: contrast(1.1);
+        opacity: .75 !important;
+    }    
+}
+
+.button-back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 58px;
+    height: 58px;
+    background-color: $brandPrimary;
+    z-index: 2;
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.63);
+    opacity: 0;
+    pointer-events: none;
+    transition: ease-in-out .25s;
+    &.is-visible {
+        opacity: 1;
+        pointer-events: all;
+    }
+    > span {
+        display: flex;
+        position: relative;
+        height: 100%;
+        align-items: center;
+        > span {
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 22px;
+            background: #fff;
+            top: 18px;
+        }
+        &:before {
+            left: 20px;
+            transform: rotate(50deg);
+        }
+        &:after {
+            right: 20px;
+            transform: rotate(-50deg);
+        }
+       }
     }
 }

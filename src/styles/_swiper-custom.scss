@@ -1,3 +1,5 @@
+@import './mixins';
+
 .swiper-container {
     &.swiper-custom-carousel {
         @include swiperCustomCarousel();
@@ -10,7 +12,7 @@
 .swiper-custom-button {
     height: 89px;
     width: 41px;
-    background: rgba(0, 0, 0, 0.54);
+    /*background: rgba(0, 0, 0, 0.54);*/
     position: absolute;
     top: 50%;
     margin-top: -44px;
@@ -25,8 +27,9 @@
             content: '';
             position: absolute;
             right: 50%;
-            width: 1px;
+            width: 2px;
             height: 37px;
+            box-shadow: 0 5px 7px 0px rgba(0,0,0,.32);
             background: $colorWhite;
         }
         &:before {
@@ -45,8 +48,9 @@
             content: '';
             position: absolute;
             left: 50%;
-            width: 1px;
+            width: 2px;
             height: 37px;
+            box-shadow: 0 5px 7px 0px rgba(0,0,0,.32);
             background: $colorWhite;
         }
         &:before {

@@ -1,13 +1,15 @@
-import Swiper from 'swiper'
-import { throttle } from './utils'
+import Swiper from 'swiper/dist/js/swiper'
+import { throttle, hasWebpSupport } from './utils'
 
 export default class SliderIntro {
    constructor(selector, options) {
       this.selector = selector
+      this.paramWebpAlpha = hasWebpSupport() ? '&fmt=webp-alpha' : '&fmt=png-alpha'
+      this.paramWebp = hasWebpSupport() ? '&fmt=webp' : ''
       this.defaults = {
          breakpoints: {
-            small: 480,
-            medium: 800,
+            small: 500,
+            medium: 900,
          }
       }
       this.options = Object.assign(this.defaults, options)
@@ -27,13 +29,13 @@ export default class SliderIntro {
             let imageElem = this.imageElements[i]
 
             if (this.isDeviceSmall) {
-               imageElem.node.style.backgroundImage = `url(${imageElem.imgSmall})`
+               imageElem.node.style.backgroundImage = `url(${imageElem.imgSmall}${this.paramWebp})`
             }
             if (this.isDeviceMedium) {
-               imageElem.node.style.backgroundImage = `url(${imageElem.imgMedium})`
+               imageElem.node.style.backgroundImage = `url(${imageElem.imgMedium}${this.paramWebp})`
             }
             if (this.isDeviceLarge) {
-               imageElem.node.style.backgroundImage = `url(${imageElem.imgLarge})`
+               imageElem.node.style.backgroundImage = `url(${imageElem.imgLarge}${this.paramWebpAlpha})`
             }
          }
       }
@@ -116,7 +118,7 @@ export default class SliderIntro {
                
                return `
                   <div class="${className}">
-                     <span>
+                     <span class="fullw no-overflow">
                         <span class="slider-intro-nav-description block fullw bold text-uppercase text-left">${data.title}</span>
                         <span class="slider-intro-nav-price block fullw text-left">S/ ${data.price}</span>
                      </span>

@@ -25,6 +25,18 @@ const domIsReady = (function (domIsReady) {
    return domIsReady;
 })(domIsReady || {});
 
+// Verify if browser supports image/webp image
+const hasWebpSupport = () => {
+   const elem = document.createElement('canvas');
+
+   if (!!(elem.getContext && elem.getContext('2d'))) {
+       // was able or not to get WebP representation
+       return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+   }
+
+   // very old browser like IE 8, canvas not supported
+   return false;
+}
 
 // Helper to add event listeners to element
 const attachEvent = (elements, type, listener, callback) => {
@@ -120,11 +132,28 @@ const throttle = (fn, wait) => {
    }
 }
 
+const slugify = string => {
+   const a = 'àáäâãåăæçèéëêǵḧìíïîḿńǹñòóöôœṕŕßśșțùúüûǘẃẍÿź·/_,:;'
+   const b = 'aaaaaaaaceeeeghiiiimnnnoooooprssstuuuuuwxyz------'
+   const p = new RegExp(a.split('').join('|'), 'g')
+
+   return string.toString().toLowerCase()
+       .replace(/\s+/g, '-') // Replace spaces with -
+       .replace(p, c => b.charAt(a.indexOf(c))) // Replace special characters
+       .replace(/&/g, '-and-') // Replace & with 'and'
+       .replace(/[^\w\-]+/g, '') // Remove all non-word characters
+       .replace(/\-\-+/g, '-') // Replace multiple - with single -
+       .replace(/^-+/, '') // Trim - from start of text
+       .replace(/-+$/, '') // Trim - from end of text
+}
+
 module.exports = {
    domIsReady : domIsReady,
    attachEvent: attachEvent,
    detachEvent: detachEvent,
    isTouchMode: isTouchMode,
-   throttle: throttle
+   throttle: throttle,
+   hasWebpSupport: hasWebpSupport,
+   slugify: slugify
 }
 

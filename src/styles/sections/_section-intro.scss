@@ -1,12 +1,49 @@
 @import './../mixins';
+@import './../variables';
 
 $paginationHeightDesktop: 55px;
 $paginationWithContentBreakpoint: 915px;
 
+.section-intro-logo {
+    height: 47px;
+    background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-mb-winner?fmt=png-alpha&wid=242&hei=50');
+    background-position: center -7px;
+    background-repeat: no-repeat;
+    border-top: 5px $brandPink solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    @media (max-width: $bp-small) {
+        background-color: #2b8cae;
+    }
+    @media (min-width: $bp-small + 101px) {
+        height: 67px;
+        background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-winner?fmt=png-alpha&wid=1200&hei=80');
+    }
+}
+
+.supports-webp {
+    .section-intro-bg {
+        background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/fondo-winner?fmt=webp&wid=1920&hei=450');
+    }    
+}
+
+.section-intro-bg {
+    background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/fondo-winner?wid=1920&hei=450');
+    background-position: center -10px;
+    background-repeat: repeat no-repeat;
+    background-size: 100% 450px;
+    padding-top: 47px;
+    @media (min-width: $bp-small + 101px) {
+        padding-top: 67px;
+    }
+}
+
 .swiper-slider-intro {
     width: 100%;
     height: auto;
-    background: red;
     @media (min-width: $paginationWithContentBreakpoint + 1px) {
         padding-bottom: $paginationHeightDesktop;
     }
@@ -59,16 +96,16 @@ $paginationWithContentBreakpoint: 915px;
     }
 
     .swiper-slide-image {
-        padding-bottom: 92%;
+        padding-bottom: 74%;
         transition: ease-in-out .15s;
         background-position: center;
-        background-size: 100% 100%;
-        @media (min-width: $bp-xsmall + 1px) {
-            padding-bottom: 60%;
+        background-size: 100%;
+        @media (min-width: $bp-xsmall + 21px) {
+            padding-bottom: 46%;
         }
-        @media (min-width: $bp-small + 1px) {
-            padding-bottom: 420px;
-            background-size: auto 420px;
+        @media (min-width: $bp-small + 101px) {
+            padding-bottom: 370px;
+            background-size: auto 370px;
             background-repeat: no-repeat;
         }
     }

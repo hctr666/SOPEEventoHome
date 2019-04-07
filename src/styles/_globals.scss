@@ -1,5 +1,15 @@
 @import './variables';
 
+.full-container {
+   &.breadrumbWrap {
+      display: none !important;
+   }
+}
+
+#chat-widget {
+   display: none !important;
+}
+
 #main {
    margin-top: 0 !important;
    > .container {
