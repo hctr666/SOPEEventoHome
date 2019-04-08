@@ -25,6 +25,7 @@
         "babel-preset-es2015": "^6.24.1",
         "blazy": "^1.8.2",
         "intersection-observer": "^0.5.1",
+        "moment": "^2.24.0",
         "mutation-observer": "^1.0.3",
         "normalize.css": "^8.0.0",
         "simplegrid": "^1.0.2",

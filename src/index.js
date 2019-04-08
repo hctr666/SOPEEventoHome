@@ -226,12 +226,17 @@ const lazyImages = () => {
          if (! imageElems[i].classList.contains('b-loaded')) {
             if (imageElems[i].dataset.srcset) {
                imageElems[i].setAttribute('srcset', `${getURLWithFmt(imageElems[i].dataset.srcset)}`)
+               delete imageElems[i].dataset.srcset
             }
             if (imageElems[i].dataset.src) {
                imageElems[i].src = getURLWithFmt(imageElems[i].dataset.src)
+               delete imageElems[i].dataset.src
             }
             imageElems[i].classList.add('b-loaded')
          }
+      }
+      if (typeof picturefill === "function") {
+         picturefill()
       }
    }
 }

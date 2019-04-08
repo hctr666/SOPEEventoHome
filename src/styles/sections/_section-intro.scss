@@ -6,7 +6,7 @@ $paginationWithContentBreakpoint: 915px;
 
 .section-intro-logo {
     height: 47px;
-    background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-mb-winner?fmt=png-alpha&wid=242&hei=50');
+    background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-mb-winner-1?fmt=png-alpha&wid=242&hei=50');
     background-position: center -7px;
     background-repeat: no-repeat;
     border-top: 5px $brandPink solid;
@@ -20,7 +20,7 @@ $paginationWithContentBreakpoint: 915px;
     }
     @media (min-width: $bp-small + 101px) {
         height: 67px;
-        background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-winner?fmt=png-alpha&wid=1200&hei=80');
+        background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-winner-1?fmt=png-alpha&wid=1200&hei=80');
     }
 }
 
@@ -76,7 +76,7 @@ $paginationWithContentBreakpoint: 915px;
                 border-radius: 0;
                 height: $paginationHeightDesktop;
                 padding: 10px 12px;
-                width: calc(100% / 5);
+                width: calc(100% / 4);
                 opacity: 1;
                 float: left;
                 display: flex;

@@ -64,8 +64,11 @@
 
 .banner-phone-sales {
     padding: 0;
-    height: 84px;
     overflow: hidden;
+    height: 74px;
+    @media (min-width: $bp-small + 1px) {
+        height: 64px;
+    }
     > div{
         height: 100%;
         padding: 12px;

@@ -1,4 +1,5 @@
 import Countdown from './countdown'
+import moment from 'moment'
 
 const URL_DATA_SHEET = ''
 
@@ -60,11 +61,11 @@ export default class DailyDeals {
                res.feed.entry.map((item, i) => {
                   const _startDate = this.createDate(item[START_DATE].$t, item[START_TIME].$t)
                   const _endDate = this.createDate(item[END_DATE].$t, item[END_TIME].$t)
-                  const nowDate = new Date()
+                  const nowDate = moment()
                   
                   // Verify date now is between dates
                   if (_startDate && _endDate) {
-                     if (nowDate.getTime() >= _startDate.getTime() && nowDate.getTime() <= _endDate.getTime()) {
+                     if (nowDate.valueOf() >= _startDate.valueOf() && nowDate.valueOf() <= _endDate.valueOf()) {
                         this.dealCode = item[CODE].$t
                         this.dealName = item[NAME].$t
                         this.dealPriceList  = item[PRICE_LIST].$t
@@ -190,13 +191,10 @@ export default class DailyDeals {
 
    createDate(rawDate, rawTime) {
       if (typeof rawDate !== "undefined" && typeof rawTime !== "undefined") {
-         rawTime = rawTime
-                     .replace('p. m.', 'pm.')
-                     .replace('a. m.', 'am.')
-                     .replace('p.m.', 'pm.')
-                     .replace('a.m.', 'am.')
-
-         const date = new Date(`${rawDate} ${rawTime}`)
+         rawTime = rawTime.replace(/(pm|p.m|pm.|p. m.)/, 'PM')
+                          .replace(/(am|a.m|am.|a. m.)/, 'AM')
+         
+         const date = moment(`${rawDate} ${rawTime}`, 'YYYY-MM-DD HH:mm:ss')
          
          if (isNaN(date)) {
             return null
