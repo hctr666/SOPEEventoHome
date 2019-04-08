@@ -1,172 +1,22 @@
-@import './../mixins';
-
-.fbra_heading.fbra_hurryBuyMessage {
-   font-size: 1.75rem;
-   font-weight: 600 !important;
-   white-space: normal !important;
+.fbra_seeAllCategoryItem {
+   &:before {
+      content: '';
+      position: absolute;
+      width: 103%;
+      bottom: -3px;
+      height: 44px;
+      opacity: .2;
+      z-index: 0;
+      background-image: url('../assets/img/icons/logo-cat.png') !important;
+      background-repeat: no-repeat !important;
+      background-position: 84% 104% !important;
+   }
+   > a {
+      > span {
+         padding: 0 12px;
+         font-size: 1.5rem;
+         line-height: 1.9rem;
+         margin-bottom: 10px;
+      }
+   }
 }
-
-.fbra_falabellaComponentHomePageCategoryList {
-    .fbra_categoryListHeaderContainer {
-       > .fbra_heading {
-          @include sectionHeading();
-       }
-    }
-    .fbra_test_categoryListHeader {
-       font-weight: 400 !important;
-       font-size: 3em !important;
-    }
-    .fbra_categoryList {
-       max-width: $containerMaxWidth !important;
-       margin: auto !important;
-       .fbra_categoryItem {
-          @media (max-width: $bp-medium) {
-             height: auto !important;
-          }
-       }
-    }
-    .fbra_categoryHeader_conatainer {
-       padding: 14px 13px 10px;
-       .fbra_categoryHeader_text {
-          font-size: 1.5em !important;
-          margin: 0 !important;
-          padding-top: 0;
-          @media (max-width: $bp-medium) {
-             font-size: 1.1em !important;
-             text-overflow: ellipsis;
-             white-space: nowrap;
-             overflow: hidden;
-          }
-       }
-       .fbra_categoryHeaderSeeCategory_button {
-          text-transform: uppercase;
-          text-align: center;
-          display: inline-block;
-          @media (max-width: $bp-medium) {
-             font-size: .525em;
-          }
-          @media (max-width: $bp-xsmall) {
-             font-size: 0.45em;
-             line-height: 2em;
-             letter-spacing: .5px;
-          }
-       }
-       .fbra_heading {
-          .fbra_categoryHeader_heilights {
-             font-weight: 300;
-          }
-          .fbra_categoryHeader_name {
-             font-weight: 500;
-          }
-       }
-    }
-    .fbra_categoryListTab {
-       margin-right: 0 !important;
-       display: flex !important;
-       justify-content: center !important;
-       align-items: center !important;
-       //width: calc(100% / 14);
- 
-       .fbra_categoryItem {
-          overflow: hidden !important;
-          padding: 12px 5px 5px !important;
-       }
-    
-       .fbra_categoryListTab__text {
-          overflow: hidden !important;
-          text-overflow: ellipsis !important;
-          font-size: 1.1rem !important;
-       }
-    }
- 
-    .fbra_productListMob {
-       -webkit-overflow-scrolling: touch;
-    }
- 
-    .fixedCategoryHeader {
-       top: $headerFixedHeight !important;
-       padding: 0;
-       @media (max-width:$bp-medium) {
-          top: $headerHeightMobile !important;
-          overflow-x: scroll;
-          overflow-y: hidden;
-          -webkit-overflow-scrolling: touch;
-       }
-    }
- 
-    .fbra_productsContainer {
-       max-width: $containerMaxWidth !important;
-       margin: auto;
-    }
- 
-    .fbra_productList {
-       .fbra_productItem {
-          padding: 0 5px;
-          width: 20%;
-          @media (max-width: $bp-medium) {
-             max-width: 200px;
-          }
-          .fbra_productListItem {
-             box-shadow: 0px 0px 4px -3px rgba(0,0,0,.51);
-             border-radius: 2px;
-             background: $colorWhite !important;
-             height: 410px !important;
-             position: relative;
-             .fbra_productPriceSection {
-                .fbra_productMainPrice {
-                    margin: 0 0 5px 0 !important;
-                    font-size: 1.65rem !important;
-                    font-weight: 600;
-                }
-             }
-             @media (max-width: $bp-medium) {
-                width: 200px;
-             }
- 
-             @media screen and (max-width: 420px) and (min-width: 341px) {
-                height: 408px !important;
-             }
-
-             @media screen and (max-width: 460px) and (min-width: 421px) {
-                height: 410px !important;
-             }
-
-             @media (max-width: 340px) {
-                height: 412px !important;
-             }
- 
-             .fbra_productImage {
-                border: 0 !important;
-                text-align: center !important;
-                img {
-                   right: 0 !important;
-                   top: 0 !important;
-                   &:not(.fbra_productImage__cyberLogo) {
-                      width: 175px !important;
-                      height: 175px !important;
-                   }
-                }
-             }
-          
-             &:hover {
-                box-shadow: none !important;
-             }
- 
-             .fbra_productButtonContainer {
-                left: 3%;
-                padding: 0;
-                bottom: 8px;
-                width: 94%;
-             }
-          }
-       }
-    }
- }
- 
- .fbra_falabellaComponent {
-    background: $greyLighter;
- }
-
- .fbra_falabellaComponentHomePageCategoryList {
-    margin-bottom: 0 !important;
- }

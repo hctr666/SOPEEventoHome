@@ -7,12 +7,22 @@
     background-repeat: no-repeat;
     background-size: 5rem 5rem;
 
+    &.c-icon-cyberwow {
+        width: 80px;
+        background-image: url('../assets/img/icons/logo-cat.png');
+        background-size: 68px;
+        position: absolute;
+        background-position-x: 12px;
+        top: 0;
+        left: 0;
+    }
+
     &.c-icon-phone {
-        background-image: url('../assets/img/icons/venta-telefonica.svg')
+        background-image: url('../assets/img/icons/venta-telefonica.svg');
     }
 
     &.c-icon-shield {
-        background-image: url('../assets/img/icons/compra-tranquilo.svg')
+        background-image: url('../assets/img/icons/compra-tranquilo.svg');
     }
 
     &.c-icon-card {

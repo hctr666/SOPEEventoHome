@@ -1,11 +1,26 @@
 @import './../variables';
 
+.section-dailydeals {
+    @media (max-width: $bp-small) {
+        background-color: $greyLighter;
+        .section-title {
+            color: $colorDark;
+        }
+    }
+    .section-wrapper {
+        @media (max-width: $bp-small) {
+            padding-bottom: 12px;
+        }
+    }
+}
+
 .content-daily-deals {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    border: 1px #ddd solid;
+    //border: 1px $brandPink solid;
     transition: ease-in-out .2s;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.48);
     @media (min-width: $bp-small + 1px){
         flex-wrap: nowrap;
         border-radius: 3px;
@@ -13,6 +28,8 @@
     @media (max-width: $bp-small) {
         border-left: 0;
         border-right: 0;
+        width: 95.5%;
+        margin: auto;
         .daily-deals-container:nth-child(1) {
             order: 2;
             border-left: 0;

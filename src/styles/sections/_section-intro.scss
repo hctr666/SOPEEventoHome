@@ -66,17 +66,28 @@ $paginationWithContentBreakpoint: 915px;
         @media (max-width: $paginationWithContentBreakpoint) {
             //@include horizontalScroll()
             text-align: center;
+            position: relative;
+            background: #114765;
+            bottom: 0;
+            padding: 5px 0;
         }
+        
     }
     .swiper-pagination-bullets {
         .swiper-pagination-bullet {
             transition: ease-in-out .15s;
+            @media (max-width: $paginationWithContentBreakpoint) {
+                width: 14px;
+                height: 14px;
+                background: $greyLighter;
+                opacity: .6;
+            }
             @media (min-width: $paginationWithContentBreakpoint + 1px) {
                 margin: 0;
                 border-radius: 0;
                 height: $paginationHeightDesktop;
                 padding: 10px 12px;
-                width: calc(100% / 4);
+                width: calc(100% / 5);
                 opacity: 1;
                 float: left;
                 display: flex;
@@ -87,6 +98,10 @@ $paginationWithContentBreakpoint: 915px;
                 border-bottom: 3px transparent solid;
             }
             &.swiper-pagination-bullet-active {
+                @media (max-width: $paginationWithContentBreakpoint) {
+                    background: $brandPink;
+                    opacity: 1;
+                }
                 @media (min-width: $paginationWithContentBreakpoint + 1px) {
                     //background: $greyLight;}
                     border-bottom: 3px $brandPrimary solid;

@@ -276,7 +276,8 @@ const appendSeeAllCategoryItemToCategoryList = () => {
             seeAllCategoryItem.innerHTML = `
                <div class="fbra_productListItem destaHome fbra_seeAllCategoryItem">
                   <a href="${seeAllCategoryLinkEl.href}" class="fullh d-flex d-flex-col-middle no-decoration fbra_anchor fbra_productListItem_Link text-center white-space-normal">
-                     <span class="block">Ver todo</span>
+                     <span class="block c-icon c-icon-cyberwow"></span>
+                     <span class="block">Descubre aquí más productos de</span>
                      <h4 class="fbra_seeAllCategoryItem_name">${categoryHeaderNameEl.textContent}</h4>
                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAABNElEQVRYCe2WoU4DQRCG59oEUVVDMCS8UZM6SoLAY+ruDRCg60l4AQRB4asQKDSqICpON/3IAMldNnt3A9xlmnRX3d7OzXz359/ZFUkjKZAUSAokBXwVAGbAGngGjn1pfqoDH5TjBRi7gwHvJdPX0xIYuYIBF8A2ALsHht5geQCl01sg8wZbRMCuvKGGwF0EbO4NdgA8BWDqt9N/gwHTyK4Kav1qugEmTWCt5gNWInLUlOQPa29Zlp3UfTeoW6i8t8RUwk2PjS3CUvBSRApTKVsQIuJjeECN/hC4TY1+ZmPvOEobZU1LyDsuZU8HXAcK6fTGnqHjSCB2zGgjbd3pHaN8p1O/RA7kR/VXLwUtSSNNdieuLquKl16BQ8vP9BoDnAMFoArtxnW41z9OyZMCSYF9VeATPJ/LM+hBPtAAAAAASUVORK5CYII=" />
                   </a>
@@ -431,7 +432,7 @@ const handleScrollToTop = (target) => {
       if (scrollToTopEl) {
          scrollToTopEl.addEventListener('click', e => {
             e.preventDefault()
-            window.scrollTo(0, 0)
+            document.body.scrollIntoView()
          })
       }
    }

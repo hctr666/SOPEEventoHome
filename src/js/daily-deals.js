@@ -168,7 +168,7 @@ export default class DailyDeals {
       if (this.priceListElem) this.priceListElem.innerHTML = this.getPriceParsed(this.dealPriceList)
 
       if (this.amountSavingsElem) {
-         this.amountSavingsElem.innerHTML = this.getPriceParsed(parseFloat(this.dealPriceList) - parseFloat(this.dealPricePromo))
+         this.amountSavingsElem.innerHTML = this.getPriceParsed(parseFloat(this.dealPriceList.replace(',', '')) - parseFloat(this.dealPricePromo.replace(',', '')))
       }
 
       if (this.promoBadgeElem && this.dealIsCMR) {
