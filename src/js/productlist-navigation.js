@@ -15,6 +15,10 @@ export default class ProductListNavigation {
       this.selector = selector
       this.defaults = {}
       this.tabActiveIndex = 0
+      this.windowY = window.pageYOffset
+      this.desktopMainNavFixedHeight = 41
+      this.mobileMainNavFixedHeight = 57
+      this.breakpointBase = 1000
       this.setOptions(options)
       this.setElements()
       this.init()
@@ -29,6 +33,11 @@ export default class ProductListNavigation {
       this.$tabs = this.$container.querySelectorAll(this.options.tabsSelector)
       this.$tabActive = this.$tabs[this.tabActiveIndex]
       this.totalTabs = this.$tabs.length
+      this.tabsWrapperEl = document.getElementById('fbra_categoryList')
+      
+      if (this.tabsWrapperEl) {
+         this.tabsWrapperTop = this.tabsWrapperEl.offsetTop
+      }
    }
 
    init() {
@@ -65,5 +74,19 @@ export default class ProductListNavigation {
             this.containerScrollLeft = this.$container.scrollLeft
          }, 90))
       }
+
+      // Improve navtablist fixed position on scroll
+      document.addEventListener('scroll', e => {
+         this.windowY = window.pageYOffset
+         let limitYOffset = window.innerWidth <= this.breakpointBase 
+            ? this.tabsWrapperTop 
+            : this.tabsWrapperTop - this.desktopMainNavFixedHeight
+         
+         if (this.windowY >= limitYOffset) {
+            this.tabsWrapperEl.classList.add('fixedCategoryHeader')
+         } else {
+            this.tabsWrapperEl.classList.remove('fixedCategoryHeader')
+         }
+      })
    }
 }

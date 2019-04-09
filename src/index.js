@@ -5,13 +5,15 @@ import {
    domIsReady,
    isTouchMode,
    hasWebpSupport,
-   slugify
+   slugify,
+   isIOS
 } from './js/utils'
 import ProductListNavigation from './js/productlist-navigation'
 import SliderIntro from './js/slider-intro'
 import DailyDeals from './js/daily-deals'
 import Swiper from 'swiper/dist/js/swiper'
 import MutationObserver from 'mutation-observer'
+import './js/latest-products'
 require('intersection-observer')
 
 let productListWrapperEl = null
@@ -33,6 +35,10 @@ const addHTMLClasses = () => {
 
    if (hasWebpSupport()) {
       document.documentElement.classList.add('supports-webp')
+   }
+   
+   if (isIOS()) {
+      document.documentElement.classList.add('ios')
    }
 }
 
@@ -431,8 +437,11 @@ const handleScrollToTop = (target) => {
 
       if (scrollToTopEl) {
          scrollToTopEl.addEventListener('click', e => {
-            e.preventDefault()
-            document.body.scrollIntoView()
+            if (typeof document.body.scrollIntoView === "function") {
+               document.body.scrollIntoView()
+            } else {
+               window.scrollTo(0, 0)
+            }
          })
       }
    }
@@ -540,9 +549,11 @@ const createScrollToTopRefEl = () => {
       handleClickProductListTab()
 
       // Init productlist navigation improvements
-      new ProductListNavigation('#fbra_categoryList', {
-         tabsSelector: '.fbra_categoryListTab'
-      })
+      setTimeout(() => {
+         new ProductListNavigation('#fbra_categoryList', {
+            tabsSelector: '.fbra_categoryListTab'
+         })
+      }, 1500)
 
       // Init lazy images
       lazyImages()

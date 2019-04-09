@@ -147,6 +147,10 @@ const slugify = string => {
        .replace(/-+$/, '') // Trim - from end of text
 }
 
+const isIOS = () => {
+   return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+}
+
 module.exports = {
    domIsReady : domIsReady,
    attachEvent: attachEvent,
@@ -154,6 +158,7 @@ module.exports = {
    isTouchMode: isTouchMode,
    throttle: throttle,
    hasWebpSupport: hasWebpSupport,
-   slugify: slugify
+   slugify: slugify,
+   isIOS: isIOS
 }
 

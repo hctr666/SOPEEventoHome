@@ -1,0 +1,72 @@
+.feed-product-progress {
+    height: 8px;
+    background: #eee;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .feed-product-name {
+    height: 34px;
+    overflow: hidden;
+  }
+  
+  .feed-product-progress span {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    left: 0;
+    background: rgba(221, 0, 33, 0.7);
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .feed-product-info {
+    letter-spacing: 1px;
+  }
+  
+  .feed-products {
+    .swiper-container {
+      min-height: 350px;
+      padding-bottom: 45px;
+      margin-bottom: 10px;
+    }
+    .swiper-pagination {
+      left: initial;
+      margin: 0;
+    }
+    .swiper-wrapper {
+      height: 393px;
+    }
+  }
+  
+  .feed-product-prices {
+    color: #000;
+    .feed-product-price-savings,
+    .feed-product-price-secondary {
+        line-height: 1.5rem;
+        margin-bottom: 5px !important;
+    }
+  }
+  
+  .feed-product-name {
+    font-size: 1.29em;
+    letter-spacing: 1px;
+  }
+  
+  .feed-product-item {
+    padding: 12px 15px;
+    background: #fff;
+    box-shadow: 0 1px 10px -4px rgba(0, 0, 0, 0.35);
+    height: 100%;
+  }
+  
+  @media (max-width: 800px) {
+    .feed-products .swiper-container {
+      overflow: visible;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feed-products .swiper-slide {
+      width: 90% !important;
+    }
+  }

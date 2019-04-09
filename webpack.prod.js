@@ -90,6 +90,11 @@ module.exports = {
          inject: false
       }),
       new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-latest-products.html',
+         filename: 'sections/section-latest-products.html',
+         inject: false
+      }),
+      new HtmlWebpackPlugin({
          template: './src/html/layouts/section-daily-deals.html',
          filename: 'sections/section-daily-deals.html',
          inject: false

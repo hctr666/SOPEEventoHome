@@ -10,6 +10,13 @@
    display: none !important;
 }
 
+.newHeader {
+   @media (max-width:1000px) {
+      position: fixed !important;
+      top: 0 !important;
+   }
+}
+
 #main {
    margin-top: 0 !important;
    > .container {
