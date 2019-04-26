@@ -7,6 +7,27 @@
     background-repeat: no-repeat;
     background-size: 5rem 5rem;
 
+    &.c-icon-2x {
+        width: 2rem;
+        height: 2rem;
+        display: inline-block;
+    }
+
+    &.c-icon-cmr {
+        width: 92px;
+        height: 17px;
+        margin-right: 10px;
+        background-image: url('../assets/img/imbatible-logo.png');
+        background-size: 92px 17px;
+    }
+
+    &.c-icon-combo {
+        width: 69px;
+        height: 19px;
+        background-image: url('../assets/img/combo-logo.png');
+        background-size: 69px 19px;
+    }
+
     &.c-icon-cyberwow {
         width: 80px;
         background-image: url('../assets/img/icons/logo-cat.png');
@@ -121,7 +142,7 @@
     }
 }
 
-.fbra_categoryListActiveTab {
+.fbra_categoryListActiveTab, .section-main-navbar {
     .c-icon-cat {
         &.c-icon-cat-terrazas-y-jardin {
             background-image: url("data:image/svg+xml,%3Csvg class='c-icon-svg' id='Capa_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 35 35'%3E%3Cstyle%3E.c-icon-svg path%7Bfill:%23ffffff;%7D%3C/style%3E%3Cpath d='M35 17.8h-2.2V7.9H2.2v9.9H0v1.7h2.2v7.6h1.6v-4.4h27.4v4.4h1.6v-7.6H35v-1.7zm-3.8-8.2v8.1H3.8V9.6h27.4zM3.8 21v-1.5h27.4V21H3.8z'/%3E%3Cpath class='st0' d='M5.7 11h1.6v5.5H5.7zM10.1 11h1.6v5.5h-1.6zM14.4 11H16v5.5h-1.6zM27.6 11h1.6v5.5h-1.6zM23.2 11h1.6v5.5h-1.6zM18.8 11h1.6v5.5h-1.6z'/%3E%3C/svg%3E");

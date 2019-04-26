@@ -19,6 +19,9 @@ const TRACK_ID = 'gsx$track-id'
 export default class DailyDeals {
    constructor(selector, options) {
       this.selector = selector
+      this.breakpoints = {
+         sm: 800,
+      }
       this.options = Object.assign({
          isDataFromSheet: true,
          selectorCountdown: '#daily-deals-countdown',
@@ -180,7 +183,7 @@ export default class DailyDeals {
       }
 
       if (this.imageElem) {
-         this.imageElem.src = `https://sodimac.scene7.com/is/image/SodimacPeru/${this.dealCode}?$lista160$`
+         this.imageElem.src = `https://sodimac.scene7.com/is/image/SodimacPeru/${this.dealCode}?${window.innerWidth <= this.breakpoints.sm ? '$lista160$' : '$lista180$'}`
          this.imageElem.classList.remove('b-lazy')
       }
 

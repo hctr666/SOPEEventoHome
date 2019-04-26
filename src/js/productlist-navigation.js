@@ -15,9 +15,9 @@ export default class ProductListNavigation {
       this.selector = selector
       this.defaults = {}
       this.tabActiveIndex = 0
+      this.sectionContainerEl = document.getElementById('fbra_homePageCategoryList')
       this.windowY = window.pageYOffset
-      this.desktopMainNavFixedHeight = 41
-      this.mobileMainNavFixedHeight = 57
+      this.mainNavFixedHeight = window.innerWidth <= 1000 ? 41 : 57
       this.breakpointBase = 1000
       this.setOptions(options)
       this.setElements()
@@ -57,6 +57,12 @@ export default class ProductListNavigation {
       }
    }
 
+   resetProductListScreenPosition() {
+      if (this.sectionContainerEl && this.$tabActive) {
+         window.scrollTo(0, this.sectionContainerEl.offsetTop + this.$tabActive.offsetHeight + this.mainNavFixedHeight)
+      }
+   }
+
    attachEvents() {
       if (this.$tabs.length > 0) {
          for (let i = 0; i < this.$tabs.length; i++) {
@@ -65,6 +71,7 @@ export default class ProductListNavigation {
                this.$tabActive = this.$tabs[i]
                this.tabActiveIndex = i
                this.checkForTransition()
+               this.resetProductListScreenPosition()
             })
          }
       }
@@ -80,7 +87,7 @@ export default class ProductListNavigation {
          this.windowY = window.pageYOffset
          let limitYOffset = window.innerWidth <= this.breakpointBase 
             ? this.tabsWrapperTop 
-            : this.tabsWrapperTop - this.desktopMainNavFixedHeight
+            : this.tabsWrapperTop - this.mainNavFixedHeight
          
          if (this.windowY >= limitYOffset) {
             this.tabsWrapperEl.classList.add('fixedCategoryHeader')

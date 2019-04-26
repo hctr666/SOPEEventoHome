@@ -10,7 +10,7 @@ module.exports = {
         host: 'localhost',
         open: 'chrome',
         port: 8082,
-        contentBase: path.join(__dirname, "dist")
+        contentBase: path.join(__dirname, "development")
     },
     node: {
         fs: 'empty'

@@ -1,0 +1,72 @@
+@import './../variables';
+
+.bnt-countdown-timer .Countdown .Countdown-col-element span,
+.bnt-countdown-timer .Countdown-col-separator {
+  color: #fff;
+
+}
+.Countdown-col-element>
+.bnt-countdown-timer .Countdown {
+  margin-right: -40px;
+  margin-top: 3px;
+}
+
+.supports-webp .bnt-countdown {
+  background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/winchas-dkp-cyber-extendimosundiamas-2?wid=1600&hei=45&fmt=webp-alpha') !important;
+}
+
+.bnt-countdown {
+  background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/winchas-dkp-cyber-extendimosundiamas-2?wid=1600&hei=45&fmt=png-alpha') !important;
+  background-color: $brandSecondary;
+}
+
+.bnt-countdown-timer {
+  right: 5rem !important;
+
+}
+
+.Countdown .Countdown-col:nth-child(1) {
+  display: block !important;
+}
+.bnt-countdown-timer .Countdown-col-separator {
+ top: -5px!important;
+ right: 4px!important;
+
+}
+.bnt-countdown-timer .Countdown .Countdown-col-element {
+ font-size: 0.8em!important;
+ font-weight: 600;
+}
+@media (min-width:1000px) {
+  body:not(.myaccount) .newDbreadrumb {
+    top: 60px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .supports-webp .bnt-countdown {
+    background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/winchas-mb-cyber-extendimosundiamas-2?wid=768&hei=120&fmt=webp-alpha') !important;
+  }
+  .bnt-countdown {
+   min-height: 13vw !important;
+   background-size: cover;
+   background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/winchas-mb-cyber-extendimosundiamas-2?wid=768&hei=120&fmt=png-alpha') !important;
+  }
+  .bnt-countdown-timer .Countdown {
+    margin-right: 0;
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+  .bnt-countdown-timer {
+    margin-left: -5.9em !important;
+    top: 1.8em !important;
+    left: 85% !important;
+  }
+  .bnt-countdown-timer .Countdown .Countdown-col-element {
+  font-size: 0.8em!important;
+  font-weight: 600;
+  }
+  .bnt-countdown-timer {
+   font-size: 4vw!important;
+  }
+}

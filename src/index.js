@@ -11,7 +11,6 @@ import {
 import ProductListNavigation from './js/productlist-navigation'
 import SliderIntro from './js/slider-intro'
 import DailyDeals from './js/daily-deals'
-import Swiper from 'swiper/dist/js/swiper'
 import MutationObserver from 'mutation-observer'
 import './js/latest-products'
 require('intersection-observer')
@@ -218,6 +217,34 @@ const tabProductlist = () => {
    })
 }
 
+const handleNavbarInteractions = () => {
+   const navbarOpenerEl = document.getElementById('js-main-navbar-opener')
+   const navbarCloseEl = document.getElementById('js-main-navbar-close')
+   const navbarContentOpenClass = 'main-navbar-content-open'
+   let navbarOpenerTargetEl = null
+
+   // Handle opener button
+   if (navbarOpenerEl) {
+      navbarOpenerTargetEl = document.querySelector(navbarOpenerEl.dataset.target)
+      navbarOpenerEl.addEventListener('click', e => {
+         e.preventDefault()
+         if (navbarOpenerTargetEl) {
+            navbarOpenerTargetEl.classList.toggle(navbarContentOpenClass)
+         }
+      })
+   }
+
+   // Handle close button
+   if (navbarCloseEl) {
+      navbarCloseEl.addEventListener('click', e => {
+         e.preventDefault()
+         if (navbarOpenerTargetEl) {
+            navbarOpenerTargetEl.classList.remove(navbarContentOpenClass)
+         }
+      })
+   }
+}
+
 // Lazy load images to improve page load performace
 const lazyImages = () => {
    const imageElems = document.querySelectorAll('.b-lazy')
@@ -282,10 +309,10 @@ const appendSeeAllCategoryItemToCategoryList = () => {
             seeAllCategoryItem.innerHTML = `
                <div class="fbra_productListItem destaHome fbra_seeAllCategoryItem">
                   <a href="${seeAllCategoryLinkEl.href}" class="fullh d-flex d-flex-col-middle no-decoration fbra_anchor fbra_productListItem_Link text-center white-space-normal">
-                     <span class="block c-icon c-icon-cyberwow"></span>
+                     <span class="block c-icon"></span>
                      <span class="block">Descubre aquí más productos de</span>
                      <h4 class="fbra_seeAllCategoryItem_name">${categoryHeaderNameEl.textContent}</h4>
-                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAABNElEQVRYCe2WoU4DQRCG59oEUVVDMCS8UZM6SoLAY+ruDRCg60l4AQRB4asQKDSqICpON/3IAMldNnt3A9xlmnRX3d7OzXz359/ZFUkjKZAUSAokBXwVAGbAGngGjn1pfqoDH5TjBRi7gwHvJdPX0xIYuYIBF8A2ALsHht5geQCl01sg8wZbRMCuvKGGwF0EbO4NdgA8BWDqt9N/gwHTyK4Kav1qugEmTWCt5gNWInLUlOQPa29Zlp3UfTeoW6i8t8RUwk2PjS3CUvBSRApTKVsQIuJjeECN/hC4TY1+ZmPvOEobZU1LyDsuZU8HXAcK6fTGnqHjSCB2zGgjbd3pHaN8p1O/RA7kR/VXLwUtSSNNdieuLquKl16BQ8vP9BoDnAMFoArtxnW41z9OyZMCSYF9VeATPJ/LM+hBPtAAAAAASUVORK5CYII=" />
+                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAMAAADyQNAxAAAAhFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9hWbqAAAAAK3RSTlMAAQMGChAVHE5RVVZYWVpdYXF4h4uMlqGksbW3vcjO0tjh5Ojp6u7x8vz+DivhBQAAAIlJREFUGBntwUcSgkAURdEHqBhRMWHAiKnv/vdnj5HqP7DKEeeo9SeTxzGV6Q6nriwVUHZkmDlgG8uQ420iGdZ4CxniAm8uQ3IA3Fh1g4ov775qbjS4qOZOg6tqRk++uKGCkh3gMgVFBV6usCXeSmE5XhEpKHPAPlFYBZQdGW5w7skyfZWpWj/4AAsTGe9r4PMmAAAAAElFTkSuQmCC" />
                   </a>
                </div>
             `
@@ -315,10 +342,12 @@ const renderMissingPrices = () => {
             const fbraProductPriceSection = fbraProductItemEl.querySelector('.fbra_productPrice')
             const curSavingsElem = fbraProductItemEl.querySelector('[data-name="savings"]')
             const curPriceSecondaryFromNameEl = fbraProductItemEl.querySelector('[data-name="price-normal"]')
+            const curDiscountTagEl = fbraProductItemEl.querySelector('.js-item-tag-discount')
 
             if (shouldResetMissingPrices) {
                if (curSavingsElem) curSavingsElem.parentNode.removeChild(curSavingsElem)
                if (curPriceSecondaryFromNameEl) curPriceSecondaryFromNameEl.parentNode.removeChild(curPriceSecondaryFromNameEl)
+               if (curDiscountTagEl) curDiscountTagEl.parentNode.removeChild(curDiscountTagEl)               
             }
    
             const fbraProductPrices = []
@@ -356,7 +385,28 @@ const renderMissingPrices = () => {
             if (fbraProductPrices.length > 0) {
                if (typeof fbraProductPrices[0] !== "undefined" && typeof fbraProductPrices[1] !== "undefined") {
                   const amountSavings = (fbraProductPrices[1].value - fbraProductPrices[0].value).toFixed(2)
-
+                  const discountPercentage = Math.floor((amountSavings / fbraProductPrices[1].value) * 100)
+                  
+                  if (! curDiscountTagEl) {
+                     console.log(discountPercentage);
+                     
+                     if (discountPercentage > 0) {
+                        const discountTagEl = document.createElement('span')
+                        discountTagEl.classList.add('js-item-tag-discount', 'prodItem_tagDiscount')
+                        discountTagEl.innerHTML = `<span>-${discountPercentage}%</span>`
+                        fbraProductItemEl.appendChild(discountTagEl)
+                     }
+                  } else {
+                     if (discountPercentage > 0) {
+                        const curDiscountTagInnerEl = curDiscountTagEl.querySelector('span')
+                        if (curDiscountTagInnerEl) {
+                           curDiscountTagInnerEl.innerHTML = `-${discountPercentage}%`
+                        }
+                     } else {
+                        curDiscountTagEl.classList.add('hidden')
+                     }
+                  }
+                  
                   if (! curSavingsElem) {
                      const savingsElem = document.createElement('p')
                      savingsElem.classList.add('fbra_productSecondaryPrice')
@@ -367,7 +417,7 @@ const renderMissingPrices = () => {
                         <span>Ahorro </span>
                         <span>S/${amountSavings}</span>
                      `
-
+                     
                      if (fbraProductPriceSection) {
                         fbraProductPriceSection.appendChild(savingsElem)
                      }
@@ -381,9 +431,12 @@ const renderMissingPrices = () => {
                         `
                         fbraProductPriceSection.appendChild(priceSecondaryFromNameEl)
                      }
+
+                     // Render discount tag
+
                   } else {
                      //curSavingsElem.querySelectorAll('span')[0].textContent = 'Ahorro'
-                     curSavingsElem.querySelectorAll('span')[1].textContent = amountSavings
+                     curSavingsElem.querySelectorAll('span')[1].textContent = `S/ ${amountSavings}`
                      if (curPriceSecondaryFromNameEl) {
                         curPriceSecondaryFromNameEl.querySelectorAll('span')[1].textContent = fbraProductPrices[1].value.toFixed(2)
                      }
@@ -502,11 +555,8 @@ const createScrollToTopRefEl = () => {
       sectionNewsEl = d.querySelector('.section-news')
       scrollToTopEl = d.querySelector('.button-back-to-top')
 
-      createScrollToTopRefEl()
-
-      initMutationObservers([ productListWrapperEl ])
-
-      handleScrollToTop(scrollToTopRefElem)
+      // Handle menu navbar interactions
+      handleNavbarInteractions()
 
       // Init Slider intro
       new SliderIntro('#swiper-slider-intro', {
@@ -528,11 +578,19 @@ const createScrollToTopRefEl = () => {
          dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full?alt=json',
       })
 
+      // Init mutation observers
+      initMutationObservers([ productListWrapperEl ])
+
+      createScrollToTopRefEl()
+
+      // Handle button 'scrolltotop'
+      handleScrollToTop(scrollToTopRefElem)
+
       // section promotions
       sectionPromotions()
 
       // section news
-      sectionOurBrands()
+      //sectionOurBrands()
 
       // Improve productlist image resolution
       improveProdImagesSrcs()

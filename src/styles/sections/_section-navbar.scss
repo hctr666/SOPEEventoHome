@@ -1,0 +1,156 @@
+@import './../variables';
+
+$navbarHeight: 48px;
+
+.section-main-navbar {
+    .main-navbar-heading {
+      position: fixed;
+      height: $navbarHeight;
+      overflow: hidden;
+      top: 54px;
+      z-index: 201;
+      left: 0;
+      right: 0;
+      background: $brandSecondary;
+    }
+
+    .main-navbar-logo {
+        width: calc(100% - 120px);
+        height: inherit;
+        float: left;
+    }
+
+   .main-navbar-opener-label {
+      display: inline-flex;
+      vertical-align: middle;
+      flex-direction: column;
+      justify-content: center;
+      height: inherit;
+      width: 50%;
+      color: #fff;
+      > span {
+         &:first-child {
+            font-size: .9em;
+            line-height: 1em;
+         }
+         &:last-child {
+            font-size: .43em;
+         }
+      }
+    }
+
+   .main-navbar-opener {
+      float: right;
+      height: inherit;
+      width: 120px;
+   }
+
+   .main-navbar-opener-bars {
+      display: inline-flex;
+      width: 46.3%;
+      height: inherit;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      vertical-align: middle;
+      background: #000;
+      > span {
+         display: block;
+         width: 28px;
+         margin-bottom: 7px;
+         height: 2px;
+         background: #fff;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+   .main-navbar-content {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $brandPrimary;
+      z-index: 1000;
+      pointer-events: none;
+      opacity: 0;
+      transform: scale(.9, .9);
+      transition: ease-in .34s;
+      .c-icon-cat {
+         @media (min-width: $bp-xsmall + 1px) {
+            height: 2.6em;
+            width: 2.6em;
+            background-size: 2.6em;
+         }
+      }
+      &.main-navbar-content-open {
+         opacity: 1;
+         pointer-events: all;
+         transform: scale(1,1);
+      }
+
+      .main-navbar-heading {
+         position: relative;
+         top: 0;
+         background: #000;
+      }
+      .main-navbar-opener-bars {
+         float: right;
+         width: 60px;
+         background: $brandPrimary;
+         > span {
+            width: 32px;
+            margin: 0;
+            &:nth-child(1) {
+               transform: rotate(45deg);
+               margin-bottom: -2px;
+            }
+            &:nth-child(2) {
+               transform: rotate(-45deg);
+            }
+            &:nth-child(3) {
+               display: none;
+            }
+         }
+      }
+      .main-navbar-opener-label {
+         float: right;
+         width: 75px;
+         > span {
+            font-size: .7em;
+         }
+      }
+      > ul {
+         font-size: .57em;
+         height: calc(100% - #{$navbarHeight});
+         overflow-x: hidden;
+         overflow-y: scroll;
+         -webkit-overflow-scrolling: touch;
+         @media (min-width: $bp-xsmall + 1px) {
+            font-size: 1.75vmax;
+         }
+         > li {
+            width: 33.3333%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100% / 5);
+            float: left;
+            box-shadow: 0 0 1px 0px rgba(255, 255, 255, 0.4);
+            > a {
+               color: #fff;
+               display: flex;
+               height: 100%;
+               width: 100%;
+               padding: 8px;
+               flex-direction: column;
+               justify-content: center;
+               @media (min-width:$bp-xsmall + 1px) {
+                  padding: 8px 18px;
+               }
+            }
+         }
+      }
+   }
+}

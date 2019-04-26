@@ -5,8 +5,8 @@ $paginationHeightDesktop: 55px;
 $paginationWithContentBreakpoint: 915px;
 
 .section-intro-logo {
-    height: 47px;
-    background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-mb-winner-1?fmt=png-alpha&wid=242&hei=50');
+    //height: 0;
+    //background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-mb-winner-2?fmt=png-alpha&wid=242&hei=50');
     background-position: center -7px;
     background-repeat: no-repeat;
     border-top: 5px $brandPink solid;
@@ -15,28 +15,36 @@ $paginationWithContentBreakpoint: 915px;
     left: 0;
     right: 0;
     z-index: 2;
+    @media (min-width: $bp-medium) {
+        height: 67px;
+        background-image: url('../assets/img/logo-dkp.png');
+    }
     @media (max-width: $bp-small) {
         background-color: #2b8cae;
+        //background-image: url('../assets/img/logo-tb.png');
     }
     @media (min-width: $bp-small + 101px) {
-        height: 67px;
-        background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-winner-1?fmt=png-alpha&wid=1200&hei=80');
+        //height: 67px;
+        //background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-winner-2?fmt=png-alpha&wid=1200&hei=80');
     }
 }
 
 .supports-webp {
     .section-intro-bg {
-        background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/fondo-winner?fmt=webp&wid=1920&hei=450');
+        background-image: url('http://s7d5.scene7.com/is/image/SodimacPeru/cybso-201904-bg-large?wid=1920&hei=450&qlt=82&resMode=bicub&op_usm=1,0.5,3,0&op_sharpen=1&fmt=webp');
     }    
 }
 
 .section-intro-bg {
-    background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/fondo-winner?wid=1920&hei=450');
+    background-image: url('http://s7d5.scene7.com/is/image/SodimacPeru/cybso-201904-bg-large?wid=1920&hei=450&qlt=82&resMode=bicub&op_usm=1,0.5,3,0&op_sharpen=1');
     background-position: center -10px;
     background-repeat: repeat no-repeat;
-    background-size: 100% 450px;
-    padding-top: 47px;
+    background-size: auto 450px;
+    padding-top: 57px;
     @media (min-width: $bp-small + 101px) {
+        //padding-top: 67px;
+    }
+    @media (min-width: $bp-medium) {
         padding-top: 67px;
     }
 }
@@ -60,14 +68,14 @@ $paginationWithContentBreakpoint: 915px;
         @media (min-width: $paginationWithContentBreakpoint + 1px) {
             bottom: 0;
             display: flex;
-            border-bottom: 1px $greyLighter solid;
+            //border-bottom: 1px $greyLighter solid;
             box-shadow: 0px -6px 30px -13px rgba(0, 0, 0, 0.62);
         }
         @media (max-width: $paginationWithContentBreakpoint) {
             //@include horizontalScroll()
             text-align: center;
             position: relative;
-            background: #114765;
+            background: #382e95;
             bottom: 0;
             padding: 5px 0;
         }

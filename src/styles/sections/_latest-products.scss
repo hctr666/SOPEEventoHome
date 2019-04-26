@@ -1,12 +1,44 @@
-.feed-product-progress {
+@import './../variables';
+
+.section-night-products {
+    &.feed-products {
+      .swiper-wrapper {
+          height: 385px;
+      }
+      .swiper-pagination {
+        display: none;
+      }
+      .swiper-custom-button {
+        display: block;
+      }
+    }
+    .swiper-container {
+      &.swiper-custom-carousel {
+        .swiper-custom-button {
+          display: block;
+        }
+      }
+    }
+}
+
+  .feed-product-progress {
     height: 8px;
     background: #eee;
     border-radius: 8px;
     position: relative;
   }
+
+  .feed-product-brand {
+    height: 13px;
+    margin-bottom: 7px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   
   .feed-product-name {
-    height: 34px;
+    height: 38px;
+    text-overflow: ellipsis;
     overflow: hidden;
   }
   
@@ -24,6 +56,7 @@
   }
   
   .feed-products {
+    overflow: hidden;
     .swiper-container {
       min-height: 350px;
       padding-bottom: 45px;
@@ -32,24 +65,58 @@
     .swiper-pagination {
       left: initial;
       margin: 0;
+      position: relative;
+      bottom: 0;
+      padding: 12px 0;
     }
     .swiper-wrapper {
-      height: 393px;
+      height: 435px;
     }
+    .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: $brandPink;
+    }
+    .swiper-custom-button {
+        background: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .feed-product-sale-percentage {
+      font-size: 1.2rem;
+  }
+
+  .feed-product-price-savings,
+  .feed-product-price-secondary {
+      line-height: 1.5rem;
+      margin-bottom: 3px !important;
+  }
+  .feed-product-price-primary {
+    margin-bottom: 10px!important;
+    font-size: 2.1rem!important;
+    display: inline-block;
+    padding: 3px 5px;
+    background: $brandSecondary;
+    color: #fff;
+    margin-top: 5px !important;
   }
   
   .feed-product-prices {
     color: #000;
-    .feed-product-price-savings,
-    .feed-product-price-secondary {
-        line-height: 1.5rem;
-        margin-bottom: 5px !important;
+    padding-top: 17px;
+    .c-icon {
+        position: absolute;
+        top: 0;
     }
   }
   
   .feed-product-name {
-    font-size: 1.29em;
-    letter-spacing: 1px;
+    font-size: .88em !important;
+    line-height: 1.1em !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
   }
   
   .feed-product-item {
@@ -70,3 +137,61 @@
       width: 90% !important;
     }
   }
+
+  .centrEfecto{
+    text-align: center;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.scape {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.scapeFirst:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+.scapeLast:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.scapeLast:last-of-type span {
+  margin-left:-200px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-600px; }
+    20% { margin-left:-600px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:200px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:200px;}
+}
+
+.swiper-feedproducts-button-prev,
+.swiper-feedproducts-button-next {
+  display: block !important;
+}

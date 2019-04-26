@@ -1,8 +1,10 @@
-import Swiper from 'swiper/dist/js/swiper'
 import { throttle, hasWebpSupport } from './utils'
 
 export default class SliderIntro {
    constructor(selector, options) {
+      if (typeof Swiper === "undefined") {
+         return false
+      }
       this.selector = selector
       this.paramWebpAlpha = hasWebpSupport() ? '&fmt=webp-alpha' : '&fmt=png-alpha'
       this.paramWebp = hasWebpSupport() ? '&fmt=webp' : ''
@@ -98,6 +100,9 @@ export default class SliderIntro {
    initSwiper() {
       this.swiper = new Swiper(this.selector, {
          slidesPerView: 1,
+         autoplay: {
+            delay: 4400
+         },
          preventClicks: false,
          preventClicksPropagation: false,
          pagination: {
@@ -120,7 +125,7 @@ export default class SliderIntro {
                   <div class="${className}">
                      <span class="fullw no-overflow">
                         <span class="slider-intro-nav-description block fullw bold text-uppercase text-left">${data.title}</span>
-                        <span class="slider-intro-nav-price block fullw text-left">S/ ${data.price}</span>
+                        <span class="slider-intro-nav-price block fullw text-left">${data.price && data.price !== '' ? `S/ ${data.price}` : ''}</span>
                      </span>
                   </div>
                `
@@ -129,6 +134,11 @@ export default class SliderIntro {
          navigation: {
             nextEl: this.options.selectorBtnNext,
             prevEl: this.options.selectorBtnPrev
+         },
+         breakpoints: {
+            1000: {
+               autoplay: false
+            }
          }
       })
    }

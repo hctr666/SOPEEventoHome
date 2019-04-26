@@ -8,7 +8,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const ProvidePlugin = require('webpack').ProvidePlugin;
 //const EncodingPlugin = require('webpack-encoding-plugin');
 
-const buildPath = path.resolve(__dirname, 'dist');
+const buildPath = path.resolve(__dirname, 'production');
 
 module.exports = {
    devtool: 'source-map',

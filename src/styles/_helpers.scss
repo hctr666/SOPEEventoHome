@@ -30,8 +30,23 @@
     background: #fff;
 }
 
+.bg-brand-primary {
+    background-color: $brandPrimary;
+}
+
 .bg-brand-pink {
     background: $brandPink;
+}
+
+.cursor-auto {
+    cursor: auto !important;
+}
+
+.img-resp-sm {
+    @media (max-width: $bp-small) {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .fz-2x {
@@ -39,8 +54,16 @@
     line-height: 1.12em;
 }
 
+.color-brand-event-primary {
+    color: $brandPrimary;
+}
+
 .color-secondary {
     color: #dd021d;
+}
+
+.color-brand-pink {
+    color: $brandPink;
 }
 
 .bg-grey-lighter {
@@ -109,6 +132,26 @@
         display: table;
         clear: both;
     }
+}
+
+.ml-auto {
+   margin-left: auto; 
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mr-auto {
+    margin-right: auto; 
+ }
+
+.height-inherit {
+    height: inherit;
+}
+
+.bolder {
+    font-weight: 900;
 }
 
 .ol-style-decimal {

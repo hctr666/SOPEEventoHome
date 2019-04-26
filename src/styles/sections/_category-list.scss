@@ -1,5 +1,7 @@
+@import './../variables';
+
 .fbra_seeAllCategoryItem {
-   &:before {
+   /*&:before {
       content: '';
       position: absolute;
       width: 103%;
@@ -10,7 +12,7 @@
       background-image: url('../assets/img/icons/logo-cat.png') !important;
       background-repeat: no-repeat !important;
       background-position: 84% 104% !important;
-   }
+   }*/
    > a {
       > span {
          padding: 0 12px;
@@ -19,4 +21,15 @@
          margin-bottom: 10px;
       }
    }
+}
+
+.prodItem_tagDiscount {
+   position: absolute;
+   background: $brandSecondary;
+   color: $colorWhite;
+   padding: 2px 8px;
+   font-weight: 600;
+   font-size: 1.4rem;
+   top: 65%;
+   right: -3px;
 }

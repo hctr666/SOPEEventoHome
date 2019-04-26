@@ -17,7 +17,7 @@
 .content-daily-deals {
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    //overflow: hidden;
     //border: 1px $brandPink solid;
     transition: ease-in-out .2s;
     box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.48);
@@ -30,6 +30,11 @@
         border-right: 0;
         width: 95.5%;
         margin: auto;
+        .daily-deals-container {
+            @media (max-width: $bp-small) {
+                width: 50%;
+            }
+        }
         .daily-deals-container:nth-child(1) {
             order: 2;
             border-left: 0;
@@ -48,6 +53,17 @@
     border-left: 1px $greyLight solid;
     border-top: 1px $greyLight solid;
     background: $colorWhite;
+    .ddeals-btn-cta {
+        @media (min-width: $bp-small + 1px) {
+            opacity: 0;
+            transition: ease .2s;
+        }
+    }
+    &:hover {
+        .ddeals-btn-cta {
+            opacity: 1;
+        }
+    }
     @media (min-width: $bp-xxsmall + 20px) {
         padding: 12px;
     }
@@ -105,12 +121,12 @@
     position: relative;
     z-index: 1;
     background: $colorWhite;
-    color: $brandPrimary;
     letter-spacing: 4px;
     padding-left: 4px;
     border-radius: 2.5px;
     box-shadow: -4px 0 12px -3px rgba(0, 0, 0, .3);
     @media (min-width: $bp-small + 1px) {
+        color: $brandSecondary;
         font-size: 2.3rem;
         letter-spacing: 6px;
         padding-left: 6px;
@@ -197,12 +213,23 @@
 .daily-deals-countdown {
     padding: 11px 12px 8px;
     width: 100%;
-    background: $brandPrimary;
+    background: #000;
     @media (min-width: $bp-small + 1px) {
+        background: $brandSecondary;
         width: 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        border-radius: 2px;
+        box-shadow: 0 0 8px -3px rgba(0, 0, 0, 0.6);
+    }
+}
+
+.ddeals-price-promo {
+    @media (min-width: $bp-small + 1px) {
+        font-size: 3rem;
     }
 }
 
@@ -217,6 +244,11 @@
     height: 54px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.ddeals-price-promo-wrap {
+    background: #000;
+    padding: 0px 7px;
 }
 
 .ddeals-content-image {

@@ -4,12 +4,14 @@
 -->
 <% if (process.env.NODE_ENV === "production") { %>
 <head>
+   <script>;$(function(){ $('title').first().text('De todo para tu casa y obra, Recojo en tienda, Devoluciones Gratis | Cyber Sodimac') });</script>
    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
-   <meta name="theme-color" content="#0072ce">
+   <meta name="theme-color" content="#5149b2">
    <!-- Mobile header color Windows Phone -->
-   <meta name="msapplication-navbutton-color" content="#0072ce">
+   <meta name="msapplication-navbutton-color" content="#5149b2">
    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+   <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
    <% for (key in htmlWebpackPlugin.files.css) { %>
       <% if (htmlWebpackPlugin.files.cssIntegrity) { %>
       <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet"

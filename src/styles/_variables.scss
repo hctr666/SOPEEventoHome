@@ -1,11 +1,16 @@
 /* Colors */
-$brandPrimary: #2e92af;
+$brandPrimary: #5149b2;
+$cyberWow: false;
 $brandSecondary: #dd0021;
 $brandPink: #fd2b73;
 $greyLighter: #eee;
 $greyLight: #ddd;
 $colorWhite: #fff;
 $colorDark: #000;
+
+@if $cyberWow == false {
+    $brandPink: $brandSecondary
+}
 
 /* Layouts sizes */
 $headerHeight: 142px;

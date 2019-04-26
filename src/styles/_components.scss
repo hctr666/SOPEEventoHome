@@ -81,3 +81,36 @@
         display: none !important;
     }
 }
+
+.box-with-button {
+    transition: ease-in-out .25s;
+    a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+    }
+    &:hover {
+        box-shadow: 0 0 10px -6px #000;
+        transform: translateY(-3px);
+        transform-origin: bottom;
+        .box-button {
+            transform: translateY(0);
+        }
+    }
+    .box-button {
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        border-radius: 2px;
+        background: $brandSecondary;
+        padding: 7px 10px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: .6em;
+        box-shadow: 0 0 6px -3px #000;
+        transform: translateY(50px);
+        transition: ease-in-out .25s;
+    }
+}
