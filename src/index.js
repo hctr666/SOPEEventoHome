@@ -231,6 +231,10 @@ const handleNavbarInteractions = () => {
          if (navbarOpenerTargetEl) {
             navbarOpenerTargetEl.classList.toggle(navbarContentOpenClass)
          }
+         if (navbarOpenerTargetEl.classList.contains(navbarContentOpenClass)) {
+            document.documentElement.classList.add('no-overflow')
+            document.body.classList.add('no-overflow')
+         }
       })
    }
 
@@ -240,6 +244,8 @@ const handleNavbarInteractions = () => {
          e.preventDefault()
          if (navbarOpenerTargetEl) {
             navbarOpenerTargetEl.classList.remove(navbarContentOpenClass)
+            document.documentElement.classList.remove('no-overflow')
+            document.body.classList.remove('no-overflow')
          }
       })
    }
@@ -299,9 +305,11 @@ const appendSeeAllCategoryItemToCategoryList = () => {
    try {
       const seeAllCategoryLinkEl = document.querySelector('a.fbra_categoryHeaderSeeCategory_button')
       const categoryHeaderNameEl = document.querySelector('.fbra_categoryHeader_name')
+      const categoryHeaderName = categoryHeaderNameEl ? categoryHeaderNameEl.textContent : ''
 
       if (productListWrapperEl) {
          const seeAllCategoryItemEl = productListWrapperEl.querySelector('.fbra_seeAllCategoryItemWrap')
+
          if (!seeAllCategoryItemEl) {
             //seeAllCategoryItemEl.parentNode.removeChild(seeAllCategoryItemEl)
             const seeAllCategoryItem = document.createElement('div')
@@ -311,7 +319,7 @@ const appendSeeAllCategoryItemToCategoryList = () => {
                   <a href="${seeAllCategoryLinkEl.href}" class="fullh d-flex d-flex-col-middle no-decoration fbra_anchor fbra_productListItem_Link text-center white-space-normal">
                      <span class="block c-icon"></span>
                      <span class="block">Descubre aquí más productos de</span>
-                     <h4 class="fbra_seeAllCategoryItem_name">${categoryHeaderNameEl.textContent}</h4>
+                     <h4 class="fbra_seeAllCategoryItem_name">${categoryHeaderName}</h4>
                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAMAAADyQNAxAAAAhFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9hWbqAAAAAK3RSTlMAAQMGChAVHE5RVVZYWVpdYXF4h4uMlqGksbW3vcjO0tjh5Ojp6u7x8vz+DivhBQAAAIlJREFUGBntwUcSgkAURdEHqBhRMWHAiKnv/vdnj5HqP7DKEeeo9SeTxzGV6Q6nriwVUHZkmDlgG8uQ420iGdZ4CxniAm8uQ3IA3Fh1g4ov775qbjS4qOZOg6tqRk++uKGCkh3gMgVFBV6usCXeSmE5XhEpKHPAPlFYBZQdGW5w7skyfZWpWj/4AAsTGe9r4PMmAAAAAElFTkSuQmCC" />
                   </a>
                </div>
@@ -319,7 +327,28 @@ const appendSeeAllCategoryItemToCategoryList = () => {
             productListWrapperEl.appendChild(seeAllCategoryItem)
          } else {
             seeAllCategoryItemEl.querySelector('a').href = seeAllCategoryLinkEl.href
-            seeAllCategoryItemEl.querySelector('.fbra_seeAllCategoryItem_name').textContent = categoryHeaderNameEl.textContent
+            seeAllCategoryItemEl.querySelector('.fbra_seeAllCategoryItem_name').textContent = categoryHeaderName
+         }
+
+         const mobileSeeAllCategoryBtn = document.querySelector('.mobile-see-all-category-btn')
+   
+         // Mobile "see category" button
+         if (window.innerWidth <= 1000) {
+            if (!mobileSeeAllCategoryBtn) {
+               const _mobileSeeAllCategoryBtn = document.createElement('div')
+               _mobileSeeAllCategoryBtn.classList.add('mobile-see-all-category-btn', 'text-center')
+               _mobileSeeAllCategoryBtn.innerHTML = `
+                  <a href="${seeAllCategoryLinkEl.href}" title="${categoryHeaderName}">
+                     <span class="block">Encuentra más de </span>
+                     <span class="bold text-uppercase">${categoryHeaderName} </span>
+                     <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+               `
+               productListWrapperEl.parentNode.parentNode.insertBefore(_mobileSeeAllCategoryBtn, productListWrapperEl.parentNode.parentNode.children[2])
+            } else {
+               mobileSeeAllCategoryBtn.querySelector('a').href = seeAllCategoryLinkEl.href
+               mobileSeeAllCategoryBtn.querySelector('span:nth-child(2)').textContent = categoryHeaderName
+            }
          }
       }
       
@@ -388,11 +417,9 @@ const renderMissingPrices = () => {
                   const discountPercentage = Math.floor((amountSavings / fbraProductPrices[1].value) * 100)
                   
                   if (! curDiscountTagEl) {
-                     console.log(discountPercentage);
-                     
                      if (discountPercentage > 0) {
                         const discountTagEl = document.createElement('span')
-                        discountTagEl.classList.add('js-item-tag-discount', 'prodItem_tagDiscount')
+                        discountTagEl.classList.add('js-item-tag-discount', 'prodItem_tagDiscount', 'hidden')
                         discountTagEl.innerHTML = `<span>-${discountPercentage}%</span>`
                         fbraProductItemEl.appendChild(discountTagEl)
                      }
@@ -569,12 +596,14 @@ const createScrollToTopRefEl = () => {
       // DailyDeals Homecenter
       new DailyDeals('#daily-deals-homecenter', {
          renderToExternalCountdown: true,
+         //dataSheetURL: '/static/campanas/cybersodimac/eventos-2019/dailyDealsHomecenter.json?1234567890',
          dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full?alt=json',
       })
 
       // DailyDeals Constructor
       new DailyDeals('#daily-deals-constructor', {
          renderCountdown: false,
+         //dataSheetURL: '/static/campanas/cybersodimac/eventos-2019/dailyDealsConstructor.json?1234567890',
          dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full?alt=json',
       })
 

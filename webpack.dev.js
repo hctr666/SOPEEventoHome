@@ -68,6 +68,18 @@ module.exports = {
                         }
                     }
                 ],
+            },
+            {
+                // Load JSON/XML data
+                test: /\.(json|xml)$/,
+                use: [
+                    {
+                        loader: 'json-loader',
+                        options: {
+                            name: '[path][name].[ext]?hash=[hash:20]'
+                        }
+                    }
+                ]
             }
         ],
     },
@@ -75,7 +87,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             inject: false,
-            title: 'Sodimac CyberWow',
+            title: 'Cyber Sodimac',
             unsupportedBrowser: true,
         }),
     ]

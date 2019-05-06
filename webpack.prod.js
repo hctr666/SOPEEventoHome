@@ -5,7 +5,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const ProvidePlugin = require('webpack').ProvidePlugin;
 //const EncodingPlugin = require('webpack-encoding-plugin');
 
 const buildPath = path.resolve(__dirname, 'production');
@@ -16,7 +15,7 @@ module.exports = {
    output: {
       filename: '[name].[hash:20].js',
       path: buildPath,
-      publicPath: '/static/campanas/cyberwow/evento/2019/home/'
+      publicPath: '/static/campanas/cybersodimac/eventos-2019/home/'
    },
    node: {
       fs: 'empty'

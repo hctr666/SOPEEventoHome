@@ -23,6 +23,28 @@
    }
 }
 
+.mobile-see-all-category-btn {
+   font-size: 0.75em;
+   margin-top: 20px;
+   a {
+      display: block;
+      width: calc(100% - 30px);
+      margin: auto;
+      letter-spacing: 1px;
+      background: $brandSecondary;
+      padding: 12px 14px;
+      color: #fff;
+      border-radius: 4px;
+      border-bottom: 4px #bd0b25 solid;
+      span {
+         &:first-child {
+            font-size: .85em;
+            margin-bottom: 3px;
+         }
+      }
+   }
+}
+
 .prodItem_tagDiscount {
    position: absolute;
    background: $brandSecondary;

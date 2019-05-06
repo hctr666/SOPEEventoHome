@@ -82,6 +82,16 @@
     }
 }
 
+.touch-mode {
+    .box-with-button {
+        transform: translateY(-3px);
+        transform-origin: bottom;
+        .box-button {
+            background: rgba(221, 0, 33, 0.85);
+            transform: translateY(0);
+        }
+    }
+}
 .box-with-button {
     transition: ease-in-out .25s;
     a {
@@ -99,18 +109,24 @@
     }
     .box-button {
         position: absolute;
-        right: 6px;
-        bottom: 6px;
         border-radius: 2px;
         background: $brandSecondary;
-        padding: 7px 10px;
         color: #fff;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 1.5px;
-        font-size: .6em;
+        font-size: .5em;
         box-shadow: 0 0 6px -3px #000;
         transform: translateY(50px);
         transition: ease-in-out .25s;
+        padding: 5px 7px;
+        left: 0;
+        bottom: 0;
+        @media (min-width:$bp-xsmall + 1px) {
+            font-size: .6em;
+            left: 10px;
+            bottom: 10px;
+            padding: 7px 10px;
+        }
     }
 }

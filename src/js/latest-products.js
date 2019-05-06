@@ -9,11 +9,12 @@ Object.defineProperty(Array.prototype, "chunk", {
 })
 
 const swiperFeedProducts = new Swiper(".js-swiper-feedproducts", {
-   slidesPerView: 4,
+   slidesPerView: 'auto',
    spaceBetween: 5,
    pagination: {
       el: ".swiper-feedproducts-pagination",
-      clickable: true
+      clickable: true,
+      type: 'fraction'
    },
    navigation: {
       prevEl: ".swiper-feedproducts-button-prev",
@@ -25,15 +26,15 @@ const swiperFeedProducts = new Swiper(".js-swiper-feedproducts", {
    onlyExternal: window.innerWidth > 800,
    breakpoints: {
       1024: {
-         slidesPerView: 3
+         //slidesPerView: 3
       },
       768: {
-         slidesPerView: 2
+         //slidesPerView: 2
       },
       470: {
-         slidesPerView: "auto",
-         centeredSlides: true,
-         spaceBetween: 10
+         //slidesPerView: "auto",
+         //centeredSlides: true,
+         spaceBetween: 8
       }
    }
 });
@@ -43,7 +44,8 @@ const swiperNightProducts = new Swiper(".js-swiper-nightproducts", {
    spaceBetween: 5,
    pagination: {
       el: ".swiper-nightproducts-pagination",
-      clickable: true
+      clickable: true,
+      type: 'fraction'
    },
    navigation: {
       prevEl: ".swiper-nightproducts-button-prev",
@@ -278,7 +280,7 @@ function SlideBuilder(options) {
       return "hidden"
    };
    this.buildSlide = function () {
-      let slideHTML = `<div class="swiper-slide"><div class="feed-product-item"><a class="no-decoration color-dark" title="${this.options.renderData.name}" href="${this.options.renderData.url}"><div class="feed-product-img-wrapper mb-5 text-center"><img width="175" height="175" src="${this.options.renderData.imgSrc}" /></div><div class="feed-product-info">`;
+      let slideHTML = `<div class="swiper-slide box-with-button"><div class="feed-product-item"><a class="no-decoration color-dark" title="${this.options.renderData.name}" href="${this.options.renderData.url}"><div class="feed-product-img-wrapper mb-5 text-center"><img width="175" height="175" src="${this.options.renderData.imgSrc}" /></div><div class="feed-product-info">`;
       slideHTML += `<h6 class="mb-5 text-uppercase feed-product-brand">${this.options.renderData.brand ? this.options.renderData.brand : ''}</h6>`
       slideHTML += `<h4 class="feed-product-name mt-5">${this.options.renderData.name}</h4><div class="feed-product-prices posr">`;
       

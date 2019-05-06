@@ -1,0 +1,1756 @@
+{
+    "version": "1.0",
+    "encoding": "UTF-8",
+    "feed": {
+      "entry": [
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cokwr"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "DIA 1"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3485471, name: Huawei Y9 2019 Negro, start-date: 2019-04-28, start-time: 23:00:00, end-date: 2019-04-29, end-time: 5:59:59, price-promo: 999, price-list: 1099, track-id: lnd43578"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cokwr"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "DIA 1"
+          },
+          "gsx$code": {
+            "$t": "3485471"
+          },
+          "gsx$name": {
+            "$t": "Huawei Y9 2019 Negro"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-28"
+          },
+          "gsx$start-time": {
+            "$t": "23:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "999"
+          },
+          "gsx$price-list": {
+            "$t": "1099"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43578"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cpzh4"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 3"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3474518, name: Set de 6 Estuches para Viaje Negro, start-date: 2019-04-29, start-time: 6:00:00, end-date: 2019-04-29, end-time: 8:59:59, price-promo: 44.9, price-list: 69.9, track-id: lnd43577"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cpzh4"
+            }
+          ],
+          "gsx$code": {
+            "$t": "3474518"
+          },
+          "gsx$name": {
+            "$t": "Set de 6 Estuches para Viaje Negro"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "44.9"
+          },
+          "gsx$price-list": {
+            "$t": "69.9"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43577"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cre1l"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 4"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2600161, name: Cámara Digital 1.8\" HD 5 MP Plata, start-date: 2019-04-29, start-time: 9:00:00, end-date: 2019-04-29, end-time: 11:59:59, price-promo: 49.90, price-list: 69, track-id: lnd43579"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cre1l"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2600161"
+          },
+          "gsx$name": {
+            "$t": "Cámara Digital 1.8\" HD 5 MP Plata"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "49.90"
+          },
+          "gsx$price-list": {
+            "$t": "69"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43579"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/chk2m"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 5"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2649152, name: Kit Vanitorio River 60x41.6x50cm Chocolate, start-date: 2019-04-29, start-time: 12:00:00, end-date: 2019-04-29, end-time: 14:59:59, price-promo: 439.90, price-list: 699.9, track-id: lnd43580"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/chk2m"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2649152"
+          },
+          "gsx$name": {
+            "$t": "Kit Vanitorio River 60x41.6x50cm Chocolate"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "439.90"
+          },
+          "gsx$price-list": {
+            "$t": "699.9"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43580"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/ciyn3"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 6"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3209954, name: Ropero 6 Puertas con Espejo Rustic, start-date: 2019-04-29, start-time: 15:00:00, end-date: 2019-04-29, end-time: 17:59:59, price-promo: 599.90, price-list: 799.9, track-id: lnd43680"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/ciyn3"
+            }
+          ],
+          "gsx$code": {
+            "$t": "3209954"
+          },
+          "gsx$name": {
+            "$t": "Ropero 6 Puertas con Espejo Rustic"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "599.90"
+          },
+          "gsx$price-list": {
+            "$t": "799.9"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43680"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/ckd7g"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 7"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 349134X, name: Pack Audífonos Ink'd Negro + Lente Negro, start-date: 2019-04-29, start-time: 18:00:00, end-date: 2019-04-29, end-time: 20:59:59, price-promo: 69.90, price-list: 149, track-id: lnd43681"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/ckd7g"
+            }
+          ],
+          "gsx$code": {
+            "$t": "349134X"
+          },
+          "gsx$name": {
+            "$t": "Pack Audífonos Ink'd Negro + Lente Negro"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "69.90"
+          },
+          "gsx$price-list": {
+            "$t": "149"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43681"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/clrrx"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 8"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2711834, name: Reloj de mano Mundial 2018, start-date: 2019-04-29, start-time: 21:00:00, end-date: 2019-04-29, end-time: 23:59:59, price-promo: 14.90, price-list: 19.9, track-id: lnd43682"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/clrrx"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2711834"
+          },
+          "gsx$name": {
+            "$t": "Reloj de mano Mundial 2018"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "14.90"
+          },
+          "gsx$price-list": {
+            "$t": "19.9"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43682"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cyevm"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "DIA 2"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3476065, name: Smartphone 3X 5058 Metal Black, start-date: 2019-04-30, start-time: 0:00:00, end-date: 2019-04-30, end-time: 5:59:59, price-promo: 399.00, price-list: 499.00, track-id: lnd43683"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cyevm"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "DIA 2"
+          },
+          "gsx$code": {
+            "$t": "3476065"
+          },
+          "gsx$name": {
+            "$t": "Smartphone 3X 5058 Metal Black"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "0:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "399.00"
+          },
+          "gsx$price-list": {
+            "$t": "499.00"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43683"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cztg3"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 10"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2664968, name: Dragon Ball Fighter Z, start-date: 2019-04-30, start-time: 6:00:00, end-date: 2019-04-30, end-time: 8:59:59, price-promo: 79.00, price-list: 169.00, track-id: lnd43684"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cztg3"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2664968"
+          },
+          "gsx$name": {
+            "$t": "Dragon Ball Fighter Z"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "79.00"
+          },
+          "gsx$price-list": {
+            "$t": "169.00"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43684"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d180g"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 11"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2762358, name: Juego Comedor Kult Vintage, start-date: 2019-04-30, start-time: 9:00:00, end-date: 2019-04-30, end-time: 11:59:59, price-promo: 499.90, price-list: 799.90, track-id: lnd43685"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d180g"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2762358"
+          },
+          "gsx$name": {
+            "$t": "Juego Comedor Kult Vintage"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "499.90"
+          },
+          "gsx$price-list": {
+            "$t": "799.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43685"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d2mkx"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 12"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2755475, name: Alacena Bella Madera 1.80m, start-date: 2019-04-30, start-time: 12:00:00, end-date: 2019-04-30, end-time: 14:59:59, price-promo: 479.90, price-list: 699.90, track-id: lnd43686"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d2mkx"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2755475"
+          },
+          "gsx$name": {
+            "$t": "Alacena Bella Madera 1.80m"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "469.90"
+          },
+          "gsx$price-list": {
+            "$t": "699.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43686"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cssly"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 13"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3492362, name: Cámara HD Mini Wi-Fi DCS-8000LH, start-date: 2019-04-30, start-time: 15:00:00, end-date: 2019-04-30, end-time: 17:59:59, price-promo: 149.00, price-list: 199.00, track-id: lnd43700"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cssly"
+            }
+          ],
+          "gsx$code": {
+            "$t": "3492362"
+          },
+          "gsx$name": {
+            "$t": "Cámara HD Mini Wi-Fi DCS-8000LH"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "149.00"
+          },
+          "gsx$price-list": {
+            "$t": "199.00"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43700"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cu76f"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 14"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2761440, name: Juego de Comedor 4 Personas Plateado, start-date: 2019-04-30, start-time: 18:00:00, end-date: 2019-04-30, end-time: 20:59:59, price-promo: 299.9, price-list: 399.90, track-id: lnd43702"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cu76f"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2761440"
+          },
+          "gsx$name": {
+            "$t": "Juego de Comedor 4 Personas Plateado"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "299.9"
+          },
+          "gsx$price-list": {
+            "$t": "399.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43702"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cvlqs"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 15"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1852582, name:  Sillón Reclinable Washington, start-date: 2019-04-30, start-time: 21:00:00, end-date: 2019-04-30, end-time: 23:59:59, price-promo: 299.90, price-list: 599.90, track-id: lnd43703"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cvlqs"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1852582"
+          },
+          "gsx$name": {
+            "$t": " Sillón Reclinable Washington"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "299.90"
+          },
+          "gsx$price-list": {
+            "$t": "599.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43703"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cx0b9"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "DIA 3"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1310585, name:  Mochila para camping 65 L, start-date: 2019-05-01, start-time: 0:00:00, end-date: 2019-05-01, end-time: 5:59:59, price-promo: 69.90, price-list: 119.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/cx0b9"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "DIA 3"
+          },
+          "gsx$code": {
+            "$t": "1310585"
+          },
+          "gsx$name": {
+            "$t": " Mochila para camping 65 L"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "0:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "69.90"
+          },
+          "gsx$price-list": {
+            "$t": "119.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d9ney"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 17"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2546396, name: Mesa de aluminio redonda 60x72cm, start-date: 2019-05-01, start-time: 6:00:00, end-date: 2019-05-01, end-time: 8:59:59, price-promo: 79.90, price-list: 129.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d9ney"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2546396"
+          },
+          "gsx$name": {
+            "$t": "Mesa de aluminio redonda 60x72cm"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "79.90"
+          },
+          "gsx$price-list": {
+            "$t": "129.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/db1zf"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 18"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 133663, name:  Toldo poliéstér 4x3m Home Collection, start-date: 2019-05-01, start-time: 9:00:00, end-date: 2019-05-01, end-time: 11:59:59, price-promo: 129.90, price-list: 174.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/db1zf"
+            }
+          ],
+          "gsx$code": {
+            "$t": "133663"
+          },
+          "gsx$name": {
+            "$t": " Toldo poliéstér 4x3m Home Collection"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "129.90"
+          },
+          "gsx$price-list": {
+            "$t": "174.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dcgjs"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 19"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2760487, name: Escritorio Júpiter Home Collection, start-date: 2019-05-01, start-time: 12:00:00, end-date: 2019-05-01, end-time: 14:59:59, price-promo: 399.90, price-list: 599.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dcgjs"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2760487"
+          },
+          "gsx$name": {
+            "$t": "Escritorio Júpiter Home Collection"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "399.90"
+          },
+          "gsx$price-list": {
+            "$t": "599.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/ddv49"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 20"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 133701, name:  Toldo poliéstér 3x3m Home Collection, start-date: 2019-05-01, start-time: 15:00:00, end-date: 2019-05-01, end-time: 17:59:59, price-promo: 79.90, price-list: 89.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/ddv49"
+            }
+          ],
+          "gsx$code": {
+            "$t": "133701"
+          },
+          "gsx$name": {
+            "$t": " Toldo poliéstér 3x3m Home Collection"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "79.90"
+          },
+          "gsx$price-list": {
+            "$t": "89.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d415a"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 21"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1554808, name: Cooler 16L Klimber, start-date: 2019-05-01, start-time: 18:00:00, end-date: 2019-05-01, end-time: 20:59:59, price-promo: 49.90, price-list: 94.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d415a"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1554808"
+          },
+          "gsx$name": {
+            "$t": "Cooler 16L Klimber"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "49.90"
+          },
+          "gsx$price-list": {
+            "$t": "94.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d5fpr"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 22"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2761408, name: Silla PC Aries Home Collection, start-date: 2019-05-01, start-time: 21:00:00, end-date: 2019-05-01, end-time: 23:59:59, price-promo: 199.90, price-list: 249.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d5fpr"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2761408"
+          },
+          "gsx$name": {
+            "$t": "Silla PC Aries Home Collection"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "199.90"
+          },
+          "gsx$price-list": {
+            "$t": "249.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d6ua4"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "EXT."
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2492199, name:  Mesa pleglable 52x39.5cm, start-date: 2019-05-02, start-time: 0:00:00, end-date: 2019-05-02, end-time: 5:59:59, price-promo: 29.90, price-list: 39.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d6ua4"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "EXT."
+          },
+          "gsx$code": {
+            "$t": "2492199"
+          },
+          "gsx$name": {
+            "$t": " Mesa pleglable 52x39.5cm"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "0:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "29.90"
+          },
+          "gsx$price-list": {
+            "$t": "39.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d88ul"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 24"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2672642, name:  Silla Camping Aluminio Pro Klimber Plus, start-date: 2019-05-02, start-time: 6:00:00, end-date: 2019-05-02, end-time: 8:59:59, price-promo: 99.90, price-list: 154.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/d88ul"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2672642"
+          },
+          "gsx$name": {
+            "$t": " Silla Camping Aluminio Pro Klimber Plus"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "99.90"
+          },
+          "gsx$price-list": {
+            "$t": "154.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dkvya"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 25"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2255308, name:  Papel higiénico Doble hoja 8und x 65m Elite, start-date: 2019-05-02, start-time: 9:00:00, end-date: 2019-05-02, end-time: 11:59:59, price-promo: 18.90, price-list: 21.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dkvya"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2255308"
+          },
+          "gsx$name": {
+            "$t": " Papel higiénico Doble hoja 8und x 65m Elite"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "18.90"
+          },
+          "gsx$price-list": {
+            "$t": "21.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dmair"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 26"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1689673, name:  Mesa plegable maleta 152 x 76 cm Klimber, start-date: 2019-05-02, start-time: 12:00:00, end-date: 2019-05-02, end-time: 14:59:59, price-promo: 99.90, price-list: 169.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dmair"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1689673"
+          },
+          "gsx$name": {
+            "$t": " Mesa plegable maleta 152 x 76 cm Klimber"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "99.90"
+          },
+          "gsx$price-list": {
+            "$t": "169.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dnp34"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 27"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3485471, name:  Huawei Y9 2019 Negro, start-date: 2019-05-02, start-time: 15:00:00, end-date: 2019-05-02, end-time: 17:59:59, price-promo: 999, price-list: 1099"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dnp34"
+            }
+          ],
+          "gsx$code": {
+            "$t": "3485471"
+          },
+          "gsx$name": {
+            "$t": " Huawei Y9 2019 Negro"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "999"
+          },
+          "gsx$price-list": {
+            "$t": "1099"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dp3nl"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 28"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2753537C1, name: Caja China Chica Premium + Parrilla de Varillas Niqueladas + Pack Parrillero + Parrilla a carbón redonda, start-date: 2019-05-02, start-time: 18:00:00, end-date: 2019-05-02, end-time: 20:59:59, price-promo: 289.90, price-list: 438.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/dp3nl"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2753537C1"
+          },
+          "gsx$name": {
+            "$t": "Caja China Chica Premium + Parrilla de Varillas Niqueladas + Pack Parrillero + Parrilla a carbón redonda"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "289.90"
+          },
+          "gsx$price-list": {
+            "$t": "438.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/df9om"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 29"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1852582, name:  Sillón Reclinable Washington Asenti, start-date: 2019-05-02, start-time: 21:00:00, end-date: 2019-05-02, end-time: 23:59:59, price-promo: 299.90, price-list: 599.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full/df9om"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1852582"
+          },
+          "gsx$name": {
+            "$t": " Sillón Reclinable Washington Asenti"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "299.90"
+          },
+          "gsx$price-list": {
+            "$t": "599.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        }
+      ]
+    }
+  }

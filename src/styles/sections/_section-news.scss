@@ -4,24 +4,25 @@ $bp-news-medium: 900px;
 $bp-news-small: 600px;
 $gridColSpace: 5px;
 $gridImageWidth: 295px;
+$boxFeatureIndex1: 3;
+$boxFeatureIndex2: 6;
 
 .section-news-banner {
     flex-basis: calc(50% - #{$gridColSpace});
     margin-bottom: $gridColSpace;
     margin-right: $gridColSpace / 2;
     margin-left: $gridColSpace / 2;
-    
-    &:first-child {
-        //flex-basis: 100%;
+
+    &:nth-child(#{$boxFeatureIndex1}),
+    &:nth-child(#{$boxFeatureIndex2}) {
+        flex-basis: 100%;
     }
 
-    @media (min-width: $bp-news-small) {
-        flex-basis: calc(33.33333% - #{$gridColSpace});
-    }
-    @media (min-width: $containerMaxWidth) {
-        flex-basis: $gridImageWidth;
-        &:first-child {
-            //flex-basis: 49%;
+    @media (min-width: $bp-news-small + 1px) {
+        flex-basis: calc(25% - #{$gridColSpace});
+        &:nth-child(#{$boxFeatureIndex1}),
+        &:nth-child(#{$boxFeatureIndex2}) {
+            flex-basis: calc(50% - #{$gridColSpace});
         }
     }
     img {

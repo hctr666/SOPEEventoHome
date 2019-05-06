@@ -61,6 +61,7 @@
       min-height: 350px;
       padding-bottom: 45px;
       margin-bottom: 10px;
+      padding-top: 5px !important;
     }
     .swiper-pagination {
       left: initial;
@@ -68,6 +69,19 @@
       position: relative;
       bottom: 0;
       padding: 12px 0;
+    }
+    .swiper-slide {
+      max-width: none !important;
+      width: 80% !important;
+      @media (min-width: $bp-xsmall + 1px) {
+        width: calc(100% / 2.3) !important;
+      }
+      @media (min-width: $bp-small + 1px) {
+        width: calc(100% / 4.08) !important;
+      }
+      @media (min-width: $bp-medium + 1px) {
+        width: calc(100% / 5.08) !important;
+      }
     }
     .swiper-wrapper {
       height: 435px;

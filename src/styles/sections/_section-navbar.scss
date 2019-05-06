@@ -3,21 +3,32 @@
 $navbarHeight: 48px;
 
 .section-main-navbar {
+    @media (min-width: $bp-medium + 1px) {
+      display: none;
+    }
     .main-navbar-heading {
       position: fixed;
       height: $navbarHeight;
       overflow: hidden;
-      top: 54px;
-      z-index: 201;
+      top: 57px;
+      z-index: 200;
       left: 0;
       right: 0;
       background: $brandSecondary;
+      box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px, rgba(0, 0, 0, 0.3) 0px 2px 4px -1px;
     }
 
     .main-navbar-logo {
         width: calc(100% - 120px);
         height: inherit;
         float: left;
+        background-image: url('../assets/img/logo-mb-1.png');
+        background-repeat: no-repeat;
+        background-size: auto 35px;
+        background-position: 4px center;
+        @media (min-width: $bp-xsmall + 120px) {
+           background-image: url('../assets/img/logo-tb-1.png');
+        }
     }
 
    .main-navbar-opener-label {
@@ -72,6 +83,10 @@ $navbarHeight: 48px;
       right: 0;
       bottom: 0;
       background: $brandPrimary;
+      background: -moz-linear-gradient(-45deg, #5148b1 0%, #4c45b0 43%, #1e13ae 100%);
+      background: -webkit-linear-gradient(-45deg, #5148b1 0%, #4c45b0 43%, #201a79 100%);
+      background: linear-gradient(135deg, #776cf5 0%, #574fc3 43%, #120a7d 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5149b2', endColorstr='#1d13af',GradientType=1 );
       z-index: 1000;
       pointer-events: none;
       opacity: 0;
@@ -94,6 +109,7 @@ $navbarHeight: 48px;
          position: relative;
          top: 0;
          background: #000;
+         box-shadow: none;
       }
       .main-navbar-opener-bars {
          float: right;
@@ -138,7 +154,18 @@ $navbarHeight: 48px;
             height: calc(100% / 5);
             float: left;
             box-shadow: 0 0 1px 0px rgba(255, 255, 255, 0.4);
+            &:hover,
+            &:active,
+            &.active {
+               background: #fff;
+               a {
+                  color: $brandPrimary;
+                  font-weight: 700;
+               }
+            }
             > a {
+               letter-spacing: 1px;
+               text-decoration: none;
                color: #fff;
                display: flex;
                height: 100%;

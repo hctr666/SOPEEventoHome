@@ -27,7 +27,7 @@ export default class DailyDeals {
          selectorCountdown: '#daily-deals-countdown',
          renderToExternalCountdown: false,
          renderCountdown: true,
-         dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full?alt=json'
+         dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full?alt=json&v=1.2'
       }, options, {})
       this.query = null
       this.isRequestingData = false
@@ -57,7 +57,9 @@ export default class DailyDeals {
             url: this.options.dataSheetURL,
             beforeSend: () => {
                this.isRequestingData = true
-               this.$container.classList.add('is-loading')
+               if (this.$container) {
+                  this.$container.classList.add('is-loading')
+               }
             }
          }).done((res, textStatus) => {
             if (textStatus === "success" && res.feed.entry && res.feed.entry.length > 0) {
@@ -94,7 +96,9 @@ export default class DailyDeals {
          .always((res, textStatus) => {
             if (textStatus !== "abort") {
                this.isRequestingData = false
-               this.$container.classList.remove('is-loading')
+               if (this.$container) {
+                  this.$container.classList.remove('is-loading')
+               }
             }
          })
       }

@@ -1,0 +1,1756 @@
+{
+    "version": "1.0",
+    "encoding": "UTF-8",
+    "feed": {
+      "entry": [
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cokwr"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "DIA 1"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1406434C2, name: Tanque de Agua 1100 L + Bomba Periférica 0.5 HP , start-date: 2019-04-28, start-time: 23:00:00, end-date: 2019-04-29, end-time: 5:59:59, price-promo: 489.9, price-list: 629.80, is-cmr: 1, is-combo: 1, track-id: lnd43575"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cokwr"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "DIA 1"
+          },
+          "gsx$code": {
+            "$t": "1406434C2"
+          },
+          "gsx$name": {
+            "$t": "Tanque de Agua 1100 L + Bomba Periférica 0.5 HP "
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-28"
+          },
+          "gsx$start-time": {
+            "$t": "23:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "489.9"
+          },
+          "gsx$price-list": {
+            "$t": "629.80"
+          },
+          "gsx$is-cmr": {
+            "$t": "1"
+          },
+          "gsx$is-combo": {
+            "$t": "1"
+          },
+          "gsx$track-id": {
+            "$t": "lnd43575"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cpzh4"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 3"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1406434C15, name: Tanque de Agua 1100 L + Bomba Periférica 0.5 HP + Kit de instalación + Automatico de nivel, start-date: 2019-04-29, start-time: 6:00:00, end-date: 2019-04-29, end-time: 8:59:59, price-promo: 569.9, price-list: 691.60, is-cmr: 1, is-combo: 1, track-id: lnd43576"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cpzh4"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1406434C15"
+          },
+          "gsx$name": {
+            "$t": "Tanque de Agua 1100 L + Bomba Periférica 0.5 HP + Kit de instalación + Automatico de nivel"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "569.9"
+          },
+          "gsx$price-list": {
+            "$t": "691.60"
+          },
+          "gsx$is-cmr": {
+            "$t": "1"
+          },
+          "gsx$is-combo": {
+            "$t": "1"
+          },
+          "gsx$track-id": {
+            "$t": "lnd43576"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cre1l"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 4"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 199737C11, name: BOMBA PEDROLLO 1.0HP + VALVULA ESFERICA 1/2 + AUTOMATICO DE NIVEL, start-date: 2019-04-29, start-time: 9:00:00, end-date: 2019-04-29, end-time: 11:59:59, price-promo: 639.90, price-list: 714.70, is-cmr: 1, is-combo: 1, track-id: lnd43581"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cre1l"
+            }
+          ],
+          "gsx$code": {
+            "$t": "199737C11"
+          },
+          "gsx$name": {
+            "$t": "BOMBA PEDROLLO 1.0HP + VALVULA ESFERICA 1/2 + AUTOMATICO DE NIVEL"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "639.90"
+          },
+          "gsx$price-list": {
+            "$t": "714.70"
+          },
+          "gsx$is-cmr": {
+            "$t": "1"
+          },
+          "gsx$is-combo": {
+            "$t": "1"
+          },
+          "gsx$track-id": {
+            "$t": "lnd43581"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/chk2m"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 5"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2274027, name:  Pistola para pintar con base 650W Bauker, start-date: 2019-04-29, start-time: 12:00:00, end-date: 2019-04-29, end-time: 14:59:59, price-promo: 149.90, price-list: 359.90, track-id: lnd43582"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/chk2m"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2274027"
+          },
+          "gsx$name": {
+            "$t": " Pistola para pintar con base 650W Bauker"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "149.90"
+          },
+          "gsx$price-list": {
+            "$t": "359.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43582"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/ciyn3"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 6"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1385135, name: Coche de Carga 250 Kg Redline, start-date: 2019-04-29, start-time: 15:00:00, end-date: 2019-04-29, end-time: 17:59:59, price-promo: 89.90, price-list: 149.90, track-id: lnd43687"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/ciyn3"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1385135"
+          },
+          "gsx$name": {
+            "$t": "Coche de Carga 250 Kg Redline"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "89.90"
+          },
+          "gsx$price-list": {
+            "$t": "149.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43687"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/ckd7g"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 7"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code:  200522C8 , name: Tanque de Agua 1100 L + Bomba Periférica 0.5 HP , start-date: 2019-04-29, start-time: 18:00:00, end-date: 2019-04-29, end-time: 20:59:59, price-promo: 459.90, price-list: 509.80, is-combo: 1, track-id: lnd43688"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/ckd7g"
+            }
+          ],
+          "gsx$code": {
+            "$t": " 200522C8 "
+          },
+          "gsx$name": {
+            "$t": "Tanque de Agua 1100 L + Bomba Periférica 0.5 HP "
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "459.90"
+          },
+          "gsx$price-list": {
+            "$t": "509.80"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": "1"
+          },
+          "gsx$track-id": {
+            "$t": "lnd43688"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/clrrx"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 8"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 200492C1, name: Tanque de Agua 250 L + Bomba Periférica 0.5 HP , start-date: 2019-04-29, start-time: 21:00:00, end-date: 2019-04-29, end-time: 23:59:59, price-promo: 279.90, price-list: 329.80, is-combo: 1, track-id: lnd43689"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/clrrx"
+            }
+          ],
+          "gsx$code": {
+            "$t": "200492C1"
+          },
+          "gsx$name": {
+            "$t": "Tanque de Agua 250 L + Bomba Periférica 0.5 HP "
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-29"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "279.90"
+          },
+          "gsx$price-list": {
+            "$t": "329.80"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": "1"
+          },
+          "gsx$track-id": {
+            "$t": "lnd43689"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cyevm"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "DIA 2"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 200573, name: Filtro Purificador Sobre Lavadero Rotoplas, start-date: 2019-04-30, start-time: 0:00:00, end-date: 2019-04-30, end-time: 5:59:59, price-promo: 139.90, price-list: 181.90, track-id: lnd43690"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cyevm"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "DIA 2"
+          },
+          "gsx$code": {
+            "$t": "200573"
+          },
+          "gsx$name": {
+            "$t": "Filtro Purificador Sobre Lavadero Rotoplas"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "0:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "139.90"
+          },
+          "gsx$price-list": {
+            "$t": "181.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43690"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cztg3"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 10"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2605724, name: Puerta de Seguridad 3 Paneles 86x205cm Izquierda Sheriff, start-date: 2019-04-30, start-time: 6:00:00, end-date: 2019-04-30, end-time: 8:59:59, price-promo: 699.90, price-list: 999.90, track-id: lnd43691"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cztg3"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2605724"
+          },
+          "gsx$name": {
+            "$t": "Puerta de Seguridad 3 Paneles 86x205cm Izquierda Sheriff"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "699.90"
+          },
+          "gsx$price-list": {
+            "$t": "999.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43691"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d180g"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 11"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2218046, name: Lijadora Orbital STEL 401 220 W Stanley + Recolector de polvo, start-date: 2019-04-30, start-time: 9:00:00, end-date: 2019-04-30, end-time: 11:59:59, price-promo: 109.90, price-list: 159.90, track-id: lnd43692"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d180g"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2218046"
+          },
+          "gsx$name": {
+            "$t": "Lijadora Orbital STEL 401 220 W Stanley + Recolector de polvo"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "109.90"
+          },
+          "gsx$price-list": {
+            "$t": "159.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43692"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d2mkx"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 12"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1406442C5, name: Combo Tanque de Agua 2500 L + Bomba Periférica 0.5 HP, start-date: 2019-04-30, start-time: 12:00:00, end-date: 2019-04-30, end-time: 14:59:59, price-promo: 839.90, price-list: 1,057.80, is-combo: 1, track-id: lnd43693"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d2mkx"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1406442C5"
+          },
+          "gsx$name": {
+            "$t": "Combo Tanque de Agua 2500 L + Bomba Periférica 0.5 HP"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "849.90"
+          },
+          "gsx$price-list": {
+            "$t": "1,057.80"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": "1"
+          },
+          "gsx$track-id": {
+            "$t": "lnd43693"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cssly"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 13"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 25150X, name: Cerradura tranca Y-754, start-date: 2019-04-30, start-time: 15:00:00, end-date: 2019-04-30, end-time: 17:59:59, price-promo: 159.90, price-list: 174.90, track-id: lnd43695"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cssly"
+            }
+          ],
+          "gsx$code": {
+            "$t": "25150X"
+          },
+          "gsx$name": {
+            "$t": "Cerradura tranca Y-754"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "159.90"
+          },
+          "gsx$price-list": {
+            "$t": "174.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43695"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cu76f"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 14"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3153630, name:  Dremel 3000 + Eje Flexible + Empuñadora + 30 Accesorios + Bolso, start-date: 2019-04-30, start-time: 18:00:00, end-date: 2019-04-30, end-time: 20:59:59, price-promo: 279.90, price-list: 349.90, is-combo: 1, track-id: lnd43696"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cu76f"
+            }
+          ],
+          "gsx$code": {
+            "$t": "3153630"
+          },
+          "gsx$name": {
+            "$t": " Dremel 3000 + Eje Flexible + Empuñadora + 30 Accesorios + Bolso"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "279.90"
+          },
+          "gsx$price-list": {
+            "$t": "349.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": "1"
+          },
+          "gsx$track-id": {
+            "$t": "lnd43696"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cvlqs"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 15"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 200573C, name:  Combo Purificador sobre Lavadero + Cartucho Purificador, start-date: 2019-04-30, start-time: 21:00:00, end-date: 2019-04-30, end-time: 23:59:59, price-promo: 179.90, price-list: 273.80, track-id: lnd43697"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cvlqs"
+            }
+          ],
+          "gsx$code": {
+            "$t": "200573C"
+          },
+          "gsx$name": {
+            "$t": " Combo Purificador sobre Lavadero + Cartucho Purificador"
+          },
+          "gsx$start-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-04-30"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "179.90"
+          },
+          "gsx$price-list": {
+            "$t": "273.80"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43697"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cx0b9"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "DIA 3"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2033879, name: Tanque de Agua 1100 L, start-date: 2019-05-01, start-time: 0:00:00, end-date: 2019-05-01, end-time: 5:59:59, price-promo: 349.90, price-list: 359.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/cx0b9"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "DIA 3"
+          },
+          "gsx$code": {
+            "$t": "2033879"
+          },
+          "gsx$name": {
+            "$t": "Tanque de Agua 1100 L"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "0:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "349.90"
+          },
+          "gsx$price-list": {
+            "$t": "359.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d9ney"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 17"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2507323, name: Contenedor Brute 121L, start-date: 2019-05-01, start-time: 6:00:00, end-date: 2019-05-01, end-time: 8:59:59, price-promo: 99.90, price-list: 129.90, track-id: lnd43698"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d9ney"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2507323"
+          },
+          "gsx$name": {
+            "$t": "Contenedor Brute 121L"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "99.90"
+          },
+          "gsx$price-list": {
+            "$t": "129.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": "lnd43698"
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/db1zf"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 18"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2608391, name: Toldo Retráctil 3.95 x 2.50 m Verde/Blanco Rayado, start-date: 2019-05-01, start-time: 9:00:00, end-date: 2019-05-01, end-time: 11:59:59, price-promo: 499.90, price-list: 799.00"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/db1zf"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2608391"
+          },
+          "gsx$name": {
+            "$t": "Toldo Retráctil 3.95 x 2.50 m Verde/Blanco Rayado"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "499.90"
+          },
+          "gsx$price-list": {
+            "$t": "799.00"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dcgjs"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 19"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 3205223, name: Atornillador Inalámbrico 3.6V, start-date: 2019-05-01, start-time: 12:00:00, end-date: 2019-05-01, end-time: 14:59:59, price-promo: 88.90, price-list: 129.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dcgjs"
+            }
+          ],
+          "gsx$code": {
+            "$t": "3205223"
+          },
+          "gsx$name": {
+            "$t": "Atornillador Inalámbrico 3.6V"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "88.90"
+          },
+          "gsx$price-list": {
+            "$t": "129.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/ddv49"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 20"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 199737C11, name: Bomba Centrífuga + Automático de Nivel + Válvula Esférica, start-date: 2019-05-01, start-time: 15:00:00, end-date: 2019-05-01, end-time: 17:59:59, price-promo: 629.90, price-list: 714.70"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/ddv49"
+            }
+          ],
+          "gsx$code": {
+            "$t": "199737C11"
+          },
+          "gsx$name": {
+            "$t": "Bomba Centrífuga + Automático de Nivel + Válvula Esférica"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "629.90"
+          },
+          "gsx$price-list": {
+            "$t": "714.70"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d415a"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 21"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2702932, name: Toldo Retráctil Vertical 2x3m Azul, start-date: 2019-05-01, start-time: 18:00:00, end-date: 2019-05-01, end-time: 20:59:59, price-promo: 249.90, price-list: 599.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d415a"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2702932"
+          },
+          "gsx$name": {
+            "$t": "Toldo Retráctil Vertical 2x3m Azul"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "249.90"
+          },
+          "gsx$price-list": {
+            "$t": "599.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d5fpr"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 22"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2584913C, name: Horno eléctrico 25L + Adaptador Universal sin Contacto a Tierra x 2 unid., start-date: 2019-05-01, start-time: 21:00:00, end-date: 2019-05-01, end-time: 23:59:59, price-promo: 119.90, price-list: 206.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d5fpr"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2584913C"
+          },
+          "gsx$name": {
+            "$t": "Horno eléctrico 25L + Adaptador Universal sin Contacto a Tierra x 2 unid."
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-01"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "119.90"
+          },
+          "gsx$price-list": {
+            "$t": "206.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d6ua4"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "EXT."
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2481804C, name: Linterna Hard Case Recargable + 10 Pilas Alcalinas AA, start-date: 2019-05-02, start-time: 0:00:00, end-date: 2019-05-02, end-time: 5:59:59, price-promo: 179.90, price-list: 247.80"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d6ua4"
+            }
+          ],
+          "gsx$_cn6ca": {
+            "$t": "EXT."
+          },
+          "gsx$code": {
+            "$t": "2481804C"
+          },
+          "gsx$name": {
+            "$t": "Linterna Hard Case Recargable + 10 Pilas Alcalinas AA"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "0:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "5:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "179.90"
+          },
+          "gsx$price-list": {
+            "$t": "247.80"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d88ul"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 24"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2678829, name: Autoradio 2 parlantes KDR-480 JVC, start-date: 2019-05-02, start-time: 6:00:00, end-date: 2019-05-02, end-time: 8:59:59, price-promo: 279.00, price-list: 299.00"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/d88ul"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2678829"
+          },
+          "gsx$name": {
+            "$t": "Autoradio 2 parlantes KDR-480 JVC"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "6:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "8:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "279.00"
+          },
+          "gsx$price-list": {
+            "$t": "299.00"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dkvya"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 25"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1831097C1, name: Ducha eléctrica instantánea + Tablero Adosable + Interruptor Termomagnético, start-date: 2019-05-02, start-time: 9:00:00, end-date: 2019-05-02, end-time: 11:59:59, price-promo: 89.00, price-list: 100.70"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dkvya"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1831097C1"
+          },
+          "gsx$name": {
+            "$t": "Ducha eléctrica instantánea + Tablero Adosable + Interruptor Termomagnético"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "9:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "11:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "89.00"
+          },
+          "gsx$price-list": {
+            "$t": "100.70"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dmair"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 26"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2605724, name: Puerta de Seguridad 3 Paneles 86x205cm Izquierda Sheriff, start-date: 2019-05-02, start-time: 12:00:00, end-date: 2019-05-02, end-time: 14:59:59, price-promo: 699.90, price-list: 999.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dmair"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2605724"
+          },
+          "gsx$name": {
+            "$t": "Puerta de Seguridad 3 Paneles 86x205cm Izquierda Sheriff"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "12:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "14:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "699.90"
+          },
+          "gsx$price-list": {
+            "$t": "999.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dnp34"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 27"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2109425C10, name: Tanque de Agua 750 L + Bomba Periférica + Kit Instalación Tanque + Automático de Nivel, start-date: 2019-05-02, start-time: 15:00:00, end-date: 2019-05-02, end-time: 17:59:59, price-promo: 459.90, price-list: 546.60"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dnp34"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2109425C10"
+          },
+          "gsx$name": {
+            "$t": "Tanque de Agua 750 L + Bomba Periférica + Kit Instalación Tanque + Automático de Nivel"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "15:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "17:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "459.90"
+          },
+          "gsx$price-list": {
+            "$t": "546.60"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dp3nl"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 28"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 1973274, name: Porcelanato Mar negro 60x60cm rendimiento: 1.44m2 Hölztek, start-date: 2019-05-02, start-time: 18:00:00, end-date: 2019-05-02, end-time: 20:59:59, price-promo: 26.9, price-list: 39.9"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/dp3nl"
+            }
+          ],
+          "gsx$code": {
+            "$t": "1973274"
+          },
+          "gsx$name": {
+            "$t": "Porcelanato Mar negro 60x60cm rendimiento: 1.44m2 Hölztek"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "18:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "20:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "26.9"
+          },
+          "gsx$price-list": {
+            "$t": "39.9"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        },
+        {
+          "id": {
+            "$t": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/df9om"
+          },
+          "updated": {
+            "$t": "2019-04-29T20:23:17.436Z"
+          },
+          "category": [
+            {
+              "scheme": "http://schemas.google.com/spreadsheets/2006",
+              "term": "http://schemas.google.com/spreadsheets/2006#list"
+            }
+          ],
+          "title": {
+            "type": "text",
+            "$t": "Row: 29"
+          },
+          "content": {
+            "type": "text",
+            "$t": "code: 2543893, name: Atornillador BDCS36F 3.6 V BLACK+DECKER, start-date: 2019-05-02, start-time: 21:00:00, end-date: 2019-05-02, end-time: 23:59:59, price-promo: 79.90, price-list: 99.90"
+          },
+          "link": [
+            {
+              "rel": "self",
+              "type": "application/atom+xml",
+              "href": "https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full/df9om"
+            }
+          ],
+          "gsx$code": {
+            "$t": "2543893"
+          },
+          "gsx$name": {
+            "$t": "Atornillador BDCS36F 3.6 V BLACK+DECKER"
+          },
+          "gsx$start-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$start-time": {
+            "$t": "21:00:00"
+          },
+          "gsx$end-date": {
+            "$t": "2019-05-02"
+          },
+          "gsx$end-time": {
+            "$t": "23:59:59"
+          },
+          "gsx$price-promo": {
+            "$t": "79.90"
+          },
+          "gsx$price-list": {
+            "$t": "99.90"
+          },
+          "gsx$is-cmr": {
+            "$t": ""
+          },
+          "gsx$is-combo": {
+            "$t": ""
+          },
+          "gsx$track-id": {
+            "$t": ""
+          }
+        }
+      ]
+    }
+  }

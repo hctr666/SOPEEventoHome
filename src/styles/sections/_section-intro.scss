@@ -3,6 +3,8 @@
 
 $paginationHeightDesktop: 55px;
 $paginationWithContentBreakpoint: 915px;
+$menuNavbarHeight: 48px;
+$totalSlides: 6;
 
 .section-intro-logo {
     //height: 0;
@@ -17,7 +19,7 @@ $paginationWithContentBreakpoint: 915px;
     z-index: 2;
     @media (min-width: $bp-medium) {
         height: 67px;
-        background-image: url('../assets/img/logo-dkp.png');
+        background-image: url('../assets/img/logo-dkp-1.png');
     }
     @media (max-width: $bp-small) {
         background-color: #2b8cae;
@@ -40,7 +42,7 @@ $paginationWithContentBreakpoint: 915px;
     background-position: center -10px;
     background-repeat: repeat no-repeat;
     background-size: auto 450px;
-    padding-top: 57px;
+    padding-top: $menuNavbarHeight - 1px;
     @media (min-width: $bp-small + 101px) {
         //padding-top: 67px;
     }
@@ -75,7 +77,7 @@ $paginationWithContentBreakpoint: 915px;
             //@include horizontalScroll()
             text-align: center;
             position: relative;
-            background: #382e95;
+            background: #201370;
             bottom: 0;
             padding: 5px 0;
         }
@@ -95,7 +97,7 @@ $paginationWithContentBreakpoint: 915px;
                 border-radius: 0;
                 height: $paginationHeightDesktop;
                 padding: 10px 12px;
-                width: calc(100% / 5);
+                width: calc(100% / #{$totalSlides});
                 opacity: 1;
                 float: left;
                 display: flex;
@@ -113,6 +115,8 @@ $paginationWithContentBreakpoint: 915px;
                 @media (min-width: $paginationWithContentBreakpoint + 1px) {
                     //background: $greyLight;}
                     border-bottom: 3px $brandPrimary solid;
+                    background: #352181;
+                    color: #fff;
                 }
             }
         }
