@@ -8,7 +8,9 @@ import {
    slugify,
    isIOS
 } from './js/utils'
-import ProductListNavigation from './js/productlist-navigation'
+/*import ProductListNavigation from './js/productlist-navigation'*/
+import './js/product-panel'
+
 import SliderIntro from './js/slider-intro'
 import DailyDeals from './js/daily-deals'
 import MutationObserver from 'mutation-observer'
@@ -35,7 +37,7 @@ const addHTMLClasses = () => {
    if (hasWebpSupport()) {
       document.documentElement.classList.add('supports-webp')
    }
-   
+
    if (isIOS()) {
       document.documentElement.classList.add('ios')
    }
@@ -59,7 +61,7 @@ const improveProdImagesSrcs = () => {
 
 const resetProductListScrollPosition = () => {
    if (productListWrapperEl && productListWrapperEl.parentNode) {
-      productListWrapperEl.parentNode.scrollTo(0,0)
+      productListWrapperEl.parentNode.scrollTo(0, 0)
    }
 }
 
@@ -73,7 +75,7 @@ const handleClickProductListTab = () => {
             shouldResetMissingPrices = true
             resetProductListScrollPosition()
          })
-      })      
+      })
    }
 }
 
@@ -157,12 +159,12 @@ const handleModals = () => {
          currModalElem = null
       }
    }
-   
+
    const onClickCloseListener = e => {
       e.preventDefault()
       hideModal(currModalElem)
    }
-   
+
    const onClickInnerListener = e => {
       e.stopPropagation()
    }
@@ -199,7 +201,7 @@ const handleModals = () => {
                e.preventDefault()
                const targetElem = document.getElementById(openerElems[o].dataset.targetId)
                showModal(targetElem)
-            }) 
+            })
          }
       }
    }
@@ -212,7 +214,7 @@ const tabProductlist = () => {
       activeIndex: 0,
       onTransitionChangeEnd: (st) => {
          console.log(st);
-         
+
       }
    })
 }
@@ -262,7 +264,7 @@ const lazyImages = () => {
    }
    if (imageElems.length > 0) {
       for (let i = 0; i < imageElems.length; i++) {
-         if (! imageElems[i].classList.contains('b-loaded')) {
+         if (!imageElems[i].classList.contains('b-loaded')) {
             if (imageElems[i].dataset.srcset) {
                imageElems[i].setAttribute('srcset', `${getURLWithFmt(imageElems[i].dataset.srcset)}`)
                delete imageElems[i].dataset.srcset
@@ -284,10 +286,10 @@ const lazyImages = () => {
 const extractPriceListFromString = (str) => {
    if (typeof str !== "undefined") {
       // Extract "regular/antes/normal" prices from substring text
-      const regExp  = /\( *(Antes|Regular|Normal) *S\/ *\d+\.*,*\d* *\)/i;
+      const regExp = /\( *(Antes|Regular|Normal) *S\/ *\d+\.*,*\d* *\)/i;
       const matches = regExp.exec(str);
 
-      if(matches && matches.length > 1) {
+      if (matches && matches.length > 1) {
          const strFound = $.trim(matches[0].replace(/\(/, '').replace(/\)/, ''));
          const priceArr = strFound.split(/S\//);
          return {
@@ -313,7 +315,7 @@ const appendSeeAllCategoryItemToCategoryList = () => {
          if (!seeAllCategoryItemEl) {
             //seeAllCategoryItemEl.parentNode.removeChild(seeAllCategoryItemEl)
             const seeAllCategoryItem = document.createElement('div')
-            seeAllCategoryItem.classList.add('fbra_productItem', 'fbra_seeAllCategoryItemWrap','col-sm-4','col-md-3','pdd3', 'mt10')
+            seeAllCategoryItem.classList.add('fbra_productItem', 'fbra_seeAllCategoryItemWrap', 'col-sm-4', 'col-md-3', 'pdd3', 'mt10')
             seeAllCategoryItem.innerHTML = `
                <div class="fbra_productListItem destaHome fbra_seeAllCategoryItem">
                   <a href="${seeAllCategoryLinkEl.href}" class="fullh d-flex d-flex-col-middle no-decoration fbra_anchor fbra_productListItem_Link text-center white-space-normal">
@@ -331,7 +333,7 @@ const appendSeeAllCategoryItemToCategoryList = () => {
          }
 
          const mobileSeeAllCategoryBtn = document.querySelector('.mobile-see-all-category-btn')
-   
+
          // Mobile "see category" button
          if (window.innerWidth <= 1000) {
             if (!mobileSeeAllCategoryBtn) {
@@ -351,8 +353,8 @@ const appendSeeAllCategoryItemToCategoryList = () => {
             }
          }
       }
-      
-   } catch(e) {
+
+   } catch (e) {
       console.error('Error trying to append "see category" item to category list', e);
    }
 }
@@ -376,9 +378,9 @@ const renderMissingPrices = () => {
             if (shouldResetMissingPrices) {
                if (curSavingsElem) curSavingsElem.parentNode.removeChild(curSavingsElem)
                if (curPriceSecondaryFromNameEl) curPriceSecondaryFromNameEl.parentNode.removeChild(curPriceSecondaryFromNameEl)
-               if (curDiscountTagEl) curDiscountTagEl.parentNode.removeChild(curDiscountTagEl)               
+               if (curDiscountTagEl) curDiscountTagEl.parentNode.removeChild(curDiscountTagEl)
             }
-   
+
             const fbraProductPrices = []
 
             // Get price main
@@ -387,7 +389,7 @@ const renderMissingPrices = () => {
                   fbraProductPrices.push({
                      value: parseFloat(fbraProductMainPriceElem.children[1].textContent.trim()),
                      format: fbraProductMainPriceElem.children[3].textContent.trim()
-                  }) 
+                  })
                }
             }
 
@@ -396,7 +398,7 @@ const renderMissingPrices = () => {
                if (typeof fbraProductSecondaryPriceElem.children[3] !== "undefined") {
                   fbraProductPrices.push({
                      value: parseFloat(fbraProductSecondaryPriceElem.children[3].textContent.trim()),
-                  }) 
+                  })
                }
             } else {
                // Extracting price list from name
@@ -406,7 +408,7 @@ const renderMissingPrices = () => {
                   if (priceSecondaryFromName) {
                      fbraProductPrices.push({
                         value: parseFloat(priceSecondaryFromName.value),
-                     }) 
+                     })
                   }
                }
             }
@@ -415,8 +417,8 @@ const renderMissingPrices = () => {
                if (typeof fbraProductPrices[0] !== "undefined" && typeof fbraProductPrices[1] !== "undefined") {
                   const amountSavings = (fbraProductPrices[1].value - fbraProductPrices[0].value).toFixed(2)
                   const discountPercentage = Math.floor((amountSavings / fbraProductPrices[1].value) * 100)
-                  
-                  if (! curDiscountTagEl) {
+
+                  if (!curDiscountTagEl) {
                      if (discountPercentage > 0) {
                         const discountTagEl = document.createElement('span')
                         discountTagEl.classList.add('js-item-tag-discount', 'prodItem_tagDiscount', 'hidden')
@@ -433,8 +435,8 @@ const renderMissingPrices = () => {
                         curDiscountTagEl.classList.add('hidden')
                      }
                   }
-                  
-                  if (! curSavingsElem) {
+
+                  if (!curSavingsElem) {
                      const savingsElem = document.createElement('p')
                      savingsElem.classList.add('fbra_productSecondaryPrice')
                      savingsElem.setAttribute('data-name', 'savings')
@@ -444,14 +446,14 @@ const renderMissingPrices = () => {
                         <span>Ahorro </span>
                         <span>S/${amountSavings}</span>
                      `
-                     
+
                      if (fbraProductPriceSection) {
                         fbraProductPriceSection.appendChild(savingsElem)
                      }
                      if (!fbraProductSecondaryPriceElem) {
                         const priceSecondaryFromNameEl = document.createElement('p')
                         priceSecondaryFromNameEl.classList.add('fbra_productSecondaryPrice')
-                        priceSecondaryFromNameEl.setAttribute('data-name', 'price-normal')                        
+                        priceSecondaryFromNameEl.setAttribute('data-name', 'price-normal')
                         priceSecondaryFromNameEl.innerHTML = `
                            <span>Antes </span>
                            <span>S/${fbraProductPrices[1].value.toFixed(2)}</span>
@@ -474,7 +476,7 @@ const renderMissingPrices = () => {
             fbraProductItemEl.classList.add('jsHasMissingPrices')
          }
       }
-   } catch(e){
+   } catch (e) {
       console.error(e, 'Error trying to render missing prices');
    }
 }
@@ -485,12 +487,12 @@ const handleScrollToTop = (target) => {
       const buildThresholdList = () => {
          var thresholds = [];
          var numSteps = 20;
-       
+
          for (var i = 1.0; i <= numSteps; i++) {
-           var ratio = i / numSteps;
-           thresholds.push(ratio);
+            var ratio = i / numSteps;
+            thresholds.push(ratio);
          }
-       
+
          thresholds.push(0);
          return thresholds;
       }
@@ -502,7 +504,7 @@ const handleScrollToTop = (target) => {
          thresholds: buildThresholdList()
       }
 
-      const observer = new IntersectionObserver((entries, observer) => {            
+      const observer = new IntersectionObserver((entries, observer) => {
          entries.forEach(entry => {
             if (scrollToTopEl) {
                if (entry.isIntersecting) {
@@ -533,7 +535,7 @@ const initMutationObservers = (targets) => {
       for (let i = 0; i < targets.length; i++) {
          const observer = new MutationObserver((mutations) => {
             mutations.map(mutation => {
-               if (!mutation.target.classList.contains('fbra_loadingWrapper--isLoading') && mutation.type === "childList") {                  
+               if (!mutation.target.classList.contains('fbra_loadingWrapper--isLoading') && mutation.type === "childList") {
                   improveProdImagesSrcs()
                   renderMissingPrices()
                   appendSeeAllCategoryItemToCategoryList()
@@ -541,13 +543,16 @@ const initMutationObservers = (targets) => {
             })
          })
 
-         observer.observe(targets[i], {
-            attributes: true,
-            childList: true,
-            characterData: true
-         })
+         if (targets[i]) {
+            observer.observe(targets[i], {
+               attributes: true,
+               childList: true,
+               characterData: true
+            })
+         }
+
       }
-   } 
+   }
 }
 
 
@@ -555,7 +560,7 @@ const initMutationObservers = (targets) => {
 const setTabNavIcons = () => {
    const catListTabElems = document.querySelectorAll('.fbra_categoryListTab')
    if (catListTabElems.length > 0) {
-      for(let i = 0; i < catListTabElems.length; i++) {
+      for (let i = 0; i < catListTabElems.length; i++) {
          const catListTabIconEl = catListTabElems[i].querySelector('.icono-cyber')
          const catListTabTextEl = catListTabElems[i].querySelector('.fbra_categoryListTab__text')
 
@@ -566,7 +571,7 @@ const setTabNavIcons = () => {
          }
       }
    }
-   
+
 }
 
 const createScrollToTopRefEl = () => {
@@ -575,74 +580,75 @@ const createScrollToTopRefEl = () => {
    document.body.appendChild(scrollToTopRefElem)
 }
 
-;(function(d, w, domIsReady) {
-   domIsReady(function() {
+   ; (function (d, w, domIsReady) {
+      domIsReady(function () {
 
-      productListWrapperEl = d.querySelector('.fbra_productList .fbra_loadingWrapper')
-      sectionNewsEl = d.querySelector('.section-news')
-      scrollToTopEl = d.querySelector('.button-back-to-top')
+         productListWrapperEl = d.querySelector('.fbra_productList .fbra_loadingWrapper')
+         sectionNewsEl = d.querySelector('.section-news')
+         scrollToTopEl = d.querySelector('.button-back-to-top')
 
-      // Handle menu navbar interactions
-      handleNavbarInteractions()
+         // Handle menu navbar interactions
+         handleNavbarInteractions()
 
-      // Init Slider intro
-      new SliderIntro('#swiper-slider-intro', {
-         imageSelector: '.js-swiper-slide-image',
-         selectorBtnNext: '.swiper-slider-intro-btn-next',
-         selectorBtnPrev: '.swiper-slider-intro-btn-prev',
-         selectorPagination: '.swiper-slider-intro-pagination'
-      })
-
-      // DailyDeals Homecenter
-      new DailyDeals('#daily-deals-homecenter', {
-         renderToExternalCountdown: true,
-         //dataSheetURL: '/static/campanas/cybersodimac/eventos-2019/dailyDealsHomecenter.json?1234567890',
-         dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full?alt=json',
-      })
-
-      // DailyDeals Constructor
-      new DailyDeals('#daily-deals-constructor', {
-         renderCountdown: false,
-         //dataSheetURL: '/static/campanas/cybersodimac/eventos-2019/dailyDealsConstructor.json?1234567890',
-         dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full?alt=json',
-      })
-
-      // Init mutation observers
-      initMutationObservers([ productListWrapperEl ])
-
-      createScrollToTopRefEl()
-
-      // Handle button 'scrolltotop'
-      handleScrollToTop(scrollToTopRefElem)
-
-      // section promotions
-      sectionPromotions()
-
-      // section news
-      //sectionOurBrands()
-
-      // Improve productlist image resolution
-      improveProdImagesSrcs()
-
-      // Add missing prices to product item
-      renderMissingPrices()
-
-      // Append 'see all category' banner to category list
-      appendSeeAllCategoryItemToCategoryList()
-
-      // Set product list tab navigation icons
-      setTabNavIcons()
-
-      handleClickProductListTab()
-
-      // Init productlist navigation improvements
-      setTimeout(() => {
-         new ProductListNavigation('#fbra_categoryList', {
-            tabsSelector: '.fbra_categoryListTab'
+         // Init Slider intro
+         new SliderIntro('#swiper-slider-intro', {
+            imageSelector: '.js-swiper-slide-image',
+            selectorBtnNext: '.swiper-slider-intro-btn-next',
+            selectorBtnPrev: '.swiper-slider-intro-btn-prev',
+            selectorPagination: '.swiper-slider-intro-pagination'
          })
-      }, 1500)
 
-      // Init lazy images
-      lazyImages()
-   })
-})(document, window, domIsReady);
+         // DailyDeals Homecenter
+         new DailyDeals('#daily-deals-homecenter', {
+            renderToExternalCountdown: true,
+            //dataSheetURL: '/static/campanas/cybersodimac/eventos-2019/dailyDealsHomecenter.json?1234567890',
+            dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full?alt=json',
+         })
+
+         // DailyDeals Constructor
+         new DailyDeals('#daily-deals-constructor', {
+            renderCountdown: false,
+            //dataSheetURL: '/static/campanas/cybersodimac/eventos-2019/dailyDealsConstructor.json?1234567890',
+            dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/2/public/full?alt=json',
+         })
+
+         // Init mutation observers
+         initMutationObservers([productListWrapperEl])
+
+         createScrollToTopRefEl()
+
+         // Handle button 'scrolltotop'
+         handleScrollToTop(scrollToTopRefElem)
+
+         // section promotions
+         sectionPromotions()
+
+         // section news
+         //sectionOurBrands()
+
+         // Improve productlist image resolution
+         improveProdImagesSrcs()
+
+         // Add missing prices to product item
+         renderMissingPrices()
+
+         // Append 'see all category' banner to category list
+         appendSeeAllCategoryItemToCategoryList()
+
+         // Set product list tab navigation icons
+         setTabNavIcons()
+
+         handleClickProductListTab()
+
+         // Init productlist navigation improvements
+         /*
+         setTimeout(() => {
+            new ProductListNavigation('#fbra_categoryList', {
+               tabsSelector: '.fbra_categoryListTab'
+            })
+         }, 1500)
+         */
+         // Init lazy images
+         lazyImages()
+      })
+   })(document, window, domIsReady);

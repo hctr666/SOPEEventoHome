@@ -1,6 +1,7 @@
 @import './mixins';
 @import './variables';
 
+
 .section-heading {
     text-align: center;
 }
@@ -51,4 +52,8 @@
 @import './sections/top-banner';
 
 @import './sections/section-navbar';
+
+@import './sections/section-product-panel';
+
+
 
