@@ -10,6 +10,7 @@ import {
 } from './js/utils'
 /*import ProductListNavigation from './js/productlist-navigation'*/
 import './js/product-panel'
+/*import './js/products'*/
 
 import SliderIntro from './js/slider-intro'
 import DailyDeals from './js/daily-deals'
@@ -605,6 +606,7 @@ const createScrollToTopRefEl = () => {
             dataSheetURL: 'https://spreadsheets.google.com/feeds/list/1YwE83WH-kHH0aYn0JGLwyAGL8ABrB6Umrv_WnwNsalk/1/public/full?alt=json',
          })
 
+         
          // DailyDeals Constructor
          new DailyDeals('#daily-deals-constructor', {
             renderCountdown: false,

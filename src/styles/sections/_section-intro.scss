@@ -52,8 +52,11 @@ $totalSlides: 6;
 }
 
 .swiper-slider-intro {
+
     width: 100%;
     height: auto;
+  
+
     @media (min-width: $paginationWithContentBreakpoint + 1px) {
         padding-bottom: $paginationHeightDesktop;
     }
@@ -64,6 +67,8 @@ $totalSlides: 6;
 
     .swiper-slide {
         height: auto;
+        width: 100% !important;
+        margin: auto;
     }
 
     .swiper-pagination {
@@ -132,7 +137,7 @@ $totalSlides: 6;
         }
         @media (min-width: $bp-small + 101px) {
             padding-bottom: 370px;
-            background-size: auto 370px;
+            background-size: auto 350px;
             background-repeat: no-repeat;
         }
     }
@@ -158,3 +163,7 @@ $totalSlides: 6;
         }
     }
 }
+
+    .section-imbatibles-combos img{
+        width: 100%;
+    }

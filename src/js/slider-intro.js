@@ -100,9 +100,10 @@ export default class SliderIntro {
    initSwiper() {
       this.swiper = new Swiper(this.selector, {
          slidesPerView: 1,
+         /*
          autoplay: {
             delay: 4400
-         },
+         },*/
          preventClicks: false,
          preventClicksPropagation: false,
          pagination: {
@@ -135,6 +136,7 @@ export default class SliderIntro {
             nextEl: this.options.selectorBtnNext,
             prevEl: this.options.selectorBtnPrev
          },
+
          breakpoints: {
             1000: {
                autoplay: false

@@ -7,6 +7,7 @@ $gridImageWidth: 295px;
 $boxFeatureIndex1: 3;
 $boxFeatureIndex2: 6;
 
+
 .section-news-banner {
     flex-basis: calc(50% - #{$gridColSpace});
     margin-bottom: $gridColSpace;
@@ -19,7 +20,7 @@ $boxFeatureIndex2: 6;
     }
 
     @media (min-width: $bp-news-small + 1px) {
-        flex-basis: calc(25% - #{$gridColSpace});
+       /* flex-basis: calc(25% - #{$gridColSpace});*/
         &:nth-child(#{$boxFeatureIndex1}),
         &:nth-child(#{$boxFeatureIndex2}) {
             flex-basis: calc(50% - #{$gridColSpace});
@@ -30,5 +31,11 @@ $boxFeatureIndex2: 6;
         @media (min-width: $containerMaxWidth) {
             width: auto;
         }
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1000px)  {
+    .section-news-banner {
+        margin-bottom: 3px;
     }
 }

@@ -1,9 +1,22 @@
 @import './variables';
 
-.flex-grid {
+@media(min-width:1000px){
+   
+    .flex-grid {
+        display: flex;
+        flex-shrink: 2;
+       /* flex-flow: wrap;*/
+    }
+}
+
+@media(max-width:768px) {
+    .flex-grid-2 {
+        display: flex;
+    }
+}
+
+.flex-grid-1 {
     display: flex;
-    flex-shrink: 2;
-    flex-flow: wrap;
 }
 
 .flex-grid-col {
@@ -25,4 +38,8 @@
             width: calc(100% / 4);
         }
     }
+}
+.section-our-benefits .flex-grid{
+    display: flex;
+    flex-flow: wrap;
 }

@@ -15,7 +15,7 @@ module.exports = {
    output: {
       filename: '[name].[hash:20].js',
       path: buildPath,
-      publicPath: '/static/campanas/cybersodimac/eventos-2019/home/'
+      publicPath: '/static/campanas/cierrapuertas/evento/2019/mayo/home/'
    },
    node: {
       fs: 'empty'
@@ -91,6 +91,11 @@ module.exports = {
       new HtmlWebpackPlugin({
          template: './src/html/layouts/section-latest-products.html',
          filename: 'sections/section-latest-products.html',
+         inject: false
+      }),
+      new HtmlWebpackPlugin({
+         template: './src/html/layouts/section-product-panel.html',
+         filename: 'sections/section-product-panel.html',
          inject: false
       }),
       new HtmlWebpackPlugin({
