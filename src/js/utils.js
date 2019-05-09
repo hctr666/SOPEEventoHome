@@ -113,15 +113,6 @@ const isTouchMode = () => {
    return mq(query);
 }
 
-const setStyleWithVendors = (element, property, value) => {
-   if (typeof element !== "undefined") {
-      element.style["webkit" + property] = value;
-      element.style["moz" + property] = value;
-      element.style["ms" + property] = value;
-      element.style["o" + property] = value;
-   }
-}
-
 const throttle = (fn, wait) => {
    let time = Date.now();
    return () => {

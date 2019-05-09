@@ -8,6 +8,8 @@ import {
    slugify,
    isIOS
 } from './js/utils'
+import SwiperTabs from './js/swiper-tabs'
+
 /*import ProductListNavigation from './js/productlist-navigation'*/
 import './js/product-panel'
 /*import './js/products'*/
@@ -629,18 +631,18 @@ const createScrollToTopRefEl = () => {
          //sectionOurBrands()
 
          // Improve productlist image resolution
-         improveProdImagesSrcs()
+         //improveProdImagesSrcs()
 
          // Add missing prices to product item
-         renderMissingPrices()
+         //renderMissingPrices()
 
          // Append 'see all category' banner to category list
-         appendSeeAllCategoryItemToCategoryList()
+         //appendSeeAllCategoryItemToCategoryList()
 
          // Set product list tab navigation icons
-         setTabNavIcons()
+         //setTabNavIcons()
 
-         handleClickProductListTab()
+         //handleClickProductListTab()
 
          // Init productlist navigation improvements
          /*
@@ -652,5 +654,7 @@ const createScrollToTopRefEl = () => {
          */
          // Init lazy images
          lazyImages()
+
+         tabProductlist()
       })
    })(document, window, domIsReady);
