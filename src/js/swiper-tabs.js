@@ -1,5 +1,6 @@
-import Swiper from '../../node_modules/swiper/dist/js/swiper'
-import '../../node_modules/swiper/dist/css/swiper.css'
+import { Swiper, Pagination, Navigation } from '../../node_modules/swiper/dist/js/swiper.esm'
+
+Swiper.use([ Pagination, Navigation ])
 
 class SwiperTabs {
    constructor(selector, options) {
