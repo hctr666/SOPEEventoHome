@@ -4,7 +4,7 @@
 $paginationHeightDesktop: 55px;
 $paginationWithContentBreakpoint: 915px;
 $menuNavbarHeight: 48px;
-$totalSlides: 6;
+$totalSlides: 4;
 
 .section-intro-logo {
     //height: 0;
@@ -19,7 +19,7 @@ $totalSlides: 6;
     z-index: 2;
     @media (min-width: $bp-medium) {
         height: 67px;
-        background-image: url('../assets/img/logo-dkp-1.png');
+        background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo_preventa_dkp?fmt=png-alpha&wid=1200&hei=80&fmt=png-alpha');
     }
     @media (max-width: $bp-small) {
         background-color: #2b8cae;
@@ -30,15 +30,15 @@ $totalSlides: 6;
         //background-image: url('https://sodimac.scene7.com/is/image/SodimacPeru/logo-winner-2?fmt=png-alpha&wid=1200&hei=80');
     }
 }
-
+/*
 .supports-webp {
     .section-intro-bg {
         background-image: url('http://s7d5.scene7.com/is/image/SodimacPeru/cybso-201904-bg-large?wid=1920&hei=450&qlt=82&resMode=bicub&op_usm=1,0.5,3,0&op_sharpen=1&fmt=webp');
     }    
 }
-
+*/
 .section-intro-bg {
-    background-image: url('http://s7d5.scene7.com/is/image/SodimacPeru/cybso-201904-bg-large?wid=1920&hei=450&qlt=82&resMode=bicub&op_usm=1,0.5,3,0&op_sharpen=1');
+    background-image: url('http://s7d5.scene7.com/is/image/SodimacPeru/fondo-winners-1?wid=1940&hei=570&qlt=82&resMode=bicub&op_usm=1,0.5,3,0&op_sharpen=1');
     background-position: center -10px;
     background-repeat: repeat no-repeat;
     background-size: auto 450px;
@@ -73,16 +73,17 @@ $totalSlides: 6;
 
     .swiper-pagination {
         @media (min-width: $paginationWithContentBreakpoint + 1px) {
-            bottom: 0;
+            bottom: -3px;
             display: flex;
             //border-bottom: 1px $greyLighter solid;
             box-shadow: 0px -6px 30px -13px rgba(0, 0, 0, 0.62);
+            justify-content: center;
         }
         @media (max-width: $paginationWithContentBreakpoint) {
             //@include horizontalScroll()
             text-align: center;
             position: relative;
-            background: #201370;
+            background:#d4dedd;
             bottom: 0;
             padding: 5px 0;
         }
@@ -95,7 +96,7 @@ $totalSlides: 6;
                 width: 14px;
                 height: 14px;
                 background: $greyLighter;
-                opacity: .6;
+                opacity: 1;
             }
             @media (min-width: $paginationWithContentBreakpoint + 1px) {
                 margin: 0;
@@ -114,13 +115,13 @@ $totalSlides: 6;
             }
             &.swiper-pagination-bullet-active {
                 @media (max-width: $paginationWithContentBreakpoint) {
-                    background: $brandPink;
+                    background: #333;
                     opacity: 1;
                 }
                 @media (min-width: $paginationWithContentBreakpoint + 1px) {
                     //background: $greyLight;}
                     border-bottom: 3px $brandPrimary solid;
-                    background: #352181;
+                    background: #dd0021;
                     color: #fff;
                 }
             }
@@ -164,6 +165,29 @@ $totalSlides: 6;
     }
 }
 
-    .section-imbatibles-combos img{
-        width: 100%;
+    .section-imbatibles-combos  {
+
+        @media only screen and (max-width: 1000px) and (min-width: 500px)  {
+            img {
+                width: 100%;
+            }
+        }     
+        .col-xs-12 {                      
+            @media(max-width:767px) {
+                    padding-top: 15px;  
+                    img{
+                        width: 100%;
+                    }              
+            }
+        }
+
+       .col-md-4{
+            padding-right: 0px !important;
+            padding-left: 0px !important
+       }
+
+       .banner-promotional{
+          padding: 0px 10px;
+       }          
     }
+

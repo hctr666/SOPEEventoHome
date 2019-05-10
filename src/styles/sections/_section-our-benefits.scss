@@ -8,7 +8,7 @@
     margin: 2px;
     font-size: 1.4rem;
     height: 100;
-    border-bottom: 5px $greyLight solid;
+    border: 0.5px $greyLight solid;
     @media (min-width: $bp-xsmall + 1px) {
         font-size: 1.7rem;
     }
