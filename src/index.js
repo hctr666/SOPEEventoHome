@@ -11,7 +11,7 @@ import {
 import SwiperTabs from './js/swiper-tabs'
 
 /*import ProductListNavigation from './js/productlist-navigation'*/
-import './js/product-panel'
+import ProductPanel from './js/product-panel'
 /*import './js/products'*/
 
 import SliderIntro from './js/slider-intro'
@@ -212,16 +212,6 @@ const handleModals = () => {
    init()
 }
 
-const tabProductlist = () => {
-   return new SwiperTabs('.swiper-tabs-1', {
-      activeIndex: 0,
-      onTransitionChangeEnd: (st) => {
-         console.log(st);
-
-      }
-   })
-}
-
 const handleNavbarInteractions = () => {
    const navbarOpenerEl = document.getElementById('js-main-navbar-opener')
    const navbarCloseEl = document.getElementById('js-main-navbar-close')
@@ -301,6 +291,24 @@ const extractPriceListFromString = (str) => {
          };
       }
       return null;
+   }
+}
+
+const handleProductPanelMount = (st, productPanel) => {
+   if (!st.swiperTabsContainerActive.classList.contains('js-data-loaded')) {
+      productPanel.setSheetIndex(st.activeIndex + 1)
+      productPanel.setMountContainer(st.swiperTabsContainerActive)
+      productPanel.getData().then(data => {
+         productPanel.renderHTML(data, {
+            id: st.swiperTabsContainerActive.dataset.catId,
+            name: st.swiperTabsContainerActive.dataset.catName,
+            iconClass: st.swiperTabsContainerActive.dataset.catIconClass
+         })
+         st.swiperTabsContainerActive.classList.add('js-data-loaded')
+         
+      }).catch(err => {
+         console.error(err);
+      })
    }
 }
 
@@ -655,6 +663,15 @@ const createScrollToTopRefEl = () => {
          // Init lazy images
          lazyImages()
 
-         tabProductlist()
+         let productPanel = new ProductPanel()
+         const swiperTabs = new SwiperTabs('.swiper-tabs-1', {
+            activeIndex: 0,
+            onTransitionChangeEnd: (st) => {
+               handleProductPanelMount(st, productPanel)
+            },
+            onInit: (st) => {
+               handleProductPanelMount(st, productPanel)
+            }
+         })
       })
    })(document, window, domIsReady);

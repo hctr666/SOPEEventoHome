@@ -1,5 +1,94 @@
-.mbs{
-    background: red;
-    height: 200px;
-    width: 200px;
+@import './../variables';
+
+.section-product-panel {
+    .swiper-tabs-nav {
+        border-bottom: 3px $brandRed solid;
+        font-size: .59em;
+        line-height: 1.3em;
+        height: 85px;
+        padding-top: 4px;
+        .swiper-wrapper {
+            align-items: flex-end;
+        }
+        .swiper-slide {
+            background: $brandSecondary;
+            color: $colorWhite;
+            border-bottom: 0;
+            &.swiper-slide-tab-active {
+                background: $brandRed;
+                height: 89px;
+            }
+        }
+        .c-icon-cat {
+            margin-bottom: 5px;
+        }
+        .swiper-slide-tabs-nav-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .swiper-tabs-container {
+        .swiper-wrapper,
+        .swiper-slide {
+            height: auto;
+        }
+        .swiper-slide {
+            padding: 14px 7px;
+            background: $greyLighter;
+            align-items: flex-start;
+            min-height: 332px;
+        }
+        .spinner-loading {
+            z-index: 2;
+            opacity: 1;
+        }
+    }
+
+    .prod-panel-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .prod-panel-card {
+        background: #fff;
+        border: 1px $greyLight solid;
+        width: 50%;
+        height: 300px;
+        margin-bottom: 4px;
+        @media (min-width: $bp-xsmall + 120px) {
+            width: 33.333333%;
+        }
+        @media (min-width: $bp-small) {
+            width: 25%;
+        }
+        @media (min-width: $bp-medium + 1px) {
+            width: 20%;
+        }
+    }
+    .prod-panel-img-wrapper {
+        overflow: hidden;
+    }
+    .category-panel-card {
+        background: $brandRed;
+        padding: 0 15px;
+        .c-icon-cat {
+            width: 3em;
+            height: 3em;
+            background-size: 3em 3em;
+        }
+        > a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+
+    .category-panel-card-heading {
+        font-size: 1.2em !important;
+    }
 }

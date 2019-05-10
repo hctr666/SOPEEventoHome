@@ -67,23 +67,8 @@
     @media (min-width: $bp-xxsmall + 20px) {
         padding: 12px;
     }
-    .ddeals-loading {
-        display: flex;
-        opacity: 0;
-        background: $colorWhite;
-        pointer-events: none;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        z-index: 1;
-        align-items: center;
-        justify-content: center;
-        transition: ease-in-out .35s;
-    }
     &.is-loading {
-        .ddeals-loading {
+        .spinner-loading {
             opacity: 1;
         }
     }

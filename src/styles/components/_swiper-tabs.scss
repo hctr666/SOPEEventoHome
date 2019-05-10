@@ -1,21 +1,37 @@
+@import '../variables';
+
+$swiperTabNavWidth: 10%;
+
 .swiper-tabs-nav {
     height: 80px;
+    width: 100%;
     .swiper-slide {
-        width: 22%;
+        width: $swiperTabNavWidth;
         display: flex;
         justify-content: center;
         align-items: center;
         border-bottom: 2px #eee solid;
         transition: ease-in-out .15s;
+        .swiper-slide-tabs-nav-inner {
+            padding: 5px 13px;
+        }
         &.swiper-slide-tab-active {
             background: #eee;
             border-bottom: 2px #0072ce solid;
+        }
+        @media (max-width: $bp-small) {
+            width: 15%;
+        }
+        @media (max-width: $bp-xsmall) {
+            width: auto;
+            max-width: 25%;
         }
     }
 }
 
 .swiper-tabs-container {
     .swiper-slide {
+        width: 100% !important;
         display: flex;
         align-items: center;
         justify-content: center;
